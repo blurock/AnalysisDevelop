@@ -1,0 +1,15 @@
+Numbers Initial
+IntegerChoice Initial#Numbers
+Integer Initial#Numbers#IntegerChoice One 1.0
+Integer Initial#Numbers#IntegerChoice Two 2.0
+Integer Initial#Numbers#IntegerChoice Three 3.0
+RealChoice Initial#Numbers
+Real Initial#Numbers#RealChoice One 1.111
+Real Initial#Numbers#RealChoice Two 2.222
+Real Initial#Numbers#RealChoice Three 3.333
+END
+IntegerChoice One
+One
+Two
+
+

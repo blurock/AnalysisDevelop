@@ -1,0 +1,14 @@
+ObjectClasses:
+DataType: SelectionTree An Algorithm Selection Tree
+AlgorithmSelectionTree 
+              ObjectClasses:
+              END
+END
+ClassNamePairs:
+SelectionTree      AlgorithmSelectionTree
+GoalDefs           SetOfGoalDefs
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END

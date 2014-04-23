@@ -1,0 +1,12 @@
+  <Derived>
+    <Obj type="Object">
+      <Derived>
+      </Derived>
+      <Members>
+        <String>TestObject</String>
+      </Members>
+    </Obj>
+      <Double>1</Double>
+      <Double>2</Double>
+      <Double>3</Double>
+      <Double>4</Double>

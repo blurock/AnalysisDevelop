@@ -1,0 +1,14 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+1000
+CriticalPoints: Var1 [100.0,5.0]  END
+CriticalPoints: Var2 [100.0,5.0] [200.0,6.0] [300.0,7.0] END
+LTEQEQGT    END
+P.Var1            END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The List of Instances
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 Instance1    The First Instance
+0.5 2    0.5 8.45
+END
+

@@ -1,0 +1,62 @@
+Expression (Empty Attributes)
+Attributes:
+%% -------------------------------------------------
+%%    VarsAndExps   KeyWords
+%% -------------------------------------------------
+Attribute NewGraph Expression END
+%% -------------------------------------------------
+%%    SimpleNodeDescription     Description
+%% -------------------------------------------------
+Description:
+GreaterThanThree            FuzzyParameterPredicate
+LessThanThree               FuzzyParameterPredicate
+EqualToThree                FuzzyParameterPredicate
+END
+Predicate:  J Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  3.0 4.0 4.0
+Predicate:  J Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 1.0 0.0  2.0 2.0 3.0
+Predicate:  J Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 0.0  2.0 3.0 4.0
+%% -------------------------------------------------
+%%    Expression     GeneralExpression
+%% -------------------------------------------------
+  ( LDescription NodeDescription GraphExample )
+%% -------------------------------------------------
+%%    NodeDescription           ExpDescription
+%% -------------------------------------------------
+        DescriptionExpressions:
+        ParameterSet: ClassNamePairs: END Operation:
+        Post: NoPostOperation
+        BeginDescription:
+                 ClassNamePairs:
+                 GreaterThanThree            ParIntrinsicExpression
+                 LessThanThree               ParIntrinsicExpression
+                 EqualToThree                ParIntrinsicExpression
+                 END
+                 %% -------------------------------------
+                 ParameterSet: ClassNamePairs: 
+                 Three Real
+                 END
+                 3.0
+                 Operation:
+                 ( GreaterThanZero  ( - J Three ) )
+                 %% -------------------------------------
+                 ParameterSet: ClassNamePairs:
+                 Three Real
+                 END
+                 3.0
+                 Operation:
+                 ( LessThanZero  ( - J Three ) )
+                 %% -------------------------------------
+                 ParameterSet: ClassNamePairs:
+                 Three Real
+                 END
+                 3.0
+                 Operation:
+                 ( EqualToZero  ( - J Three ) )
+        EndDescription:
+%% =================================================
+%%      The Instances
+%% =================================================
+END

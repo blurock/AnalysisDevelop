@@ -1,0 +1,24 @@
+%% -------------------------------------------------
+%% The Graphs in the Instances
+%% -------------------------------------------------
+ObjectClasses:
+%% -------------------------------------------------
+DataType: GraphNodePair The continuous graph node pair
+ContinuousGraphNodePair Continuous
+%% -------------------------------------------------
+DataType: GraphNodePairs The continuous set of graph node pairs
+ContinuousGraphNodePairs ContinuousGraphNodePair
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+Graph           StandardGraph
+GeneratedNode   ContinuousGraphNodePairs
+END
+%% -------------------------------------------------

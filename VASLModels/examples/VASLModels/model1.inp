@@ -1,0 +1,84 @@
+Expression Test
+Attributes:
+%%% -------------------------------------
+%%%   InstanceListFromPredicates KeyWords
+%%% -------------------------------------
+OriginalPass5MeasuredDiff_Check
+END
+%%% -------------------------------------
+%%%%%   OriginalPass5MeasuredDiff_Check              PVerifyExpression
+%%% -------------------------------------
+                        ParameterSet: ClassNamePairs: END Operation:
+        Bottom   Real
+        Top      Real
+        StdMultFactorShift   Real
+        StdMultFactorBottom  Real
+                        Average  Real
+                        Std   Real
+                        END
+        0.0 1.0  0.0 0.0
+%%                        5.63758 12.0552
+                          1.0  1.0
+                     ( GenericPredicate ( Set Top Top Bottom
+                                            ( + Average ( * StdMultFactorShift Std ) )
+                                            ( + Average ( * StdMultFactorShift Std ) )
+                                            ( + Average ( * StdMultFactorBottom Std ) ) )
+                               OriginalPass5MeasuredDiff )
+%%% -------------------------------------
+%%%   Pass3WidthDiff_Check              PVerifyExpression
+%%% -------------------------------------
+                        ParameterSet: ClassNamePairs: END Operation:
+        Bottom   Real
+        Top      Real
+        StdMultFactorShift   Real
+        StdMultFactorBottom  Real
+                        Average  Real
+                        Std   Real
+                        END
+        0.0 1.0  1.0 2.0
+                        157.982 53.9199
+                     ( GenericPredicate ( Set Top Top Bottom
+                                            ( + Average ( * StdMultFactorShift Std ) )
+                                            ( + Average ( * StdMultFactorShift Std ) )
+                                            ( + Average ( * StdMultFactorBottom Std ) ) )
+                               Pass3WidthDiff )
+%%% -------------------------------------
+%%%   Pass5MeasuredDiff_Check              PVerifyExpression
+%%% -------------------------------------
+                        ParameterSet: ClassNamePairs: END Operation:
+        Bottom   Real
+        Top      Real
+        StdMultFactorShift   Real
+        StdMultFactorBottom  Real
+                        Average  Real
+                        Std   Real
+                        END
+        0.0 1.0  1.0 2.0
+                        8.49487 15.8724
+                     ( GenericPredicate ( Set Top Top Bottom
+                                            ( + Average ( * StdMultFactorShift Std ) )
+                                            ( + Average ( * StdMultFactorShift Std ) )
+                                            ( + Average ( * StdMultFactorBottom Std ) ) )
+                               Pass5MeasuredDiff )
+%%% -------------------------------------
+%%%   Pass5WidthDiff_Check              PVerifyExpression
+%%% -------------------------------------
+                        ParameterSet: ClassNamePairs: END Operation:
+        Bottom   Real
+        Top      Real
+        StdMultFactorShift   Real
+        StdMultFactorBottom  Real
+                        Average  Real
+                        Std   Real
+                        END
+        0.0 1.0  1.0 2.0
+                        2.73044 3.42202
+                     ( GenericPredicate ( Set Top Top Bottom
+                                            ( + Average ( * StdMultFactorShift Std ) )
+                                            ( + Average ( * StdMultFactorShift Std ) )
+                                            ( + Average ( * StdMultFactorBottom Std ) ) )
+                               Pass5WidthDiff )
+%% =================================================
+%%      The Instances
+%% =================================================
+END

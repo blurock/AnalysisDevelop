@@ -1,0 +1,14 @@
+ObjectClasses:
+END
+ClassNamePairs:
+RunID          Real
+END
+ObjectClasses:
+END
+ClassNamePairs:
+Var1 Integer
+Var2 Integer
+Var3 Real
+Var4 Real
+Var5 Integer
+END

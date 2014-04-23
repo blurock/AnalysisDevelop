@@ -1,0 +1,113 @@
+No attributes
+Attributes:
+%%%%-----------------------------------------------------------------------------
+%%%%  CriticalPointReadAlg    AlgorithmSummary
+      Initial PartitionAlgs PredGen END
+      Level0 END
+      Read END 
+                               % (Name-Class Pairs)
+     CriticalPointsRootName               KeyWords
+      CriticalPointsFileName               KeyWords
+      END
+                               %  Algorithm Result Parameters
+      CriticalPointsList             %  KeyWords
+      END
+%%%%-----------------------------------------------------------------------------
+%%%%  PartitionsFromCriticalPoints    AlgorithmSummary
+      Initial PartitionAlgs PredGen END
+      Level0 END
+      Partitions END
+                               % (Name-Class Pairs)
+      PartitionTypesFromPoints             KeyWords
+      CriticalPointsList                   KeyWords
+      END
+                               %  Algorithm Result Parameters
+      PredicateList                        %%KeyWords
+      PartitionList                        %%KeyWords
+      END
+%%%%-----------------------------------------------------------------------------
+%%%%   ReadInstancesAlg    AlgorithmSummary
+       Initial InstanceAlgs END    % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Read END                               % Algorithm Specification
+                                              % Algorithm Input Parameters
+                               % (Name-Class Pairs)
+       InstanceReadFiles KeyWords
+       END
+                                              % Algorithm Result Parameters
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%   InstanceSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END    % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Instances END                          % Algorithm Specification
+                                              % Algorithm Input Parameters
+       InstanceNameList KeyWords              % (Name-Class Pairs)
+       TestPercentage   Real
+       END
+                                              % Algorithm Result Parameters
+       TotalInstanceNameList %%KeyWords              % (Name-Class Pairs)
+       TestInstanceNameList  %%KeyWords
+       TrainInstanceNameList %%KeyWords
+       END
+%%%%-----------------------------------------------------------------------------
+%%%% AttributeSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END    % Algorithm Category
+       Parameter END                          % Algorithm KeyWords
+       Attributes END                         % Algorithm Specification
+                                              % Algorithm Input Parameters
+                                              % (Name-Class Pairs)
+        AttributeSpecs        KeyWords
+        TotalInstanceNameList KeyWords
+        END
+                                              % Algorithm Result Parameters
+       AttributeNames
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%   MatrixSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END               % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Matrix END                             % Algorithm Specification
+                                              % Algorithm Input Parameters
+       TotalInstanceNameList KeyWords
+       AttributeNames KeyWords
+       END
+                                              % Algorithm Result Parameters
+       MatrixObject                           % (Name-Class Pairs)
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%   CobwebClusterAlg    AlgorithmSummary
+     Initial ClusterAlgs CobwebTreeAlg END    % Algorithm Category
+                                     END    % Algorithm KeyWords
+     Create Matrix Cobweb            END    % Algorithm Specification
+                                            % (Name-Class Pairs)
+     MaxLevel                    Integer
+     LogicType                   KeyWords
+     TrainInstanceNameList       KeyWords
+     TestInstanceNameList        KeyWords
+     PredicateList               KeyWords
+     GoalNameList                KeyWords
+     END
+                                            % Algorithm Result Parameters
+     CobwebClusterTree                      % CobwebClusterTree
+     END
+%%%%-----------------------------------------------------------------------------
+%%%%   CobwebClusterTest    AlgorithmSummary
+     Initial ClusterAlgs CobwebTreeAlg END    % Algorithm Category
+                                     END    % Algorithm KeyWords
+     Test Matrix Cobweb            END    % Algorithm Specification
+                                            % (Name-Class Pairs)
+     MaxLevel                    Integer
+     LogicType                   KeyWords
+     TrainInstanceNameList       KeyWords
+     TestInstanceNameList        KeyWords
+     PredicateList               KeyWords
+     GoalNameList                KeyWords
+     CobwebClusterTree           CobwebClusterTree
+     END
+                                            % Algorithm Result Parameters
+     END
+%% ==========================================================
+%%  No Instances Defined Here
+%% ==========================================================
+END

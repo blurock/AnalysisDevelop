@@ -1,0 +1,10 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+1000
+data/ToolingClass.inp data/Tooling.inp END
+END
+50
+1.0
+Integer END
+END
+

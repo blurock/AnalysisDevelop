@@ -1,0 +1,12 @@
+ObjectClasses:
+END
+ClassNamePairs:
+Logical     LogicalExpression
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

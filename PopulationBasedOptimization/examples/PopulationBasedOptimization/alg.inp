@@ -1,0 +1,78 @@
+% ----------------------------------------------------------
+%  Parameters for entire set of instances
+% ----------------------------------------------------------
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+%%%%-----------------------------------------------------------------------------
+%%%%   InstanceSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END    % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Instances END                          % Algorithm Specification
+                                              % Algorithm Input Parameters
+       InstanceNameList KeyWords              % (Name-Class Pairs)
+       TestPercentage   Real
+       END
+                                              % Algorithm Result Parameters
+       TotalInstanceNameList %%KeyWords              % (Name-Class Pairs)
+       TestInstanceNameList  %%KeyWords
+       TrainInstanceNameList %%KeyWords
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%-----------------------------------------------------------------------------
+%%%% AttributeByNameAlg    AlgorithmSummary
+       Initial InstanceAlgs END               % Algorithm Category
+       AttributesByName END                   % Algorithm KeyWords
+       Attributes END                         % Algorithm Specification
+                                              % Algorithm Input Parameters
+                                              % (Name-Class Pairs)
+        AttributeSpecs        KeyWords
+        TotalInstanceNameList KeyWords
+        END
+                                              % Algorithm Result Parameters
+       AttributeNames
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%   MatrixSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END               % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Matrix END                             % Algorithm Specification
+                                              % Algorithm Input Parameters
+       TotalInstanceNameList KeyWords
+       AttributeNames KeyWords
+       END
+                                              % Algorithm Result Parameters
+       MatrixObject                           % (Name-Class Pairs)
+       END
+%%%%-----------------------------------------------------------------------------
+%%     DistributionAlg     AlgorithmSummary
+                                    % The name of the Algorithm
+Initial Distribution END             % The Algorithm Category
+END                                 % The Algorithm Keywords
+Calculate  END                      % Algorithm Specification
+                                    % Algorithm Input Parameters
+RootName          KeyWords
+MatrixObject      InstanceMatrix
+END
+                                    % Algorithm Output Parameters
+Distributions
+END
+%%%%-----------------------------------------------------------------------------
+%%    Genetic                     AlgorithmSummary
+                                       % The name of the Algorithm
+Initial OptimizeAlgs   END         % The Algorithm Category
+ END                                   % The Algorithm Keywords
+Genetic                END           % Algorithm Specification
+                                       % Algorithm Input Parameters
+MaximumNumberOfIterations     Integer
+TrainInstanceNameList         KeyWords
+OptimizeObject                RPopulationObject
+OptimizationCost              OptimizeCostFunction
+END
+                                       % Algorithm Output Parameters
+OptimizedObject          %  Continuous
+END
+%%%%-----------------------------------------------------------------------------
+%  Parameters for each instance
+% ----------------------------------------------------------
+END
+

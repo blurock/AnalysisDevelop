@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  Fuzzy
+@c AUTHOR   Harald Wahl
+@c 
+@c CONTENT
+@c   Texinfo documentation for CoreObjects library package "Fuzzy".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) CoreObjects Library
+
+@node     Fuzzy Package
+@section  The "Fuzzy" Package
+@cindex   package, Fuzzy
+@cindex   Fuzzy package
+@cindex   def namespace
+@cindex   namespaces, def
+
+@table @strong
+@item Package name
+@code{Fuzzy}
+
+@item Namespace name
+@code{def}
+
+@item Header files
+@file{Fuzzy.hh}, @file{FuzzyType.hh}
+@end table
+
+
+@include Fuzzy/Overview.texi
+
+@include Fuzzy/Classes.texi

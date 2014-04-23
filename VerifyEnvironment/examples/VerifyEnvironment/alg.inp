@@ -1,0 +1,33 @@
+Simple Logical Expression Test
+Attributes:
+%% -------------------------------------------------
+%%    Operation   AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial VariableGen END             % The Algorithm Category
+END                                 % The Algorithm Keywords
+Expression END                      % Algorithm Specification
+                                    % Algorithm Input Parameters
+VarsAndExps   KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%    Operation   AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial Verify END             % The Algorithm Category
+END                                 % The Algorithm Keywords
+Verify END                      % Algorithm Specification
+                                    % Algorithm Input Parameters
+VerificationOperation     KeyWords
+LogicalDescriptionNames   KeyWords
+InstanceNames             KeyWords
+END
+                                    % Algorithm Output Parameters
+ErrorInstanceNames       %%      KeyWords
+END
+%% =================================================
+%%      No Instances
+%% =================================================
+END

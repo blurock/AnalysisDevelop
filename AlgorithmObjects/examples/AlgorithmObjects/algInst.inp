@@ -1,0 +1,19 @@
+% ----------------------------------------------------------
+%  Parameters for entire set of instances
+% ----------------------------------------------------------
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+1000 200
+                                    % The name of the Algorithm
+Initial Routines END                % The Algorithm Category
+Parameter Level0 END                % The Algorithm Keywords
+Test END                            % Algorithm Specification
+Test Integer                        % Algorithm Input Parameters
+Param Real
+END
+ResultParam1 ResultParam2 END       % Algorithm Result Parameters
+% ----------------------------------------------------------
+%  Parameters for each instance
+% ----------------------------------------------------------
+END
+

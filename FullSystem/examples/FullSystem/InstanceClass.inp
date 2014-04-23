@@ -1,0 +1,48 @@
+ObjectClasses:
+END
+ClassNamePairs:
+RunID Integer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The List of Predicates
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Var3.GreaterThanZero       FuzzyParameterPredicate
+Var3.LessThanZero          FuzzyParameterPredicate
+Var3.EqualToZero           FuzzyParameterPredicate
+Var1.GreaterThanZero       FuzzyParameterPredicate
+Var1.LessThanZero          FuzzyParameterPredicate
+Var1.EqualToZero           FuzzyParameterPredicate
+Var1.NotEqualToZero        FuzzyParameterPredicate
+Var3.NotEqualToZero        FuzzyParameterPredicate
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The List of Partitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Partition.Var3.Zero.2      KeyWords
+Partition.Var1.Zero.2      KeyWords
+Partition.Var3             KeyWords
+Partition.Var1             KeyWords
+Goal.Var1                  KeyWords
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%PartitionTable.Var3.Var1   KeyWords
+%%EntropyConjunction         KeyWords
+EntropyGoal                  KeyWords
+PartitionList                KeyWords
+DecisionTreeParameters       KeyWords
+TrainInstanceNameList        KeyWords
+PredicateList                KeyWords
+MaxLevel                     Integer
+GoalNameList                 KeyWords
+LogicType                    KeyWords
+RootName                     KeyWords
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+END
+ObjectClasses:
+END
+ClassNamePairs:
+Color Colors
+VarT TrueFalse 
+Var1 Real
+Var2 Integer
+Var3 Real
+Var4 Integer
+END
+

@@ -1,0 +1,51 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: VASLDogBoneModelOperation   model
+VASLDogBoneModel   ParameterSet ParameterSet
+%% -------------------------------------------------
+DataType: VASLKashimaModelOperation   model
+VASLKashimaModel   ParameterSet ParameterSet
+%% -------------------------------------------------
+DataType: VASLWidthModelOperation   model
+VASLWidthModel   ParameterSet ParameterSet
+DataType: IntrinsicExpression  A Numeric Tree
+VASLTree
+DogBoneModel              VASLDogBoneModel
+KashimaModel              VASLKashimaModel
+WidthModel                VASLWidthModel
+END
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+Exp            VASLTree
+VarsAndExps    KeyWords
+END
+%% -------------------------------------------------
+ObjectClasses:
+DataType: NValued An Assortment of Colors
+Colors Red 0.0 Green 0.5 Blue 1.0 END
+DataType: NValued True-False Logic 
+TrueFalse True 1.0 False 0.0 END
+END
+%% -------------------------------------------------
+ClassNamePairs:
+VarT1 TrueFalse 
+VarT2 TrueFalse 
+Var1 Integer
+Var2 Integer
+Var3 Real
+Var4 Real
+Dicke_nach_Stich_warm_4                 Real
+Breite_nach_Stich_warm_4                Real
+Walzkraft_Horizontalgeruest_5           Real
+Walzkraft_Egalisierungsgeruest_5        Real
+Dicke_nach_Stich_warm_5                 Real
+Breite_vor_Stich_warm_5                 Real
+Temperatur_5                            Real
+Anstichgeschwindigkeit_5                Real
+Laenge_nach_Stich_warm_5                Real
+Breite_nach_Stich_warm_5                Real
+Breite_nach_Stich_gemessen_5            Real
+END
+%% -------------------------------------------------

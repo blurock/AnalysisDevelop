@@ -1,0 +1,76 @@
+ObjectClasses:
+DataType: AlgorithmRun  A sample goal run class
+TestAlgorithmRun
+% **********************************************************
+% The Definition of the AlgorithmRunClass
+% **********************************************************
+InstanceAlgs Initial
+        Algorithms Initial#InstanceAlgs
+                   InstanceReadASCIIAlg Initial#InstanceAlgs#Algorithms Read
+                   InstanceInstancesAlg Initial#InstanceAlgs#Algorithms Instances
+                   InstanceAttributesAlg Initial#InstanceAlgs#Algorithms Attributes
+                   InstanceMatrixAlg Initial#InstanceAlgs#Algorithms Matrix
+                   InstancesFromPredicate Initial#InstanceAlgs#Algorithms Predicate
+StatisticsAlgs Initial
+       Distribution Initial#StatisticsAlgs
+            DistributionAlgorithm Initial#StatisticsAlgs#Distribution Calculate
+VariableGen Initial
+       Algorithms Initial#VariableGen
+            ExpressionAlgorithm Initial#VariableGen#Algorithms Expression
+OptimizeAlgs Initial
+       1-OptimizeMain  Initial#OptimizeAlgs
+             GeneticAlgorithm  Initial#OptimizeAlgs#1-OptimizeMain     Genetic
+PartitionAlgs Initial
+       PredGen Initial#PartitionAlgs
+         CrPnts Initial#PartitionAlgs#PredGen
+             ReadCriticalPoints           Initial#PartitionAlgs#PredGen#CrPnts Read
+             PartitionsFromCriticalPoints Initial#PartitionAlgs#PredGen#CrPnts Partitions
+DecisionTreeAlgs Initial
+       DTreeAlg           Initial#DecisionTreeAlgs
+                DecisionTreeCreate       Initial#DecisionTreeAlgs#DTreeAlg            Create
+       SelectAlg          Initial#DecisionTreeAlgs
+                EntropySelectPredicate   Initial#DecisionTreeAlgs#SelectAlg           SimpleSelect
+       StandardEntropyAlg Initial#DecisionTreeAlgs
+                EntropyAlgorithm         Initial#DecisionTreeAlgs#StandardEntropyAlg  ZEntropy
+       StandardFilterAlg Initial#DecisionTreeAlgs
+                FilterDecisionTreeNode       Initial#DecisionTreeAlgs#StandardFilterAlg            Filter
+RuleSystem Initial
+       Algorithms Initial#RuleSystem
+            ProductionSystemSearch Initial#RuleSystem#Algorithms Calculate
+            ExecuteActionRule      Initial#RuleSystem#Algorithms Action
+Verify  Initial
+       Algorithms Initial#Verify
+            VerifyErrorAlgorithm Initial#Verify#Algorithms  Verify
+SAAlgs   Initial
+         Algorithms Initial#SAAlgs
+                    SimulatedAnnealingAlgorithm Initial#SAAlgs#Algorithms SimAnn 
+VASLAlgs Initial
+         Algorithms Initial#VASLAlgs
+                    WidthModelMatrixSetUp Initial#VASLAlgs#Algorithms VASLMatrix 
+END
+%% -------------------------------------------------
+END
+ClassNamePairs:
+NewParameter                           AlgorithmSummary
+CriticalPointReadAlg                   AlgorithmSummary
+PartitionsFromCriticalPointsAlg        AlgorithmSummary
+DecisionTreeAlg                        AlgorithmSummary
+InstanceSetUpAlg                       AlgorithmSummary
+AttributeSetUpAlg                      AlgorithmSummary
+AttributeByTypeAlg                     AlgorithmSummary
+AttributeByNameAlg                     AlgorithmSummary
+MatrixSetUpAlg                         AlgorithmSummary
+DistributionAlg                        AlgorithmSummary
+RuleSystemSearch                       AlgorithmSummary
+RuleAction                             AlgorithmSummary
+Verify                                 AlgorithmSummary
+InstanceListFromPredicate              AlgorithmSummary
+AlgSATest                              AlgorithmSummary
+AlgSAOpt                               AlgorithmSummary
+MatrixSetUpAlg10Percents               AlgorithmSummary
+END
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END

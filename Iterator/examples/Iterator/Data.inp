@@ -1,0 +1,33 @@
+Data Set Up
+Attributes:
+%%% ---- Number Real
+1.0
+%%%% ---- Iterator StandardObjectIterator
+Real I1 1.0
+Real I2 2.0
+Real I3 3.0
+END
+%%%------------------------------------------
+%%% SetOfConditions StandardIterationSet  
+%%%------------------------------------------
+IterationSet:
+   Iterator: StandardObjectIterator Concentrations
+     %%%% ---- Iterator StandardObjectIterator
+       MoleFractionsSetClass C1
+          .2080 .7825 .0095
+       END
+   Iterator: StandardObjectIterator Temperature
+     %%%% ---- Iterator StandardObjectIterator
+       Real T1 1000.0
+       Real T2 1050.0
+       Real T3 1100.0
+    END
+   Iterator: StandardObjectIterator Pressure
+     %%%% ---- Iterator StandardObjectIterator
+       Real P1 1342250.0
+    END
+END 
+%%%------------------------------------------
+2.0
+%%% ---- Done
+END

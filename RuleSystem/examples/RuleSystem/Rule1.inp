@@ -1,0 +1,81 @@
+RuleSet  =====================A Set of Action RulesAttributes: ==========================
+Attributes:
+%%% MaximumNumberOfNodes    Integer
+30
+%%%
+Instance1 END
+%%% ProductionSystem        NormalProductionSystem
+ProductionSystem:
+GeneratedNode: GeneratedNode
+NumberOfGoals: 1
+GoalResults:  
+             Cost
+             END
+GoalCondition:
+     ParameterSet:
+     ClassNamePairs:
+     Cost    Real
+     Plus    Real
+     END
+     0.0 0.0
+     Operation:
+     LocalExpressionKeyWords:
+     Ref      Real
+     END
+     0.0
+        ( EqualToZero ( - Cost Ref ) )
+SetOfRules:
+ClassNamePairs:
+Rule1   PredicateAction
+END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%% Rule1   ExpressionAction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ActionRule:
+                ParameterSet:
+                ClassNamePairs:
+                Plus   Real
+                END
+                0.0
+                Operation:
+
+          ActionRuleCondition:
+
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+                LocalExpressionKeyWords:
+                Ref       Real
+                END
+                3.0
+                ( GreaterThanZero ( - Ref Plus ) )
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                Plus    NumericExpression
+                Cost    NumericExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%%Action1: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        LocalExpressionKeyWords:
+                        Factor Real
+                        END
+                        1.0
+                        ( + Plus Factor )
+%%%%%%%%%%%%%%%%%%%%%%%%Cost: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        X   Real
+                        Plus Real
+                        END
+                        0.0 0.0
+                        Operation:
+                        LocalExpressionKeyWords:
+                        END
+                        ( * ( - Plus X ) ( - Plus X ) )
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+END

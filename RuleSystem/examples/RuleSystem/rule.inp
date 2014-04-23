@@ -1,0 +1,50 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+1000
+Instance1 Instance2 Instance3 END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%% ExpressionAction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ActionRule:
+ParameterSet:
+ClassNamePairs:
+VarT1    TrueFalse
+T2       TrueFalse
+V1       Real
+V2       Real
+END
+True False 3.0 4.0
+Operation:
+%% Condition
+ActionRuleCondition:
+ParameterSet:
+ClassNamePairs:
+T1    TrueFalse
+T2    TrueFalse
+END
+True True
+Operation:
+LocalExpressionKeyWords:
+END
+( AND  T1 VarT1 )
+%%% Condition Cutoff Level
+CutOff: .75
+%%% Set of Actions
+ActionRuleSetOfActions:
+ClassNamePairs:
+Action1    NumericExpression
+END
+%%% Action1: NumericExpression
+ParameterSet:
+ClassNamePairs:
+V1    Real
+V2    Real
+END
+1.0 2.0
+Operation:
+LocalExpressionKeyWords:
+END
+( + ( / Var3 V1 ) ( / Var4 V2 ) )
+%% =================================================
+END
+

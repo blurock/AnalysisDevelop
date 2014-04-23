@@ -1,0 +1,10 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+1000
+InstClass.txt Instances.txt InstClass2.txt Instances2.txt END
+Instance1 Instance2 Instance3 Instance4 Instance5 Instance6 END
+50
+1.0
+Var1 Var2 END
+END
+

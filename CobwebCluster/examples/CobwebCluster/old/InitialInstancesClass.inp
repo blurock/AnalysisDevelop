@@ -1,0 +1,55 @@
+% **********************************************************
+% The Set up of the Attribute Class Information
+% **********************************************************
+%
+% ----------------------------------------------------------
+%  The Type Definition of the Attributes
+%  (no new types specified)
+% ----------------------------------------------------------
+ObjectClasses:
+END
+% ----------------------------------------------------------
+ClassNamePairs:
+RunIDCobweb                     Integer
+DebugLevel                      Integer
+GoalDebug                       Integer
+InstanceReadFiles               KeyWords
+Test                            Real
+InstanceNameList                KeyWords
+AttributeSpecs                  KeyWords
+TestPercentage                  Real
+MaxLevel                        Integer
+LogicType                       KeyWords
+GoalDebug                       Integer
+CriticalPointsFileName          KeyWords
+CriticalPointsRootName          KeyWords
+PartitionTypesFromPoints        KeyWords
+CobwebMeasure                   KeyWords
+AttributeSetUp                  GoalSpec
+InstanceSetUp                   GoalSpec
+ReadInstances                   GoalSpec
+MatrixSetUp                     GoalSpec
+PartitionsFromCriticalPoints    GoalSpec
+CobwebClusterPredRead           GoalSpec
+CobwebClusterPredGen            GoalSpec
+END
+% **********************************************************
+% The Set up of the Instances Class Information
+% **********************************************************
+%
+% ----------------------------------------------------------
+%  The Type Definition of the Instances
+%  (no new types specified)
+% ----------------------------------------------------------
+ObjectClasses:
+END
+%
+% ----------------------------------------------------------
+%  The instance parameter specifications
+%  Five Parameters are to be read in
+%
+% ----------------------------------------------------------
+ClassNamePairs:
+END
+
+

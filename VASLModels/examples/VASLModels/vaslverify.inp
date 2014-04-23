@@ -1,0 +1,48 @@
+%% -------------------------------------------------
+%%% VASLVerify   VerifyDescription
+%% -------------------------------------------------
+        DescriptionExpressions:
+        ParameterSet:
+        ClassNamePairs:
+        END
+        Operation:
+        Post: NoPostOperation
+        BeginDescription:
+                ClassNamePairs:
+                Width12Compare      VASLExpression
+                Width23Compare      VASLExpression
+                Width34Compare      VASLExpression
+                Width45Compare      VASLExpression
+                WidthEqual12        VASLExpression
+                END
+        % Width12Compare      VASLExpression
+                Factor Real 
+                END
+                10.0
+                ( PercentApproxEqual  ( / ( - Breite_nach_Stich_warm_1 Breite_nach_Stich_warm_2 ) Factor )
+        % Width12Compare      VASLExpression
+                Factor Real 
+                END
+                1.0
+                ( PercentApproxEqual  ( / ( - Breite_nach_Stich_warm_2 Breite_nach_Stich_warm_3 ) Factor )
+        % Width12Compare      VASLExpression
+                Factor Real 
+                END
+                1.0
+                ( PercentApproxEqual  ( / ( - Breite_nach_Stich_warm_3 Breite_nach_Stich_warm_4 ) Factor )
+        % Width45Compare      VASLExpression
+                Factor Real 
+                END
+                1.0
+                ( PercentApproxEqual  ( / ( - Breite_nach_Stich_warm_4 Breite_nach_Stich_warm_5 ) Factor )
+        %                 WidthEqual12        VASLExpression
+                Factor Real 
+                END
+                1.0
+                ( EqualTo  ( / ( - Breite_nach_Stich_warm_1 Breite_vor_Stich_warm_5 ) Factor )
+ 
+                        ParameterSet: ClassNamePairs: END Operation:
+                        END
+                     ( GenericPredicate ( Set Bottom Bottom Top    X             X            ( + X Width ) )  Type )
+        EndDescription:
+

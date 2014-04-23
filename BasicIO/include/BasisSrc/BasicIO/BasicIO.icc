@@ -1,0 +1,23 @@
+/*  FILE     BasicIO.icc
+**  PACKAGE  BasicIO
+**  AUTHOR   Mario Drobics
+**
+**  CONTENT
+**    Inline functions for the "BasicIO" package.
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1997 Basis Library
+*/
+ 
+#ifndef BasisSRC_BASICIO_ICC
+#define BasisSRC_BASICIO_ICC
+ 
+#pragma interface
+
+
+
+
+
+
+#endif

@@ -1,0 +1,241 @@
+@defop {Procedure on} {xxClass_3xx} {BaseDataAlgorithmSummary} 
+ empty constructor: @code{BaseDataAlgorithmSummary()}
+
+
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Procedure on} {xxClass_4xx} {BaseDataAlgorithmSummary} 
+ copy constructor: @code{BaseDataAlgorithmSummary(@var{data})}
+
+@table @code
+@item @var{data}: xxType_7xx
+ data to be copied
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Procedure on} {xxClass_5xx} {Read} 
+ Read in BaseDataAlgorithmSummary: @code{Read(@var{in}, @var{objc})}
+
+@table @code
+@item @var{in}: xxType_8xx
+ The input stream
+@item @var{objc}: xxType_9xx
+ The class definition
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Procedure on} {xxClass_6xx} {Read} 
+ Read in BaseDataAlgorithmSummary: @code{Read(@var{in}, @var{objc}, @var{name})}
+
+@table @code
+@item @var{in}: xxType_10xx
+ The input stream
+@item @var{objc}: xxType_11xx
+ The class definition
+@item @var{name}: xxType_12xx
+ The name of the object (already assigned)
+
+@end table
+The order of the read in objects is:
+@itemize @bullet
+@item A set of keywords to define the base algorithm category (list end with END)
+@item A set of keywords to guide the algorithm execution (list end with END)
+@item The name class pairs of the parameters (list end with END)
+@item A dummy number, The parameter name and a description (on one separete line)
+@item The set of parameters
+@item The set of result parameters
+
+@end itemize
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_7xx} {print} 
+ BaseDataAlgorithmSummary: @code{@var{out1} = print(@var{out})}
+
+@table @code
+@item @var{out}, @var{out1}: xxType_14xx
+ The output buffer
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_8xx} {Clone} 
+BaseDataAlgorithmSummary: @code{@var{obj} = Clone()}
+
+@table @code
+@item @var{obj}: xxType_15xx
+ The copy
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Procedure on} {xxClass_9xx} {CopyClone} 
+BaseDataAlgorithmSummary: @code{CopyClone(@var{obj})}
+
+@table @code
+@item @var{obj}: xxType_16xx
+ The object to be copied
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_10xx} {EncodeThis} 
+ BaseDataAlgorithmSummary: @code{@var{ans} = EncodeThis(@var{buffer})}
+
+@table @code
+@item @var{buffer}: xxType_17xx
+ The buffer
+@item @var{ans}: xxType_18xx
+ True if successful
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_11xx} {DecodeThis} 
+ BaseDataAlgorithmSummary: @code{@var{ans} = DecodeThis(@var{buffer})}
+
+@table @code
+@item @var{buffer}: xxType_19xx
+ The buffer
+@item @var{ans}: xxType_20xx
+ True if successful
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_12xx} {GetAlgorithmCategory} 
+ get category: @code{@var{category} = GetAlgorithmCategory()}
+
+@table @code
+@item @var{category}: xxType_21xx
+ The category of algorithms that this algorithm performs
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_13xx} {GetAlgorithmKeys} 
+ get algorithm keys: @code{@var{algkeys} = GetAlgorithmKeys()}
+
+@table @code
+@item @var{category}: xxType_22xx
+ The category of algorithms that this algorithm performs
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_14xx} {ListOfKeyWords} 
+ list of key names: @code{@var{klist} = ListOfKeyWords()}
+
+@table @code
+@item @var{klist}: xxType_23xx
+ The list of valid keys
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_15xx} {KeyWordInList} 
+ keyword among list of Keys: @code{@var{ans} = KeyWordInList(@var{keyword})}
+
+@table @code
+@item @var{keyword}: xxType_24xx
+ key to check
+@item @var{ans}: xxType_25xx
+ True if in list
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_16xx} {ListOfParameterNames} 
+ list of names: @code{@var{plist} = ListOfParameterNames()}
+
+@table @code
+@item @var{plist}: xxType_26xx
+ The names of the parameters
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_17xx} {ListOfResultNames} 
+ list of names: @code{@var{plist} = ListOfResultNames()}
+
+@table @code
+@item @var{plist}: xxType_27xx
+ The names of the parameters
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_18xx} {ParameterInList} 
+ check if parameter exists: @code{@var{ans} = ParameterInList(@var{name})}
+
+@table @code
+@item @var{name}: xxType_28xx
+ The name of the parameter
+@item @var{ans}: xxType_29xx
+ True if the parameter is in the list of parameters
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Procedure on} {xxClass_19xx} {TransferKeyWords} 
+ add algorithm keywords to current: @code{TransferKeyWords(@var{summary})}
+
+@table @code
+@item @var{summary}: xxType_30xx
+ The algorithm information
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+

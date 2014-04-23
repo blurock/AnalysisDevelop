@@ -1,0 +1,31 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: VASLDogBoneModelOperation   model
+VASLDogBoneModel   ParameterSet ParameterSet
+%% -------------------------------------------------
+DataType: VASLKashimaModelOperation   model
+VASLKashimaModel   ParameterSet ParameterSet
+%% -------------------------------------------------
+DataType: VASLWidthModelOperation     model
+VASLWidthModel   ParameterSet ParameterSet
+%% -------------------------------------------------
+DataType: IntrinsicExpression  A Numeric Tree
+VASLTree
+DogBoneModel              VASLDogBoneModel
+KashimaModel              VASLKashimaModel
+WidthModel                VASLWidthModel
+END
+%% -------------------------------------------------
+DataType: ParameterizedExpression    A new numeric parameterized function
+VASLExpression   ParameterSet VASLTree Object
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END

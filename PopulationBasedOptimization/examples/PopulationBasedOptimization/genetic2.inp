@@ -1,0 +1,39 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+% --------------------------------------------
+%% MaximumNumberOfIterations    Integer
+% --------------------------------------------
+50
+% --------------------------------------------
+%% TrainInstanceNameList         KeyWords
+% --------------------------------------------
+Instance1 Instance2 Instance3 Instance4 Instance5 
+Instance6 Instance7 Instance8 Instance9 Instance10
+Instance11 Instance12 END
+% --------------------------------------------
+%% OptimizationCost              PopulationCostFunction
+% --------------------------------------------
+CostFunction:
+Genetic:
+GeneticParameters:
+P1         GeneticReal
+P2         GeneticReal
+P3         GeneticReal
+END
+P1 Distribution_P1
+P2 Distribution_P2
+P3 Distribution_P3
+Population: 30
+ParameterSet:  ClassNamePairs: END Operation:
+Zero  Real
+END
+0.0 
+ ( - Zero 
+     ( * ( - P1 Var1 ) ( - P1 Var1 ) )
+     ( * ( - P2 Var2 ) ( - P2 Var2 ) )
+     ( * ( - P3 Var3 ) ( - P3 Var3 ) )
+ )
+% --------------------------------------------
+%% OptimizeObject                RPopulationObject
+% --------------------------------------------
+END

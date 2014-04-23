@@ -1,0 +1,6 @@
+var1 Integer 0 F
+const1 Integer 0 T
+const1 Integer 0 T
+v1 Integer 0 T
+v3 Integer 0 T
+a3 Integer 0 F

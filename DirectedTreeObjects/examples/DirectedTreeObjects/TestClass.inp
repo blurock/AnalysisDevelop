@@ -1,0 +1,30 @@
+ObjectClasses:
+DataType: NValued An Assortment of Colors
+Colors Red 0.0 Green 0.5 Blue 1.0 END
+DataType: NValued True and False
+TrueFalse False 0.0 True 1.0 END
+END
+ClassNamePairs:
+Tree DirectedTree
+Color Colors
+XColor Colors
+Var1 Integer
+Var2 Integer
+Var3 Real
+Var4 Integer
+END
+ObjectClasses:
+END
+ClassNamePairs:
+IColor Colors
+IXColor TrueFalse
+IVar1 Integer
+IVar2 Integer
+IVar3 Real
+IVar4 Integer
+END
+
+
+
+
+

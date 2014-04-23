@@ -1,0 +1,175 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+%% -------------------------------------------------
+%%     Breite_Difference_Squared
+%% -------------------------------------------------
+END
+( * ( - Breite_nach_Stich_warm_5  Breite_nach_Stich_gemessen_5 ) 
+    ( - Breite_nach_Stich_warm_5  Breite_nach_Stich_gemessen_5 ) 
+ )
+END
+( /
+   ( * ( - Breite_nach_Stich_warm_5  Breite_nach_Stich_gemessen_5 ) 
+       ( - Breite_nach_Stich_warm_5  Breite_nach_Stich_gemessen_5 ) )
+   Breite_nach_Stich_warm_5
+ )
+%% -------------------------------------------------
+%%     Pass0-5RelDiff_Temperatur
+%% -------------------------------------------------
+Two     Real
+END
+2.0
+( / ( - Temperatur_1  Temperatur_5 ) ( / ( + Temperatur_1  Temperatur_5 ) Two ) )
+%% -------------------------------------------------
+%%     Pass1-5Difference_Breite_nach_Stich_warm
+%% -------------------------------------------------
+Two     Real
+END
+2.0
+( /
+    ( - Breite_nach_Stich_warm_5  Breite_nach_Stich_warm_0 ) 
+    ( / 
+        ( + Breite_nach_Stich_warm_5  Breite_nach_Stich_warm_0 ) 
+        Two 
+    )
+)
+%% -------------------------------------------------
+%%     Pass1-2Difference_Dicke_nach_Stich_warm
+%% -------------------------------------------------
+END
+( /
+    ( - Dicke_nach_Stich_warm_1  Dicke_nach_Stich_warm_2 ) 
+    Breite_nach_Stich_warm_1
+)
+%% -------------------------------------------------
+%%     Pass2-3Difference_Dicke_nach_Stich_warm
+%% -------------------------------------------------
+END
+( /
+    ( - Dicke_nach_Stich_warm_2  Dicke_nach_Stich_warm_3 ) 
+    Breite_nach_Stich_warm_2
+)
+%% -------------------------------------------------
+%%     Pass3-4Difference_Dicke_nach_Stich_warm
+%% -------------------------------------------------
+END
+( /
+    ( - Dicke_nach_Stich_warm_3  Dicke_nach_Stich_warm_4 ) 
+    Breite_nach_Stich_warm_3
+)
+%% -------------------------------------------------
+%%     Pass4-5Difference_Dicke_nach_Stich_warm
+%% -------------------------------------------------
+END
+( /
+    ( - Dicke_nach_Stich_warm_4  Dicke_nach_Stich_warm_5 ) 
+    Breite_nach_Stich_warm_4
+)
+%% -------------------------------------------------
+%%     Pass1Difference_Breite_Stich_warmAve
+%% -------------------------------------------------
+Ten     Real
+END
+10.0
+( /
+  ( + 
+    ( - Breite_nach_Stich_warm_1  Breite_vor_Stich_warm_1 ) 
+    ( - Breite_nach_Stich_warm_2  Breite_vor_Stich_warm_2 ) 
+    ( - Breite_nach_Stich_warm_3  Breite_vor_Stich_warm_3 ) 
+    ( - Breite_nach_Stich_warm_4  Breite_vor_Stich_warm_4 ) 
+    ( - Breite_nach_Stich_warm_5  Breite_vor_Stich_warm_5 )
+  ) 
+  ( /
+       ( + 
+            Breite_nach_Stich_warm_1 Breite_vor_Stich_warm_1
+            Breite_nach_Stich_warm_2 Breite_vor_Stich_warm_2
+            Breite_nach_Stich_warm_3 Breite_vor_Stich_warm_3
+            Breite_nach_Stich_warm_4 Breite_vor_Stich_warm_4
+            Breite_nach_Stich_warm_5 Breite_vor_Stich_warm_5
+       )
+       Ten
+   )    
+)
+%% -------------------------------------------------
+%%     Ratio-DickeBreite_nach_stich_warm
+%% -------------------------------------------------
+END
+( / Breite_nach_Stich_warm_1  Dicke_nach_Stich_warm_1 )
+%% -------------------------------------------------
+%%     Ratio-DickeBreite_nach_stich_warm
+%% -------------------------------------------------
+END
+( / Breite_nach_Stich_warm_2  Dicke_nach_Stich_warm_2 )
+%% -------------------------------------------------
+%%     Ratio-DickeBreite_nach_stich_warm
+%% -------------------------------------------------
+END
+( / Breite_nach_Stich_warm_3  Dicke_nach_Stich_warm_3 )
+%% -------------------------------------------------
+%%     Ratio-DickeBreite_nach_stich_warm
+%% -------------------------------------------------
+END
+( / Breite_nach_Stich_warm_4  Dicke_nach_Stich_warm_4 )
+%% -------------------------------------------------
+%%     Ratio-DickeBreite_nach_stich_warm
+%% -------------------------------------------------
+END
+( / Breite_nach_Stich_warm_5  Dicke_nach_Stich_warm_5 )
+%% -------------------------------------------------
+%%     Ratio-DickeBreite_nach_stich_warmAve
+%% -------------------------------------------------
+Five    Real
+END
+5.0
+( /
+    ( +
+       ( / Breite_nach_Stich_warm_1  Dicke_nach_Stich_warm_1 )
+       ( / Breite_nach_Stich_warm_2  Dicke_nach_Stich_warm_2 )
+       ( / Breite_nach_Stich_warm_3  Dicke_nach_Stich_warm_3 )
+       ( / Breite_nach_Stich_warm_4  Dicke_nach_Stich_warm_4 )
+       ( / Breite_nach_Stich_warm_5  Dicke_nach_Stich_warm_5 )
+    ) 
+    Five
+)
+
+
+%% -------------------------------------------------
+%%    VarsAndExps   KeyWords
+%% -------------------------------------------------
+Instance
+Pass0-5RelDiff_Temperatur                  ExpPass0-5RelDiff_Temperatur
+Pass1-5Difference_Breite_nach_Stich_warm   ExpPass1-5Difference_Breite_nach_Stich_warm
+Pass1Difference_Breite_Stich_warmAve       ExpPass1Difference_Breite_Stich_warmAve
+Ratio-DickeBreite_nach_stich_warm_1        ExpRatio-DickeBreite_nach_stich_warm_1
+Ratio-DickeBreite_nach_stich_warm_2        ExpRatio-DickeBreite_nach_stich_warm_2
+Ratio-DickeBreite_nach_stich_warm_3        ExpRatio-DickeBreite_nach_stich_warm_3
+Ratio-DickeBreite_nach_stich_warm_4        ExpRatio-DickeBreite_nach_stich_warm_4
+Ratio-DickeBreite_nach_stich_warm_5        ExpRatio-DickeBreite_nach_stich_warm_5
+Ratio-DickeBreite_nach_stich_warmAve       ExpRatio-DickeBreite_nach_stich_warmAve
+Pass1-2Difference_Dicke_nach_Stich_warm    ExpPass1-2Difference_Dicke_nach_Stich_warm
+Pass2-3Difference_Dicke_nach_Stich_warm    ExpPass2-3Difference_Dicke_nach_Stich_warm
+Pass3-4Difference_Dicke_nach_Stich_warm    ExpPass3-4Difference_Dicke_nach_Stich_warm
+Pass4-5Difference_Dicke_nach_Stich_warm    ExpPass4-5Difference_Dicke_nach_Stich_warm
+Breite_Difference_Squared ExpBreite_Difference_Squared
+Breite_Difference_SquaredRatio ExpBreite_Difference_SquaredRatio
+END
+%%% RootName                              KeyWords
+NewParameters       END
+%%% AttributeSpecs                         KeyWords
+Pass0-5RelDiff_Temperatur
+Pass1-5Difference_Breite_nach_Stich_warm
+Ratio-DickeBreite_nach_stich_warmAve
+Ratio-DickeBreite_nach_stich_warm_1
+Ratio-DickeBreite_nach_stich_warm_2
+Ratio-DickeBreite_nach_stich_warm_3
+Ratio-DickeBreite_nach_stich_warm_4
+Ratio-DickeBreite_nach_stich_warm_5
+Pass1Difference_Breite_Stich_warmAve
+Breite_Difference_Squared
+Breite_Difference_SquaredRatio
+END
+%% =================================================
+%%      The Instances
+%% =================================================
+END
+

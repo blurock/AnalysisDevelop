@@ -1,0 +1,6 @@
+n1 v1 Integer 0 F
+n2 a1 Integer 0 F
+n3 a1 Integer 0 T
+n4 a3 Integer 0 F
+n5 v1 Integer 0 T
+n6 a3 Integer 0 F

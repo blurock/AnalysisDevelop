@@ -1,0 +1,120 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+%% -------------------------------------------------
+1000
+%% -------------------------------------------------
+4.0 6.0
+%% -------------------------------------------------
+Instance1 Instance2 Instance3 Instance4 Instance5 Instance6 Instance7 END
+%% -------------------------------------------------
+Var1 Var2 Var3 END
+%% -------------------------------------------------
+Test END
+%% -------------------------------------------------
+%%    Operation   AlgorithmSummary
+%% -------------------------------------------------
+                                       % The name of the Algorithm
+Initial PCAGenerate Calculate END      % The Algorithm Category
+END                                    % The Algorithm Keywords
+PCA       END                          % Algorithm Specification
+                                       % Algorithm Input Parameters
+MatrixObject      InstanceMatrix
+RootName          KeyWords
+END
+                                       % Algorithm Output Parameters
+PCAAnalysis
+END
+%% -------------------------------------------------
+%%    PCAVarGenAlg   AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial PCAGenerate Calculate END      % The Algorithm Category
+%%Initial PCAVariable Calculate END   % The Algorithm Category
+END                                 % The Algorithm Keywords
+Generate  END                       % Algorithm Specification
+                                    % Algorithm Input Parameters
+PCAAnalysis            InstancePCAObject
+RootName               KeyWords
+TotalInstanceNameList  KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%%%%------------------------------------------------
+%%%%   ReadInstancesAlg    AlgorithmSummary
+%% -------------------------------------------------
+       Initial InstanceAlgs END    % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Read END                               % Algorithm Specification
+                                              % Algorithm Input Parameters
+                               % (Name-Class Pairs)
+       InstanceReadFiles KeyWords
+       END
+                                              % Algorithm Result Parameters
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%   InstanceSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END    % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Instances END                          % Algorithm Specification
+                                              % Algorithm Input Parameters
+       InstanceNameList KeyWords              % (Name-Class Pairs)
+       TestPercentage   Real
+       END
+                                              % Algorithm Result Parameters
+       TotalInstanceNameList %%KeyWords              % (Name-Class Pairs)
+       TestInstanceNameList  %%KeyWords
+       TrainInstanceNameList %%KeyWords
+       END
+%%%%-----------------------------------------------------------------------------
+%%%% AttributeSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END    % Algorithm Category
+       Parameter END                          % Algorithm KeyWords
+       Attributes END                         % Algorithm Specification
+                                              % Algorithm Input Parameters
+                                              % (Name-Class Pairs)
+        AttributeSpecs        KeyWords
+        TotalInstanceNameList KeyWords
+        END
+                                              % Algorithm Result Parameters
+       AttributeNames
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%   MatrixSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END               % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Matrix END                             % Algorithm Specification
+                                              % Algorithm Input Parameters
+       TotalInstanceNameList KeyWords
+       AttributeNames KeyWords
+       END
+                                              % Algorithm Result Parameters
+       MatrixObject                           % (Name-Class Pairs)
+       END
+%%%%-----------------------------------------------------------------------------
+
+%% =================================================
+%%      The Instances
+%% =================================================
+Instance: 1 Instance1    The First Instance
+Green True 100 200 401 800.45
+%% -------------------------------------------------
+Instance: 2 Instance2    The Second Instance
+Red True   100 200 402 807.45
+%% -------------------------------------------------
+Instance: 3 Instance3    The Third Instance
+Blue False 100 200 403 810.45
+%% -------------------------------------------------
+Instance: 4 Instance4    The Fourth Instance
+Blue False 200 400 804 820.45
+%% -------------------------------------------------
+Instance: 5 Instance5    The Fifth Instance
+Blue False 300 600 1205 830.45
+%% -------------------------------------------------
+Instance: 6 Instance6    The Sixth Instance
+Blue False 400 800 1606 840.45
+%% -------------------------------------------------
+Instance: 7 Instance7    The Seventh Instance
+Blue False 500 1000 2007 850.45
+%% -------------------------------------------------
+END
+

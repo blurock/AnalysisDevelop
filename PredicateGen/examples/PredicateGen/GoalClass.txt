@@ -1,0 +1,59 @@
+% **********************************************************
+% The Definition of the GoalRunClass
+% **********************************************************
+ObjectClasses:
+END
+Routines Initial
+     PredGen Initial#Routines
+         CrPnts Initial#Routines#PredGen
+             ReadCriticalPoints           Initial#Routines#PredGen#CrPnts Read
+             PartitionsFromCriticalPoints Initial#Routines#PredGen#CrPnts Partitions
+END
+% ----------------------------------------------------------
+% Set of GoalSummary Definitions
+%
+% ----------------------------------------------------------
+SetOfGoalDefs: CriticalPointGoals          % NameTag
+% ----------------------------------------------------------
+% ---------------------- Goal Summary Definition
+% Read in the set of Critical Point
+%
+GoalSummary: CriticalPointRead
+Initial Routines PredGen END
+Level0 END
+Read END
+CriticalPointsRootName               KeyWords
+CriticalPointsFileName               KeyWords
+END
+CriticalPointsList                   %%KeyWords
+END
+   % The Goal Parameters (Name-Class Pairs)
+   END
+   % ----- List of Prerequisites (GoalSpecs)
+   END
+   % ----- End of List of Prerequisites
+% ----------------------------------------------------------
+% ---------------------- Goal Summary Definition
+% Create Predicates From the Critical Points
+%
+GoalSummary: PartitionsFromCriticalPoints
+Initial Routines PredGen END
+Level0 END
+Partitions END
+PartitionTypesFromPoints             KeyWords
+CriticalPointsList                   KeyWords
+END
+PredicateList                       KeyWords
+PartitionList                        KeyWords
+END
+   % The Goal Parameters (Name-Class Pairs)
+   END
+   % ----- List of Prerequisites (GoalSpecs)
+   CriticalPointRead
+   END
+   % ----- End of List of Prerequisites
+   END
+% ----------------------------------------------------------
+% ---------------------- Goal Summary Definition
+% end
+END

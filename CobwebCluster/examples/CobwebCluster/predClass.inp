@@ -1,0 +1,31 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: NumericPredicate A sample predicate
+FuzzyPredicate Continuous PyramidODReal
+%% -------------------------------------------------
+DataType: Predicate A predicate of a numeric predicate function
+FuzzyParameterPredicate FuzzyPredicate
+%% -------------------------------------------------
+DataType: ExactlyEqualPredicate   The Production Stage Checker
+ColorCheck  TrueFalse  Colors
+%% -------------------------------------------------
+DataType: ExactlyEqualPredicate   The Production Stage Checker
+TrueFalseCheck  TrueFalse  TrueFalse
+%% -------------------------------------------------
+END
+ClassNamePairs:
+ColorIsRed           ColorCheck
+ColorIsGreen         ColorCheck
+ColorIsBlue          ColorCheck
+ColorIsWhite         ColorCheck
+ValueIsTrue          TrueFalseCheck
+ValueIsFalse         TrueFalseCheck
+EntropyGoal          KeyWords
+ColorsPartition      KeyWords
+TFPartition          KeyWords
+PartitionList        KeyWords
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END

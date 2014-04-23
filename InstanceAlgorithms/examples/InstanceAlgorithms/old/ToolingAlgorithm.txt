@@ -1,0 +1,9 @@
+Initial InstanceAlgs Algorithms END
+Parameter AttributesByType END
+Read Instances END
+InstanceReadFiles KeyWords
+InstanceNameList  KeyWords
+TestPercentage    Integer
+AttributeSpecs    KeyWords
+END
+TestAnswer Ans2 END

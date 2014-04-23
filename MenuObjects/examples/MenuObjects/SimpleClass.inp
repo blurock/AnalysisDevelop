@@ -1,0 +1,29 @@
+ObjectClasses:
+DataType: NValued An Assortment of Colors
+Colors Red 0.0 Green 0.5 Blue 1.0 END
+DataType: NValued True-False Logic
+TrueFalse True 1.0 False 0.0 END
+DataType: LinearODReal A Linear Function
+TestLinear
+DataType: NumericPredicate A sample predicate
+Predicate Logical PyramidODReal
+DataType: NumericPredicate An exact Predicate
+PredicateExact TrueFalse PyramidODReal
+END
+ClassNamePairs:
+RunID Integer
+END
+ObjectClasses:
+END
+ClassNamePairs:
+Color Colors
+VarT TrueFalse 
+Var1 Integer
+Var2 Integer
+Var3 Real
+Var4 Integer
+Diagonal LinearODReal
+GreaterThan Predicate
+LessThan Predicate
+LessThanEqualExact Predicate
+END

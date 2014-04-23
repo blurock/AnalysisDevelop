@@ -1,0 +1,55 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: LogicDescription  A real function based predicate
+ContLogicDescription Continuous
+%% -------------------------------------------------
+DataType: RealPredicate  A real function based predicate
+ParPredicate  PyramidODReal Continuous 
+%% -------------------------------------------------
+DataType:
+NumericPredicate A sample predicate
+FuzzyPredicate Continuous PyramidODReal
+%% -------------------------------------------------
+DataType:
+Predicate A predicate of a numeric predicate function
+FuzzyParameterPredicate FuzzyPredicate 
+%% -------------------------------------------------
+DataType: RealFunctionParameterized   A Gaussian Function
+Gaussian GaussianODReal
+%% -------------------------------------------------
+DataType: RealFunctionParameterized   A Linear Function
+Line LinearODReal
+%% -------------------------------------------------
+DataType: ExpressionTree  A Numeric Tree
+NumericTree
++    NumOpPlus
+-    NumOpMinus
+*    NumOpMultiply
+/    NumOpDivide
+Set            ParameterSetOperation
+LCoerce        LogicToReal
+Vector         FormVector
+Gaussian       Gaussian
+Line           Line
+Pred           FuzzyPredicate
+END
+ODReal -Infinity T +Infinity T GaussianODReal 0.0 0.0 0.0
+ODReal -Infinity T +Infinity T LinearODReal 0.0 0.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  -1.0 3.0 3.0
+%% -------------------------------------------------
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+RunID          Integer
+Exp            NumericTree
+Var3           Real
+Var4           Real
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

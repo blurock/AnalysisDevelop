@@ -1,0 +1,20 @@
+% **********************************************************
+% The Attributes and Instances to be read in
+% **********************************************************
+%
+The Set Of Read In Instances
+%
+% ----------------------------------------------------------
+%  The set of attributes (as specified by the class)
+% ----------------------------------------------------------
+Attributes:
+% GoalDebug
+0
+% (ClassFile, DataFile) pairs
+ ToolingClass.inp Tooling.inp
+END
+% ----------------------------------------------------------
+%  The set of attributes (as specified by the class)
+%  None given
+% ----------------------------------------------------------
+END

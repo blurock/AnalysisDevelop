@@ -1,0 +1,14 @@
+ObjectClasses:
+END
+ClassNamePairs:
+TotalInstanceNameList  KeyWords
+AttributeNames         KeyWords
+LowerPower             Integer
+UpperPower             Integer
+XParameters            KeyWords
+YParameters            KeyWords
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END

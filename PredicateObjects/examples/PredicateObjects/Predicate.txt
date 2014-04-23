@@ -1,0 +1,3 @@
+TestObject 
+Predicate: Var1 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0 -1.0 1.0 1.0

@@ -1,0 +1,22 @@
+ObjectClasses:
+END
+Routines Initial
+DecisionTree Initial#Routines
+DTree           Initial#Routines#DecisionTree
+Select          Initial#Routines#DecisionTree
+StandardEntropy Initial#Routines#DecisionTree
+EntropySelectPredicate Initial#Routines#DecisionTree#Select   SimpleSelect
+EntropyAlgorithm Initial#Routines#DecisionTree#StandardEntropy ZEntropy
+DecisionTreeCreate     Initial#Routines#DecisionTree#DTree Create
+END
+Initial Routines DecisionTree END
+Parameter Level0 END
+Create 
+SimpleSelect ZEntropy END
+%%EntropyParameters      KeyWords
+EntropyGoal            KeyWords
+EntropyDescriptorList  KeyWords
+DecisionTreeParameters KeyWords
+END
+Select KeyWords
+END

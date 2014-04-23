@@ -1,0 +1,10 @@
+
+ObjectClasses:
+DataType: NValued An Assortment of Colors
+Colors Red 0.0 Green 0.5 Blue 1.0
+END
+ClassNamePairs:
+Color Colors
+END
+Green
+END

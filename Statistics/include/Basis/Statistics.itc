@@ -1,0 +1,208 @@
+/*  FILE     Statistics.itc
+**  PACKAGE  Statistics
+**  AUTHOR   ytsybukh
+**
+**  CONTENT
+**    Inline functions for the "Statistics" package.
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C)  REACTION Project, Edward S. Blurock
+*/
+ 
+#ifndef REACTIONSRC_STATISTICS_ICC
+#define REACTIONSRC_STATISTICS_ICC
+
+
+extern int Zero(int& x);
+extern float Zero(float& x);
+extern double Zero(double& x);
+
+
+extern int Unit(int& x);
+extern float Unit(float& x);
+extern double Unit(double& x);
+
+
+
+
+// whchange
+
+/*F ans = operator<(clo1,clo2)  . . . . . . . . . . . . . . . . . . BasicPair
+
+**
+
+**  DESCRIPTION
+
+**    clo1,clo2: To be compared
+
+**
+
+**  REMARKS
+
+**
+
+*/
+
+template <class T>
+
+bool operator<(const ClusterObject<T>& t1, const ClusterObject<T>& t2)
+
+     {
+
+	return 0;
+
+     }
+
+
+
+template <class T>
+
+bool operator==(const ClusterObject<T>& t1, const ClusterObject<T>& t2)
+
+     {
+
+	return 0;
+
+     }
+
+
+
+/*S Constructors
+*/
+ 
+/*F ClusterObject() . . . . . . . . . . . . . . . . . . .  Empty constructor.
+**
+**  DESCRIPTION  
+** 
+**  REMARKS
+**
+*/
+template<class T> inline ClusterObject<T>::ClusterObject() : cluster_points(0,0)
+     {           
+        };
+ 
+/*F ClusterObject(x)  . . . . . . . . . . . . . . . . . . . Copy constructor.
+**
+**  DESCRIPTION 
+**    x: param. 
+** 
+**  REMARKS
+**
+*/
+template<class T> inline ClusterObject<T>::ClusterObject(const ClusterObject<T> &x) : cluster_points(0,0) 
+     {     
+     };
+ 
+/*F ClusterObject(x)  . . . . . . . . . . . . . . . . .  Another constructor.
+**
+**  DESCRIPTION 
+**    x: param. 
+** 
+**  REMARKS
+**
+*/
+
+// whchange
+//template<class T> inline ClusterObject<T>::ClusterObject(const ClusterObject<T> *x) : cluster_points(0,0)
+//     {     
+//         };
+
+/*S Constructors
+*/
+
+
+/*F Cluster() . . . . . . . . . . . . . . . . . . . . . .  Empty constructor.
+**
+**  DESCRIPTION 
+** 
+**  REMARKS
+**
+*/
+template<class T> inline Cluster<T>::Cluster() 
+     {
+     };
+
+
+/*S Some service functions.
+*/
+ 
+/*F set_center(x) . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  
+**
+**  DESCRIPTION 
+**    x: param. 
+**    
+**    Assigns values to the coordinates of vector,
+**    representing cluster center.
+** 
+**  REMARKS
+**
+*/
+template<class T> inline void ClusterObject<T>::set_center( vector<T> x)
+      {
+       for(unsigned int i=0;i<=x.size()-1;i++)
+             center.push_back(x[i]);
+      };
+
+/*F push_cluster_points(x)  . . . . . . . . . . . . . . . . . . . . . . . .  
+**
+**  DESCRIPTION 
+**    x: param. 
+**    
+**    Pushes point to the vector of cluster points.
+** 
+**  REMARKS
+**
+*/
+template<class T> inline void ClusterObject<T>::push_cluster_points(vector<T> x)
+      {
+        cluster_points.push_back(x);
+      };
+
+/*F erase_cluster_points()  . . . . . . . . . . . . . . . . . . . . . . . .  
+**
+**  DESCRIPTION 
+**    Erases vector of cluster points.
+** 
+**  REMARKS
+**
+*/
+template<class T> inline void ClusterObject<T>::erase_cluster_points()
+         {
+          cluster_points.erase(cluster_points.begin(), cluster_points.end());   
+         };
+
+/*F show()  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  
+**
+**  DESCRIPTION 
+**    Displays coordinates of center and other cluster points.
+** 
+**  REMARKS
+**
+*/
+template<class T> inline void ClusterObject<T>::show()
+     {
+      cout << " center " << " \n";
+      cout << center;
+      cout << " cluster_points" << " \n";
+      cout << cluster_points;
+
+     };
+
+
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

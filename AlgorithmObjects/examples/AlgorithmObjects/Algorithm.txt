@@ -1,0 +1,8 @@
+AlgorithmTest                       % The name of the Algorithm
+Initial Routines END                % The Algorithm Category
+Parameter Level0 END                % The Algorithm Keywords
+Initial#Routines#AlgorithmsTest#Test END                            % Algorithm Specification
+Test Integer                        % Algorithm Input Parameters
+Param Real
+END
+ResultParam1 ResultParam2 END       % Algorithm Result Parameters

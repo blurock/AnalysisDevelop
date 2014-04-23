@@ -1,0 +1,307 @@
+Expression Test
+Attributes:
+%% ---------------------------------------------------
+%%  Distribution_Ref     AttributeDistribution
+%% ---------------------------------------------------
+PrimitiveStats:
+2 
+35.0 45.0
+% --------------------------------------------
+%% MaximumNumberOfIterations    Integer
+% --------------------------------------------
+20
+% --------------------------------------------
+%% TrainInstanceNameList         KeyWords
+% --------------------------------------------
+ BandNumber425136
+ BandNumber425138
+ BandNumber425139
+ BandNumber425140
+ BandNumber425141
+ BandNumber425142
+ BandNumber425143
+ BandNumber425144
+ BandNumber425145
+ BandNumber425146
+ BandNumber425147
+ BandNumber425148
+ BandNumber425149
+ BandNumber425150
+ BandNumber425151
+ BandNumber425152
+ BandNumber425153
+ BandNumber425154
+ BandNumber425155
+ BandNumber425156
+ BandNumber425157
+ BandNumber425158
+ BandNumber425159
+ BandNumber425160
+ BandNumber425161
+ BandNumber425162
+ BandNumber425163
+ BandNumber425164
+ BandNumber425165
+ BandNumber425166
+ BandNumber425167
+ BandNumber425168
+ BandNumber425169
+ BandNumber425170
+ BandNumber425171
+ BandNumber425172
+ BandNumber425173
+ BandNumber425174
+ BandNumber425175
+ BandNumber425176
+ BandNumber425177
+ BandNumber425178
+ BandNumber425179
+ BandNumber425180
+ BandNumber425181
+ BandNumber425182
+ BandNumber425183
+ BandNumber425184
+ BandNumber425185
+ BandNumber425186
+ BandNumber425187
+ BandNumber425188
+ BandNumber425189
+ BandNumber425190
+ BandNumber425191
+ BandNumber425192
+ BandNumber425193
+ BandNumber425194
+ BandNumber425195
+ BandNumber425196
+ BandNumber425197
+ BandNumber425198
+ BandNumber425199
+ BandNumber425200
+ BandNumber425201
+ BandNumber425202
+ BandNumber425203
+ BandNumber425204
+ BandNumber425205
+ BandNumber425206
+ BandNumber425207
+ BandNumber425208
+ BandNumber425209
+ BandNumber425210
+ BandNumber425211
+ BandNumber425212
+ BandNumber425213
+ BandNumber425214
+ BandNumber428092
+ BandNumber428093
+END
+% --------------------------------------------
+%% OptimizationCost              PopulationCostFunction
+% --------------------------------------------
+CostFunction:
+Genetic:
+GeneticParameters:
+Ref         GeneticReal
+END
+Ref Distribution_Ref
+Population: 20
+ParameterSet:  ClassNamePairs: END Operation:
+%%Ref      Real
+%%   -------------------------------------------------
+GTcdb1     Real
+GTcdb2    Real
+GTcdb3    Real
+GTcdb4    Real
+GTcdb5    Real
+GTck1     Real
+GTck2     Real
+GTck3     Real
+GTck4     Real
+GTcw1     Real
+GTcw2     Real
+%%   -------------------------------------------------
+EQcdb1     Real
+EQcdb2    Real
+EQcdb3    Real
+EQcdb4    Real
+EQcdb5    Real
+EQck1     Real
+EQck2     Real
+EQck3     Real
+EQck4     Real
+EQcw1     Real
+EQcw2     Real
+%%   -------------------------------------------------
+LTcdb1     Real
+LTcdb2    Real
+LTcdb3    Real
+LTcdb4    Real
+LTcdb5    Real
+LTck1     Real
+LTck2     Real
+LTck3     Real
+LTck4     Real
+LTcw1     Real
+LTcw2     Real
+%%   -------------------------------------------------
+diameterOfRoughingRolls    Real
+pass    Real
+Two    Real
+Factor   Real
+END
+%%16.5468
+
+-1.85763  0.06924  0.5969  0.9887 7.611
+-1.5426  0.3309  0.01335  0.01902
+40.0  400.0
+
+-1.877  0.063   0.441   0.989   7.591
+-1.64  0.376   0.016   0.15
+40.0  400.0
+
+-1.877    0.063   0.441   0.989  7.591
+-1.64   0.376   0.016    0.15
+40.0  400.0
+
+450.0
+5
+2.0
+20.0
+( - Two
+  ( Pow ( Set Two ) 
+    ( - Breite_nach_Stich_gemessen_5
+      ( + 
+       ( * ( ToReal ( GreaterThanZero ( / ( - Ratio-DickeBreite_nach_stich_warm_5 Ref ) Factor ) ) )
+%% -------------------------------------------------
+               ( WidthModel     ( Set Breite_nach_Stich_warm_4
+                                      Breite_vor_Stich_warm_5
+                                      Dicke_nach_Stich_warm_5
+                                      Breite_nach_Stich_warm_4
+                                      Dicke_nach_Stich_warm_4
+                                      Dicke_nach_Stich_warm_5
+                                      diameterOfRoughingRolls
+               %% curWidth           
+                                     Breite_nach_Stich_warm_4
+               %% curHeight          
+                                     Dicke_nach_Stich_warm_4
+               %% curTemp            
+                                     Temperatur_5
+               %% curSpeed           
+                                     Anstichgeschwindigkeit_5
+               %% curLength          
+                                     Laenge_nach_Stich_warm_5
+               %% widthBeforeEdger   
+               %%                      Breite_vor_Stich_warm_4
+               %% widthAfterEdger    
+               %%                      Breite_nach_Stich_warm_5
+               %% widthAfterPass     
+                                     Breite_nach_Stich_warm_5
+               %% forceHG            
+                                     Walzkraft_Horizontalgeruest_5
+               %% forceLE            
+                                     Walzkraft_Egalisierungsgeruest_5
+               %% forceHE            
+                                     Walzkraft_Egalisierungsgeruest_5
+               %% finalWidth         
+                                     Breite_nach_Stich_warm_5
+               %% pass            
+                                     pass
+               )
+                             ( Set GTcdb1 GTcdb2 GTcdb3 GTcdb4 GTcdb5 
+                                   GTck1 GTck2 GTck3 GTck4 
+                                   GTcw1 GTcw2 )       
+               )
+       )
+       ( * ( ToReal ( LessThanZero ( / ( - Ratio-DickeBreite_nach_stich_warm_5 Ref ) Factor ) ) )
+%% -------------------------------------------------
+               ( WidthModel     ( Set Breite_nach_Stich_warm_4
+                                      Breite_vor_Stich_warm_5
+                                      Dicke_nach_Stich_warm_5
+                                      Breite_nach_Stich_warm_4
+                                      Dicke_nach_Stich_warm_4
+                                      Dicke_nach_Stich_warm_5
+                                      diameterOfRoughingRolls
+               %% curWidth           
+                                     Breite_nach_Stich_warm_4
+               %% curHeight          
+                                     Dicke_nach_Stich_warm_4
+               %% curTemp            
+                                     Temperatur_5
+               %% curSpeed           
+                                     Anstichgeschwindigkeit_5
+               %% curLength          
+                                     Laenge_nach_Stich_warm_5
+               %% widthBeforeEdger   
+               %%                      Breite_vor_Stich_warm_4
+               %% widthAfterEdger    
+               %%                      Breite_nach_Stich_warm_5
+               %% widthAfterPass     
+                                     Breite_nach_Stich_warm_5
+               %% forceHG            
+                                     Walzkraft_Horizontalgeruest_5
+               %% forceLE            
+                                     Walzkraft_Egalisierungsgeruest_5
+               %% forceHE            
+                                     Walzkraft_Egalisierungsgeruest_5
+               %% finalWidth         
+                                     Breite_nach_Stich_warm_5
+               %% pass            
+                                     pass
+               )
+                             ( Set LTcdb1 LTcdb2 LTcdb3 LTcdb4 LTcdb5 
+                                   LTck1 LTck2 LTck3 LTck4 
+                                   LTcw1 LTcw2 )       
+               )
+       )
+       ( * ( ToReal ( EqualToZero ( / ( - Ratio-DickeBreite_nach_stich_warm_5 Ref ) Factor ) ) )
+%% -------------------------------------------------
+               ( WidthModel     ( Set Breite_nach_Stich_warm_4
+                                      Breite_vor_Stich_warm_5
+                                      Dicke_nach_Stich_warm_5
+                                      Breite_nach_Stich_warm_4
+                                      Dicke_nach_Stich_warm_4
+                                      Dicke_nach_Stich_warm_5
+                                      diameterOfRoughingRolls
+               %% curWidth           
+                                     Breite_nach_Stich_warm_4
+               %% curHeight          
+                                     Dicke_nach_Stich_warm_4
+               %% curTemp            
+                                     Temperatur_5
+               %% curSpeed           
+                                     Anstichgeschwindigkeit_5
+               %% curLength          
+                                     Laenge_nach_Stich_warm_5
+               %% widthBeforeEdger   
+               %%                      Breite_vor_Stich_warm_4
+               %% widthAfterEdger    
+               %%                      Breite_nach_Stich_warm_5
+               %% widthAfterPass     
+                                     Breite_nach_Stich_warm_5
+               %% forceHG            
+                                     Walzkraft_Horizontalgeruest_5
+               %% forceLE            
+                                     Walzkraft_Egalisierungsgeruest_5
+               %% forceHE            
+                                     Walzkraft_Egalisierungsgeruest_5
+               %% finalWidth         
+                                     Breite_nach_Stich_warm_5
+               %% pass            
+                                     pass
+               )
+                             ( Set EQcdb1 EQcdb2 EQcdb3 EQcdb4 EQcdb5 
+                                   EQck1 EQck2 EQck3 EQck4 
+                                   EQcw1 EQcw2 )       
+               )
+       )
+)
+)
+)
+)
+% --------------------------------------------
+%% OptimizeObject                RPopulationObject
+% --------------------------------------------
+%% ================================================
+%%      The Instances
+%% =================================================
+%% -------------------------------------------------
+END

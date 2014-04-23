@@ -1,0 +1,85 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+%% -------------------------------------------------
+%%    LogicDescriptionExp        VerifyExpression
+%% -------------------------------------------------
+PredicateDescription       ExpDescription
+END
+                %% -------------------------------------------------
+                %%    ParameterizedDescription     ExpDescription
+                %% -------------------------------------------------
+        DescriptionExpressions:
+        ParameterSet:
+        ClassNamePairs:
+        Two   Real
+        END
+        2.0
+        Operation:
+        Post: NoPostOperation
+        BeginDescription:
+                ClassNamePairs:
+                L.Soll1_Breite_Difference_Squared        VASLExpression
+                L.Soll2_Breite_Difference_Squared        VASLExpression
+                L.Soll3_Breite_Difference_Squared        VASLExpression
+                L.Soll4_Breite_Difference_Squared        VASLExpression
+                L.Soll5_Breite_Difference_Squared        VASLExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%% L.Soll1_Breite_Difference_Squared   RuleExpression
+                        ParameterSet: ClassNamePairs: END Operation:
+                        StdDev    Real
+                        END
+                        169.642
+                  ( LessThanZero ( - ( / Soll1_Breite_Difference_Squared  StdDev ) Two ) )
+%%%%%%%%%%%%%%%%%%%%%%%% L.Soll2_Breite_Difference_Squared   RuleExpression
+                        ParameterSet: ClassNamePairs: END Operation:
+                        StdDev    Real
+                        END
+                        348.632
+                  ( LessThanZero ( - ( / Soll2_Breite_Difference_Squared  StdDev ) Two ) )
+%%%%%%%%%%%%%%%%%%%%%%%% L.Soll3_Breite_Difference_Squared   RuleExpression
+                        ParameterSet: ClassNamePairs: END Operation:
+                        StdDev    Real
+                        END
+                        323.581
+                  ( LessThanZero ( - ( / Soll3_Breite_Difference_Squared  StdDev ) Two ) )
+%%%%%%%%%%%%%%%%%%%%%%%% L.Soll4_Breite_Difference_Squared   RuleExpression
+                        ParameterSet: ClassNamePairs: END Operation:
+                        StdDev    Real
+                        END
+                        395.743
+                  ( LessThanZero ( - ( / Soll4_Breite_Difference_Squared  StdDev ) Two ) )
+%%%%%%%%%%%%%%%%%%%%%%%% L.Soll5_Breite_Difference_Squared   RuleExpression
+                        ParameterSet: ClassNamePairs: END Operation:
+                        StdDev    Real
+                        END
+                        301.762
+                  ( LessThanZero ( - ( / Soll5_Breite_Difference_Squared  StdDev ) Two ) )
+        EndDescription:
+        ( Do PredicateDescription INSTANCE_VALUES )
+%% -------------------------------------------------
+%%    VarsAndExps   KeyWords
+%% -------------------------------------------------
+Instance LogicDescription LogicDescriptionExp END
+%% -------------------------------------------------
+%%    VerificationOperation                    StandardVerify
+%% -------------------------------------------------
+VerifyOperation: 
+IndividualCutOff:  .90
+TotalCutOff:       .90
+%% -------------------------------------------------
+%%    LogicalDescriptionNames   KeyWords
+%% -------------------------------------------------
+VerificationError LogicDescription END
+%% -------------------------------------------------
+%%    InstanceNames             KeyWords
+%% -------------------------------------------------
+ BandNumber425136
+ BandNumber425138
+ BandNumber425139
+ BandNumber425140
+ BandNumber425141
+END
+%% =================================================
+%%      The Instances
+%% =================================================
+END

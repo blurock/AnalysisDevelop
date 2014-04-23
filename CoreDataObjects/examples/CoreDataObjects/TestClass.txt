@@ -1,0 +1,13 @@
+ObjectClasses:
+%%DataType: Object This is type One
+%%BaseType1
+%%%DataType: BaseType This is type Two
+%%%BaseType2
+END
+ClassNamePairs:
+var1 BaseType1
+var2 BaseType1
+END
+1 2
+1 2
+1 2

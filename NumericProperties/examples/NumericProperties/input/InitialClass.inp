@@ -1,0 +1,18 @@
+ObjectClasses:
+END
+ClassNamePairs:
+RunID             Integer
+InstanceReadFiles KeyWords
+InstanceNameList  KeyWords
+TestPercentage    Integer
+Param             Real
+AttributeSpecs    KeyWords
+LowerPower        Integer
+UpperPower        Integer
+XParameters       KeyWords
+YParameters       KeyWords
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END

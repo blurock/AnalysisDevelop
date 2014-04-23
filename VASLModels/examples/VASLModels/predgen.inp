@@ -1,0 +1,22 @@
+PredicateGeneration  The Generation of Numeric Predicates
+Attributes:
+CriticalPointSet.inp    END
+Gen                     END
+LTGT                    END
+%%% Breite_Difference_Squared.EQ.25   FuzzyParameterPredicate
+Predicate: Breite_Difference_Squared Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  0.5 1.0 1.5
+%%% Breite_Difference_Squared.GT.25   FuzzyParameterPredicate
+Predicate: Breite_Difference_Squared Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  1.0 1.5 1.5
+%%% Breite_Difference_Squared.GT.25   FuzzyParameterPredicate
+Predicate: Breite_Difference_Squared Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 1.0 0.0  0.5 0.5 1.0
+%%% BreitePartition   KeyWords
+Breite_Difference_Squared.GT Breite_Difference_Squared.EQ Breite_Difference_Squared.LT END
+%%% EntropyGoal       KeyWords
+BreitePartition END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% No Instances
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+END

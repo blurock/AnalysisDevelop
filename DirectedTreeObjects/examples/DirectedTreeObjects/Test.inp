@@ -1,0 +1,38 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+%%% ------------------------------------------
+%%%  Directed Tree
+%%% ------------------------------------------
+DirectedTree:
+node1
+ClassNamePairs:
+node1 Integer
+node2 Integer
+node3 Integer
+node4 Integer
+node5 Integer
+END
+11 22 33 44 55
+Connections:
+node1 node2
+node1 node3
+node3 node4
+node3 node5
+END
+%%% ------------------------------------------
+%%%  Additional Attributes
+%%% ------------------------------------------
+Red Blue 1 2 4.1 8.45
+%%% ------------------------------------------
+%%%  Instances
+%%% ------------------------------------------
+Instance: 1 Instance1    The First Instance
+Blue True    0.5 2    0.5 8.45
+%%% ------------------------------------------
+Instance: 2 Instance2    The Second Instance
+Red True      0.0 20   0.0 80.45
+%%% ------------------------------------------
+Instance: 3 Instance3    The Third Instance
+Blue False   -0.5 200 -0.5 800.45
+%%% ------------------------------------------
+END

@@ -1,0 +1,26 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+%%%-----------------------------------------------------------------------
+%%% AnAlgoritm
+%%%-----------------------------------------------------------------------
+Initial InstanceAlgs Algorithms END
+Parameter AttributeDebug AttributesByName END
+Read Instances END
+InstanceReadFiles KeyWords
+InstanceNameList  KeyWords
+TestPercentage    Integer
+Param             Real
+AttributeSpecs    KeyWords
+END
+TestAnswer Ans2 END
+%%%-----------------------------------------------------------------------
+%%% SelectionTree
+%%%-----------------------------------------------------------------------
+InstanceAlgs Initial
+Algorithms Initial#InstanceAlgs
+InstanceReadASCII Initial#InstanceAlgs#Algorithms Read
+InstanceInstances Initial#InstanceAlgs#Algorithms Instances
+InstanceAttributes Initial#InstanceAlgs#Algorithms Attributes
+InstanceMatrix Initial#InstanceAlgs#Algorithms Matrix
+END
+ObjectClasses:

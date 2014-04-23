@@ -1,0 +1,19 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+%% =================================================
+%%      The Instances
+%% =================================================
+Instance: 1 Instance1    The First Instance
+True True 1 2 0.0 8.45   2.0
+%% -------------------------------------------------
+Instance: 2 Instance2    The Second Instance
+False True 10 20 2.0 80.45  3.0
+%% -------------------------------------------------
+Instance: 3 Instance3    The Third Instance
+True False 100 200 3.0 800.45  4.0
+%% -------------------------------------------------
+Instance: 4 Instance4    The Fourth Instance
+False False 1000 2000 4.0 8000.45 5.0
+%% -------------------------------------------------
+END
+

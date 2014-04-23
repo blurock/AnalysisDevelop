@@ -1,0 +1,308 @@
+Expression Test
+Attributes:
+1000
+%%%%-----------------------------------------------------------------------------
+%%    Genetic                     AlgorithmSummary
+                                       % The name of the Algorithm
+Initial OptimizeAlgs   END         % The Algorithm Category
+ END                                   % The Algorithm Keywords
+Genetic                END           % Algorithm Specification
+                                       % Algorithm Input Parameters
+MaximumNumberOfIterations     Integer
+TrainInstanceNameList         KeyWords
+OptimizeObject                RPopulationObject
+OptimizationCost              OptimizeCostFunction
+END
+                                       % Algorithm Output Parameters
+OptimizedObject          %  Continuous
+END
+%% -------------------------------------------------
+%%    Operation   AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial VariableGen END             % The Algorithm Category
+END                                 % The Algorithm Keywords
+Expression END                      % Algorithm Specification
+                                    % Algorithm Input Parameters
+VarsAndExps   KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%%%%-----------------------------------------------------------------------------
+%%%%  CriticalPointReadAlg    AlgorithmSummary
+      Initial PartitionAlgs PredGen END
+      Level0 END
+      Read END 
+                               % (Name-Class Pairs)
+     CriticalPointsRootName               KeyWords
+      CriticalPointsFileName               KeyWords
+      END
+                               %  Algorithm Result Parameters
+      CriticalPointsList             %  KeyWords
+      END
+%%%%-----------------------------------------------------------------------------
+%%%%  PartitionsFromCriticalPoints    AlgorithmSummary
+      Initial PartitionAlgs PredGen END
+      Level0 END
+      Partitions END
+                               % (Name-Class Pairs)
+      PartitionTypesFromPoints             KeyWords
+      CriticalPointsList                   KeyWords
+      END
+                               %  Algorithm Result Parameters
+      PredicateList                        %%KeyWords
+      PartitionList                        %%KeyWords
+      END
+%%%%-----------------------------------------------------------------------------
+%%%%   DecisionTreeAlg    AlgorithmSummary
+     Initial DecisionTreeAlgs        END    % Algorithm Category
+     Parameter Level0                END    % Algorithm KeyWords
+     Create SimpleSelect ZEntropy Filter END    % Algorithm Specification
+                                            % (Name-Class Pairs)
+     EntropyGoal            KeyWords
+     PartitionList          KeyWords
+     DecisionTreeParameters KeyWords
+     TrainInstanceNameList  KeyWords
+     DecisionTreeMinimumInstances  Real
+     DecisionTreePartitionPercent  Real
+     DecisionTreeMinimumEntropy    Real
+     DecisionTreeMaximumNodes      Real
+     END
+     DecisionTree %% KeyWords                        % Algorithm Result Parameters
+     END
+%%%%-----------------------------------------------------------------------------
+%%%%   InstanceSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END    % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Instances END                          % Algorithm Specification
+                                              % Algorithm Input Parameters
+       InstanceNameList KeyWords              % (Name-Class Pairs)
+       TestPercentage   Real
+       END
+                                              % Algorithm Result Parameters
+       TotalInstanceNameList %%KeyWords              % (Name-Class Pairs)
+       TestInstanceNameList  %%KeyWords
+       TrainInstanceNameList %%KeyWords
+       END
+%%%%-----------------------------------------------------------------------------
+%%%% AttributeSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END    % Algorithm Category
+       Parameter END                          % Algorithm KeyWords
+       Attributes END                         % Algorithm Specification
+                                              % Algorithm Input Parameters
+                                              % (Name-Class Pairs)
+        AttributeSpecs        KeyWords
+        TotalInstanceNameList KeyWords
+        END
+                                              % Algorithm Result Parameters
+       AttributeNames
+       END
+%%%%-----------------------------------------------------------------------------
+%%%% AttributeByTypeAlg    AlgorithmSummary
+       Initial InstanceAlgs END               % Algorithm Category
+       AttributesByType END                   % Algorithm KeyWords
+       Attributes END                         % Algorithm Specification
+                                              % Algorithm Input Parameters
+                                              % (Name-Class Pairs)
+        AttributeSpecs        KeyWords
+        TotalInstanceNameList KeyWords
+        END
+                                              % Algorithm Result Parameters
+       AttributeNames
+       END
+%%%%-----------------------------------------------------------------------------
+%%%% AttributeByNameAlg    AlgorithmSummary
+       Initial InstanceAlgs END               % Algorithm Category
+       AttributesByName END                   % Algorithm KeyWords
+       Attributes END                         % Algorithm Specification
+                                              % Algorithm Input Parameters
+                                              % (Name-Class Pairs)
+        AttributeSpecs        KeyWords
+        TotalInstanceNameList KeyWords
+        END
+                                              % Algorithm Result Parameters
+       AttributeNames
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%   MatrixSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END               % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Matrix END                             % Algorithm Specification
+                                              % Algorithm Input Parameters
+       TotalInstanceNameList KeyWords
+       AttributeNames KeyWords
+       END
+                                              % Algorithm Result Parameters
+       MatrixObject                           % (Name-Class Pairs)
+       END
+%%%%-----------------------------------------------------------------------------
+%%     DistributionAlg     AlgorithmSummary
+                                    % The name of the Algorithm
+Initial StatisticsAlgs Distribution END             % The Algorithm Category
+END                                 % The Algorithm Keywords
+Calculate  END                      % Algorithm Specification
+                                    % Algorithm Input Parameters
+RootName          KeyWords
+MatrixObject      InstanceMatrix
+END
+                                    % Algorithm Output Parameters
+Distributions
+END
+
+%%%%-----------------------------------------------------------------------------
+%%     RuleSystemSearch     AlgorithmSummary
+                                    % The name of the Algorithm
+Initial RuleSystem END              % The Algorithm Category
+END                                 % The Algorithm Keywords
+Calculate  END                      % Algorithm Specification
+                                    % Algorithm Input Parameters
+ProductionSystem           NormalProductionSystem
+TrainInstanceNameList      KeyWords
+MaximumNumberOfNodes       Integer
+END
+                                    % Algorithm Output Parameters
+END
+%%%%-----------------------------------------------------------------------------
+%%     RuleSystemSearch     AlgorithmSummary
+                                    % The name of the Algorithm
+Initial RuleSystem END              % The Algorithm Category
+END                                 % The Algorithm Keywords
+Action  END                         % Algorithm Specification
+                                    % Algorithm Input Parameters
+Rule                       SimpleAction
+TrainInstanceNameList      KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%    Operation   AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial Verify END             % The Algorithm Category
+END                                 % The Algorithm Keywords
+Verify END                      % Algorithm Specification
+                                    % Algorithm Input Parameters
+VerificationOperation     KeyWords
+LogicalDescriptionNames   KeyWords
+InstanceNames             KeyWords
+END
+                                    % Algorithm Output Parameters
+ErrorInstanceNames       %%      KeyWords
+END
+%% -------------------------------------------------
+%%     Exp    NumericTree
+%% -------------------------------------------------
+cdb1     Real
+cdb2    Real
+cdb3    Real
+cdb4    Real
+cdb5    Real
+ck1     Real
+ck2     Real
+ck3     Real
+ck4     Real
+cw1     Real
+cw2     Real
+diameterOfRoughingRolls    Real
+pass    Real
+Two    Integer
+END
+-1.877  0.063   0.441   0.989   7.591
+-1.64  0.376   0.016   0.15
+40.0  400.0
+450.0
+5
+2.0
+%%( Line ( Set P1 P2 P3 P4 ) Var1 )
+%%( Gaussian ( Set P1 P2 P3 ) Var1 )
+%%( / ( + Var1 Var2 ) Two )
+%% ( LCoerce ( Pred P1 ) )
+%% ( Vector Two Var3 Var4 )
+%% ( DogBoneModel ( Set Breite_nach_Stich_warm_4 
+%%                      Breite_vor_Stich_warm_5 
+%%                      Dicke_nach_Stich_warm_5 ) 
+%%               ( Set cdb1 cdb2 cdb3 cdb4 cdb5 ) )
+%% ( KashimaModel ( Set Breite_nach_Stich_warm_4 
+%%                      Dicke_nach_Stich_warm_4
+%%                      Dicke_nach_Stich_warm_5
+%%                      diameterOfRoughingRolls  ) 
+%%                ( Set ck1 ck2 ck3 ck4 ) )
+( WidthModel     ( Set Breite_nach_Stich_warm_4
+                       Breite_vor_Stich_warm_5
+                       Dicke_nach_Stich_warm_5
+                       Breite_nach_Stich_warm_4
+                       Dicke_nach_Stich_warm_4
+                       Dicke_nach_Stich_warm_5
+                       diameterOfRoughingRolls
+%% curWidth           
+                      Breite_nach_Stich_warm_4
+%% curHeight          
+                      Dicke_nach_Stich_warm_4
+%% curTemp            
+                      Temperatur_5
+%% curSpeed           
+                      Anstichgeschwindigkeit_5
+%% curLength          
+                      Laenge_nach_Stich_warm_5
+%% widthBeforeEdger   
+%%                      Breite_vor_Stich_warm_4
+%% widthAfterEdger    
+%%                      Breite_nach_Stich_warm_5
+%% widthAfterPass     
+                      Breite_nach_Stich_warm_5
+%% forceHG            
+                      Walzkraft_Horizontalgeruest_5
+%% forceLE            
+                      Walzkraft_Egalisierungsgeruest_5
+%% forceHE            
+                      Walzkraft_Egalisierungsgeruest_5
+%% finalWidth         
+                      Breite_nach_Stich_warm_5
+%% pass            
+                      pass
+)
+              ( Set cdb1 cdb2 cdb3 cdb4 cdb5 
+                    ck1 ck2 ck3 ck4 
+                    cw1 cw2 )       
+)
+%% -------------------------------------------------
+%%     Log    LogicalTree
+%% -------------------------------------------------
+Y1   Real
+Y2   Real
+Y3   Real
+X1   Real
+X2   Real
+X3   Real
+END
+0.0 1.0 1.0  -1.0 3.0 3.0
+%% ( PyPred ( Set Y1 Y2 Y3 X1 X2 X3 ) Var3 )
+%%( Pred Var3 )
+%%% ( Pred  Var3 Var3 )
+( NOT VarT1 )
+%% -------------------------------------------------
+%%     Set    SetTree
+%% -------------------------------------------------
+Z4   Real
+Z3   Real
+Z2   Real
+Z1   Real
+END
+5.0 0.0      5.0 1.0
+( Line ( Set Var3 Z4 Z3 Z2 Z1 ) )
+%% -------------------------------------------------
+4.0 6.0
+%% -------------------------------------------------
+%%    VarsAndExps   KeyWords
+%% -------------------------------------------------
+Instance NewVariable Exp END
+%% -------------------------------------------------
+%%    SampleVector   InstanceDoubleVector
+%% -------------------------------------------------
+2 1.0 2.0
+Var1 Var2 END
+%% ================================================
+%%      The Instances
+%% =================================================
+%% -------------------------------------------------
+END

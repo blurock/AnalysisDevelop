@@ -1,0 +1,17 @@
+% ----------------------------------------------------------
+%  Parameters for entire set of instances
+% ----------------------------------------------------------
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+1000 200 123.456
+% ----------------------------------------------------------
+%  Parameters for each instance
+% ----------------------------------------------------------
+Instance: 1 Instance1 The First Instance
+1 2 4.1 8.45
+Instance: 2 Instance2 The Second Instance
+10 20 40.1 80.45
+Instance: 3 Instance3 The Second Instance
+100 200 400.1 800.45
+END
+

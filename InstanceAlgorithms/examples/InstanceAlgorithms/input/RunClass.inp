@@ -1,0 +1,33 @@
+ObjectClasses:
+%%%-----------------------------------------------------------------------
+%%% SelectionTree
+%%%-----------------------------------------------------------------------
+DataType: AlgorithmRun An Algorithm Run
+InstanceAlgorithmRun
+         InstanceAlgs      Initial
+            Algorithms             Initial#InstanceAlgs
+                InstanceReadASCIIAlg  Initial#InstanceAlgs#Algorithms Read
+                InstanceInstancesAlg  Initial#InstanceAlgs#Algorithms Instances
+                InstanceAttributesAlg Initial#InstanceAlgs#Algorithms Attributes
+                InstanceMatrixAlg     Initial#InstanceAlgs#Algorithms Matrix
+                MatrixGraphOutput     Initial#InstanceAlgs#Algorithms Report
+         END
+END
+ClassNamePairs:
+InstanceReadFiles  KeyWords
+InstanceNameList   KeyWords
+TestPercentage     Integer
+Param              Real
+AttributeSpecs     KeyWords
+ReadInstancesAlg      AlgorithmSummary
+InstanceSetUpAlg      AlgorithmSummary
+AttributeSetUpAlg     AlgorithmSummary
+AttributeByTypeAlg    AlgorithmSummary
+AttributeByNameAlg    AlgorithmSummary
+MatrixSetUpAlg        AlgorithmSummary
+MatrixPlotAlg         AlgorithmSummary
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END

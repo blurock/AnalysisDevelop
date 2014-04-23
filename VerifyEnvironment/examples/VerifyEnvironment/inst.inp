@@ -1,0 +1,22 @@
+Expression Test -- The set of simple instances
+Attributes:
+%% =================================================
+%%      The Instances
+%% =================================================
+Instance: 1 Instance1    The First Instance
+True True 1        2.00   5.0    7.00
+%% -------------------------------------------------
+Instance: 2 Instance2    The Second Instance
+False True 10      2.95   5.85    7.95
+%% -------------------------------------------------
+Instance: 3 Instance3    The Third Instance
+True False 100     3.00   6.0   8.00
+%% -------------------------------------------------
+Instance: 4 Instance4    The Fourth Instance
+False False 1000   3.05   6.05    8.05 
+%% -------------------------------------------------
+Instance: 5 Instance5    The Fifth Instance
+False False 1000   4.0    7.00   9.00 
+%% -------------------------------------------------
+END
+

@@ -1,0 +1,18 @@
+AnalysisDevelop and AnalysisStable
+
+The AnalysisDevelop system has the sources of each module and AnalysisStable has
+the 'stable' sources (and includes) and the libraries of each module.  The
+compilation of a module that depends on other modules uses the sources and libraries
+in AnalysisStable.
+
+0. Stable System Setup
+   In the AnalysisStable directory there are the libraries and modules
+   that are considered stable.  Two environment variables must point
+   to where this directory is.  In a bash shell this would be done with:
+         export CodeBase=/usr/share/AnalysisStable
+         export ANALYSIS_BASE=/usr/share/AnalysisStable
+
+ 1. AnalysisDevelop Setup
+    Associated with the module developement part is an environment variable:
+         export ANALYSIS_DEVBASE=/usr/share/AnalysisDevelop
+         

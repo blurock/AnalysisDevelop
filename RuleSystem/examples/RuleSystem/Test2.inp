@@ -1,0 +1,12 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+ParameterSet:
+ClassNamePairs:
+T1    TrueFalse
+T2    TrueFalse
+END
+True True
+Operation:
+( AND  T1 VarT1 )
+%% -------------------------------------------------
+END

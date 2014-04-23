@@ -1,0 +1,46 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+%%  TotalInstanceNameList      KeyWords
+Instance1 Instance2 Instance3 Instance4 Instance5 Instance6 Instance7
+Instance8 Instance9 
+END
+%% AttributeSpecs             KeyWords
+END
+%%% TestPercentage   Real
+90.0               
+
+Var1.NotEqualToZero  Var1.EqualToZero    END
+%%   Var1.EqualToZero
+Predicate: Var1 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 0.0 -1.0 0.0 1.0
+%%   Var1.NotEqualToZero
+Predicate: Var1 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 1.0 -1.0 0.0 1.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The List of Instances
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 Instance1    The First Instance
+Green True    0.0 2    -1.0 8.45
+Instance: 2 Instance2    The Second Instance
+Red True      2.0 20    1.0 80.45
+Instance: 3 Instance3    The Third Instance
+Blue False   1.0 200   2.0 800.45
+Instance: 4 Instance4    The First Instance
+Green True    0.4 2     0.0 8.45
+Instance: 5 Instance5    The Second Instance
+Red True      1.0 20   1.0 80.45
+Instance: 6 Instance6    The Third Instance
+Blue False   -0.6 200 -0.5 800.45
+Instance: 7 Instance7    The First Instance
+Green True    0.3 2    0.5 8.45
+Instance: 8 Instance8    The Second Instance
+Red True      1.2 20   1.0 80.45
+Instance: 9 Instance9    The Third Instance
+Blue False   -0.7 200 -0.5 800.45
+Instance: 10 Instance10    The First Instance
+Green True    0.9 2    0.5 8.45
+Instance: 11 Instance11    The Second Instance
+Red True      1.0 20   1.0 80.45
+Instance: 12 Instance12    The Third Instance
+Blue False   -0.1 200 -0.5 800.45
+END

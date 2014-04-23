@@ -1,0 +1,25 @@
+% ----------------------------------------------------------
+%  Parameters for entire set of instances
+% ----------------------------------------------------------
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+%%%%-----------------------------------------------------------------------------
+%%    Genetic                     AlgorithmSummary
+                                       % The name of the Algorithm
+Initial OptimizeAlgs   END         % The Algorithm Category
+ END                                   % The Algorithm Keywords
+Genetic                END           % Algorithm Specification
+                                       % Algorithm Input Parameters
+MaximumNumberOfIterations     Integer
+TrainInstanceNameList         KeyWords
+OptimizeObject                RPopulationObject
+OptimizationCost              OptimizeCostFunction
+END
+                                       % Algorithm Output Parameters
+OptimizedObject          %  Continuous
+END
+%%%%-----------------------------------------------------------------------------
+%  Parameters for each instance
+% ----------------------------------------------------------
+END
+

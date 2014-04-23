@@ -1,0 +1,90 @@
+ObjectClasses:
+%%% =====================================================
+%%%  Graph Classes
+%%% =====================================================
+DataType: AlgorithmRun  A sample goal run class
+AlgorithmTestRun
+% ----------------------------------------------------------
+RuleSystem Initial
+       Algorithms Initial#RuleSystem
+            ProductionSystemSearch Initial#RuleSystem#Algorithms Calculate
+            ExecuteActionRule      Initial#RuleSystem#Algorithms Action
+END
+% ----------------------------------------------------------
+%%% =====================================================
+%%%  Graph Classes
+%%% =====================================================
+%% -------------------------------------------------
+DataType: Graph My new Graph
+StandardGraph Node Edge
+%% -------------------------------------------------
+DataType: NodeEdgeOperation The Node and Edge Operation
+NodeEdgeLogicDescription DoOperation
+%% -------------------------------------------------
+DataType: GraphElementMatch The Node and Edge Matching Operation
+NodeEdgeMatch LogicalDescriptionCompare
+%%% =====================================================
+%%%  Predicate and Logic Classes
+%%% =====================================================
+%% -------------------------------------------------
+DataType: LogicDescription  A real function based predicate
+ContLogicDescription Continuous
+%% -------------------------------------------------
+DataType: Description Description giving Continuous logical description
+ContinuousDescription ContLogicDescription
+%% -------------------------------------------------
+DataType: NumericPredicate A sample predicate
+FuzzyPredicate Continuous PyramidODReal
+%% -------------------------------------------------
+DataType: Predicate A predicate of a numeric predicate function
+FuzzyParameterPredicate FuzzyPredicate 
+%% -------------------------------------------------
+DataType: RealPredicate  A real function based predicate
+ParameterizedPyramidPredicate  PyramidODReal Continuous 
+%%% =====================================================
+%%%  Expression
+%%% =====================================================
+%% -------------------------------------------------
+DataType: ExpressionTree  A Numeric Tree
+GeneralExpression
++    NumOpPlus
+-    NumOpMinus
+*    NumOpMultiply
+/    NumOpDivide
+Set            ParameterSetOperation
+AND            LogicalAND
+OR             LogicalOR
+NOT            LogicalNOT
+LDescription   NodeEdgeLogicDescription
+Match          NodeEdgeMatch
+Neighbors      GraphNeighbors
+NodeCounts     SimpleGraphCounts
+Extract        ParameterExtract
+MatchProps     GraphNodePairsOperation
+ParPredicate   ParameterizedPyramidPredicate   
+Do             DoOperation
+Substitute     ParametersInFunction
+END
+NodeEdgeOperation: LogicDescription NodeOperation
+GraphElementMatch: LogicDescription Matches 0.4 NodeMatch
+GraphNeighbors:    Matches: Matches Pairs: Pair
+SimpleGraphCounts: NodeOperation 
+NumberOf: NumberOfNodes    CountRoot: Counts    LogicDescription: LogicDescription
+GraphNodePairsOperation:   NumberOfMatches: NumberOfMatches    MatchValue: MatchValue
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  -1.0 3.0 3.0
+%% -------------------------------------------------
+DataType: ParameterizedExpression    A new numeric parameterized function
+StandardExpression   ParameterSet GeneralExpression Object
+END
+%% -------------------------------------------------
+ClassNamePairs:
+RuleSystemSearch      AlgorithmSummary
+RuleAction            AlgorithmSummary
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

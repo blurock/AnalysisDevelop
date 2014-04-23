@@ -1,0 +1,19 @@
+DecisionTreeParameters ------------------ DecisionTreeParameters  ------------------
+Attributes:
+%% ---------------------------------------------
+%% DecisionTreeParameters       KeyWords
+StandardEntropyAlg#ZEntropy SelectAlg#SimpleSelect Filter END
+%% ---------------------------------------------
+%% DecisionTreeMinimumInstances  Real
+15
+%% ---------------------------------------------
+%% DecisionTreePartitionPercent  Real
+0.7
+%% ---------------------------------------------
+%% DecisionTreeMinimumEntropy    Real
+0.3
+%% ---------------------------------------------
+%% DecisionTreeMaximumNodes      Real
+3
+%% ---------------------------------------------
+END

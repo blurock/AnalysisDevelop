@@ -1,0 +1,110 @@
+ObjectClasses:
+DataType: NValued An Assortment of Colors
+Colors Red 0.0 Green 0.5 Blue 1.0 END
+DataType: NValued True-False Logic 
+TrueFalse True 1.0 False 0.0 END
+DataType:
+NumericPredicate A sample predicate
+FuzzyPredicate Continuous PyramidODReal
+%% -------------------------------------------------
+DataType:
+Predicate A predicate of a numeric predicate function
+FuzzyParameterPredicate FuzzyPredicate 
+%% -------------------------------------------------
+DataType: RealFunctionParameterized   A Gaussian Function
+Gaussian GaussianODReal
+%% -------------------------------------------------
+DataType: RealFunctionParameterized   A Linear Function
+Line LinearODReal
+%% -------------------------------------------------
+DataType: ExpressionTree  A Numeric Tree
+NumericExpressionTree
++    NumOpPlus
+-    NumOpMinus
+*    NumOpMultiply
+/    NumOpDivide
+Set            ParameterSetOperation
+Gaussian       Gaussian
+Line           Line
+END
+ODReal -Infinity T +Infinity T GaussianODReal 0.0 0.0 0.0
+ODReal -Infinity T +Infinity T LinearODReal 0.0 0.0 1.0 1.0
+%% -------------------------------------------------
+DataType: ExpressionTree  A Numeric Tree
+LogicalTree
++    NumOpPlus
+-    NumOpMinus
+*    NumOpMultiply
+/    NumOpDivide
+AND   LogicalAND
+OR    LogicalOR
+NOT   LogicalNOT
+Pred  FuzzyPredicate
+Set            ParameterSetOperation
+GreaterThanZero FuzzyPredicate
+LessThanZero    FuzzyPredicate
+EqualToZero     FuzzyPredicate
+END
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  0.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 0.0 1.0  -1.0 0.0 0.0
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 0.0 -1.0 0.0 0.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 0.0 -1.0 0.0 1.0
+%% -------------------------------------------------
+DataType: ExpressionTree  A Numeric Tree
+SetTree
+Set            ParameterSetOperation
+Line           NumericLineSegmentFunction
+END
+%% -------------------------------------------------
+DataType: ParameterizedExpression    A new numeric parameterized function
+NumericExpression    ParameterSet NumericExpressionTree Real
+%% -------------------------------------------------
+DataType: ParameterizedExpression    A new numeric parameterized function
+LogicalExpression    ParameterSet LogicalTree Continuous 
+%% -------------------------------------------------
+DataType: ActionRule    Expression Action
+ExpressionAction     ParameterSet Operation Continuous 
+                     LogicalExpression ParameterSet
+%% -------------------------------------------------
+%% -------------------------------------------------
+DataType: GeneticDistribution GeneticObject based on Real Distribution
+GeneticReal Real
+%% -------------------------------------------------
+DataType: GeneticSetOfParameters Genetic Object based on Set of Parameters
+GeneticSet ParameterSet
+%% -------------------------------------------------
+DataType: ParameterizedExpression A parameterized numeric expression
+ParameterizedNumeric 
+ParameterSet NumericExpressionTree Real
+%% -------------------------------------------------
+DataType: Population a real population
+RPopulation
+PopulationObject GeneticSet
+%% ---------------------------------------------------------
+DataType: PopulationCost The cost of a sample population
+PopulationCostFunction 
+% Data Population Object
+RPopulation
+% Cost Expression
+ParameterizedNumeric
+END
+ClassNamePairs:
+RunID          Integer
+TrainInstanceNameList      KeyWords
+Rule               ExpressionAction
+%%Action           NumericExpression
+%%Condition        LogicalExpression
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+VarT1 TrueFalse 
+VarT2 TrueFalse 
+Var1 Integer
+Var2 Integer
+Var3 Real
+Var4 Real
+END
+%% -------------------------------------------------

@@ -1,0 +1,32 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: LogicDescription  A real function based predicate
+ContLogicDescription Continuous
+%% -------------------------------------------------
+DataType: Description Description giving Continuous logical description
+ContinuousDescription ContLogicDescription
+%% -------------------------------------------------
+DataType: NValued True-False Logic 
+TrueFalse True 1.0 False 0.0 END
+%% -------------------------------------------------
+DataType: NumericPredicate A sample predicate
+FuzzyPredicate Continuous PyramidODReal
+%% -------------------------------------------------
+DataType: Predicate A predicate of a numeric predicate function
+FuzzyParameterPredicate FuzzyPredicate 
+END
+%% -------------------------------------------------
+ClassNamePairs:
+GreaterThanZero FuzzyPredicate
+LessThanZero    FuzzyPredicate
+EqualToZero     FuzzyPredicate
+PDescription    ContinuousDescription
+LDescription    ContLogicDescription
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

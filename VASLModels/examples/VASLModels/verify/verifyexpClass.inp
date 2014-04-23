@@ -1,0 +1,26 @@
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+ExpVolume1_Breite_Difference_Squared       IntrinsicExpression
+ExpVolume2_Breite_Difference_Squared       IntrinsicExpression
+ExpVolume3_Breite_Difference_Squared       IntrinsicExpression
+ExpVolume4_Breite_Difference_Squared       IntrinsicExpression
+ExpSoll1_Breite_Difference_Squared         IntrinsicExpression
+ExpSoll2_Breite_Difference_Squared         IntrinsicExpression
+ExpSoll3_Breite_Difference_Squared         IntrinsicExpression
+ExpSoll4_Breite_Difference_Squared         IntrinsicExpression
+ExpSoll5_Breite_Difference_Squared         IntrinsicExpression
+ExpVorNach_Breite_Difference_Squared_23    IntrinsicExpression
+ExpVorNach_Breite_Difference_Squared_45    IntrinsicExpression
+VarsAndExps                                KeyWords
+RootName                                   KeyWords
+AttributeSpecs                             KeyWords
+TestPercentage                             Real
+END
+%% 1-------------------------------------------------
+ObjectClasses:
+END
+%% 2-------------------------------------------------
+ClassNamePairs:
+END

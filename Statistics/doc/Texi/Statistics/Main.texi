@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  Statistics
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Basis library package "Statistics".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Basis Library
+
+@node     Statistics Package
+@section  The "Statistics" Package
+@cindex   package, Statistics
+@cindex   Statistics package
+@cindex   stat namespace
+@cindex   namespaces, stat
+
+@table @strong
+@item Package name
+@code{Statistics}
+
+@item Namespace name
+@code{stat}
+
+@item Header files
+@file{Statistics.hh}, @file{StatisticsType.hh}
+@end table
+
+
+@include Statistics/Overview.texi
+
+@include Statistics/Classes.texi

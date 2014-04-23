@@ -1,0 +1,22 @@
+ObjectClasses:
+DataType: NValued An Assortment of Colors
+Colors Red 0.0 Green 0.5 Blue 1.0 END
+DataType: NValued True-False Logic 
+TrueFalse True 1.0 False 0.0 END
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+VarT1 TrueFalse 
+VarT2 TrueFalse 
+Var1 Integer
+Var2 Integer
+Var3 Real
+Var4 Real
+END
+%% -------------------------------------------------

@@ -1,0 +1,7 @@
+Parameter
+A    Integer
+B    Integer
+C    Integer
+END
+1 8 3
+( - C ( / ( + A B C ) C ) ) 

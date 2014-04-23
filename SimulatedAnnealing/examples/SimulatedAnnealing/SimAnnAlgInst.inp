@@ -1,0 +1,98 @@
+No attributes
+Attributes:
+12345
+%%%%-----------------------------------------------------------------------------
+%%%%   ReadInstancesAlg    AlgorithmSummary
+       Initial InstanceAlgs END    % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Read END                               % Algorithm Specification
+                                              % Algorithm Input Parameters
+                               % (Name-Class Pairs)
+       InstanceReadFiles KeyWords
+       END
+                                              % Algorithm Result Parameters
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%   InstanceSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END    % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Instances END                          % Algorithm Specification
+                                              % Algorithm Input Parameters
+       InstanceNameList KeyWords              % (Name-Class Pairs)
+       TestPercentage   Real
+       END
+                                              % Algorithm Result Parameters
+       TotalInstanceNameList %%KeyWords              % (Name-Class Pairs)
+       TestInstanceNameList  %%KeyWords
+       TrainInstanceNameList %%KeyWords
+       END
+%%%%-----------------------------------------------------------------------------
+%%%% AttributeSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END    % Algorithm Category
+       Parameter END                          % Algorithm KeyWords
+       Attributes END                         % Algorithm Specification
+                                              % Algorithm Input Parameters
+                                              % (Name-Class Pairs)
+        AttributeSpecs        KeyWords
+        TotalInstanceNameList KeyWords
+        END
+                                              % Algorithm Result Parameters
+       AttributeNames
+       END
+%%%%-----------------------------------------------------------------------------
+%%%% AttributeByTypeAlg    AlgorithmSummary
+       Initial InstanceAlgs END               % Algorithm Category
+       AttributesByType END                   % Algorithm KeyWords
+       Attributes END                         % Algorithm Specification
+                                              % Algorithm Input Parameters
+                                              % (Name-Class Pairs)
+        AttributeSpecs        KeyWords
+        TotalInstanceNameList KeyWords
+        END
+                                              % Algorithm Result Parameters
+       AttributeNames
+       END
+%%%%-----------------------------------------------------------------------------
+%%%% AttributeByNameAlg    AlgorithmSummary
+       Initial InstanceAlgs END               % Algorithm Category
+       AttributesByName END                   % Algorithm KeyWords
+       Attributes END                         % Algorithm Specification
+                                              % Algorithm Input Parameters
+                                              % (Name-Class Pairs)
+        AttributeSpecs        KeyWords
+        TotalInstanceNameList KeyWords
+        END
+                                              % Algorithm Result Parameters
+       AttributeNames
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%   MatrixSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END               % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Matrix END                             % Algorithm Specification
+                                              % Algorithm Input Parameters
+       TotalInstanceNameList KeyWords
+       AttributeNames KeyWords
+       END
+                                              % Algorithm Result Parameters
+       MatrixObject                           % (Name-Class Pairs)
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%   SATestAlg    AlgorithmSummary
+       Initial SAAlgs END                   % Algorithm Category
+       END                                  % Algorithm KeyWords
+       SimAnn END                           % Algorithm Specification
+                                            % Algorithm Input Parameters
+       TheInstanceMatrix InstanceMatrix  
+       TheUpperLower SimAnnUpperLower
+       TheFunctionToOptimize Function1
+       END
+                                            % Algorithm Result Parameters
+%%%       MatrixObject                         % (Name-Class Pairs)
+       END
+
+
+
+
+END
+

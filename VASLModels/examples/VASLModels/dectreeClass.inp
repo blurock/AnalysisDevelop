@@ -1,0 +1,13 @@
+ObjectClasses:
+END
+ClassNamePairs:
+DecisionTreeParameters       KeyWords
+DecisionTreeMinimumInstances  Real
+DecisionTreePartitionPercent  Real
+DecisionTreeMinimumEntropy    Real
+DecisionTreeMaximumNodes      Real
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END

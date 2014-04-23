@@ -1,0 +1,9 @@
+ObjectClasses:
+END
+ClassNamePairs:
+Var1 Integer
+Var2 Integer
+Var3 Real
+Var4 Integer
+END
+1 2 4.1 8.45

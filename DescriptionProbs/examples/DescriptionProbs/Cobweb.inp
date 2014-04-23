@@ -1,0 +1,16 @@
+ToolingSet ====================== Tooling Example =================================
+Attributes:
+%% GroupProbs  InstanceVector
+3 8
+0 1 1 0 0 0 0 0
+1 0 0 0 0 0 0 0
+0 0 0 1 1 1 1 1
+ Group1 Group2 Group3 END
+ Tooling1 Tooling2 Tooling3 Tooling4 Tooling5 Tooling6 Tooling7 Tooling8 END
+%% SingleMembership  InstanceVector
+4
+1 1 0 1
+ MeasureGT180 MeasureLT180 MeasureEQ180 Measure2EQ180 END
+%% SingleMembership  Real
+1.0
+END

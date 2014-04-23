@@ -1,0 +1,118 @@
+Attributes:
+%%% MaximumNumberOfNodes    Integer
+30
+%%% ProductionSystem        NormalProductionSystem
+ProductionSystem:
+GeneratedNode: GeneratedNode
+NumberOfGoals: 2
+GoalResults:  
+             Cost
+             END
+GoalCondition:
+     ParameterSet:
+     ClassNamePairs:
+     Cost    Real
+     Plus    Real
+     Mult    Real
+     END
+     0.0 0.0 1.0
+     Operation:
+     LocalExpressionKeyWords:
+     Ref      Real
+     END
+     2.0
+        ( GreaterThanZero ( - Cost Ref ) )
+SetOfRules:
+ClassNamePairs:
+Rule1   PredicateAction
+Rule2   PredicateAction
+END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%% Rule1   ExpressionAction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ActionRule:
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+
+          ActionRuleCondition:
+
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+                LocalExpressionKeyWords:
+                Ref       Real
+                END
+                2.0
+                ( AND ( GreaterThanZero ( - Ref Plus ) ) ( GreaterThanZero ( - Ref Mult ) ) )
+%%%                ( GreaterThanZero ( - Ref ( + Mult Plus ) ) )
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                Mult    NumericExpression
+                Cost    NumericExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%%Action1: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        LocalExpressionKeyWords:
+                        END
+                        ( + Mult ( / ( * Mult X ) Factor ) )
+%%%%%%%%%%%%%%%%%%%%%%%%Cost: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        LocalExpressionKeyWords:
+                        END
+                        ( * ( - Plus Mult ) ( - Plus Mult ) )
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%% Rule2   PredicateAction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ActionRule:
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+
+          ActionRuleCondition:
+
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+                LocalExpressionKeyWords:
+                Ref     Real
+                END
+                2.0
+                ( AND ( GreaterThanZero ( - Ref Plus ) ) ( GreaterThanZero ( - Ref Mult ) ) )
+%%                ( GreaterThanZero ( - Ref ( + Mult Plus ) ) )
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                Plus    NumericExpression
+                Cost    NumericExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%%Plus: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        LocalExpressionKeyWords:
+                        END
+                        ( / ( + Plus X ) Factor )
+%%%%%%%%%%%%%%%%%%%%%%%%Cost: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        LocalExpressionKeyWords:
+                        END
+                        ( * ( - Plus Mult ) ( - Plus Mult ) )
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+END

@@ -1,0 +1,63 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+1000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+Instance1 Instance2 END
+%%( + Var3 )
+%% ( Real 1.0 )
+( + ( / Var3 ( Real 1.0 ) ) ( / Var4 ( Real 2.0 ) ) )
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+SetOfRules:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ExpressionAction Rule
+   ActionRule:
+      Var3  Real 
+      Var4  Real 
+      Test1  TrueFalse
+      END
+   ActionRuleCondition:
+     ( AND Test1 )
+   CutOff: .75
+   ActionRuleSetOfActions:
+     NumericExpression  Cost  ( + ( / Var3 ( Real 1.0 ) ) ( / Var4 ( Real 2.0 ) ) )
+     END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+END %% End of Set of Rules   
+%%% =================================================
+100
+%% =================================================
+10
+%% =================================================
+True
+%% =================================================
+%% =================================================
+%%%  VarsAndExps        KeyWords
+Attribute
+X  Exp1
+Pairs RuleExpression
+Defuzzed Defuzz 
+END
+%% =================================================
+%% InstanceNameList KeyWords
+Instance1 END
+%% =================================================
+( RulePairs Rule ( Set Var3 Var4 Test1 ) )
+
+%% =================================================
+%%      The Instances
+%% =================================================
+Instance: 1 Instance1    The First Instance
+True True 1 2 0.0 8.45
+%% -------------------------------------------------
+Instance: 2 Instance2    The Second Instance
+False True 10 20 2.0 80.45
+%% -------------------------------------------------
+Instance: 3 Instance3    The Third Instance
+True False 100 200 3.0 800.45
+%% -------------------------------------------------
+Instance: 4 Instance4    The Fourth Instance
+False False 1000 2000 4.0 8000.45
+%% -------------------------------------------------
+END
+

@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  DeFuzzy
+@c AUTHOR   SCCH
+@c 
+@c CONTENT
+@c   Texinfo documentation for CoreObjects library package "DeFuzzy".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) CoreObjects Library
+
+@node     DeFuzzy Package
+@section  The "DeFuzzy" Package
+@cindex   package, DeFuzzy
+@cindex   DeFuzzy package
+@cindex   def namespace
+@cindex   namespaces, def
+
+@table @strong
+@item Package name
+@code{DeFuzzy}
+
+@item Namespace name
+@code{def}
+
+@item Header files
+@file{DeFuzzy.hh}, @file{DeFuzzyType.hh}
+@end table
+
+
+@include DeFuzzy/Overview.texi
+
+@include DeFuzzy/Classes.texi

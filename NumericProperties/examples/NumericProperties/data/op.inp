@@ -1,0 +1,28 @@
+op Definitions ---------------- ParameterizeNormalization Demo ------------------------
+Attributes:
+
+%% ----------------------------------------
+%% Distributions       KeyWords
+%% ----------------------------------------
+Distribution_y_dimless Distribution_3-CH2 Distribution_C2H Distribution_C2H2 Distribution_C2H3 
+Distribution_C2H4 Distribution_C2H5 Distribution_C2H6 Distribution_C3H3 Distribution_C3H4 
+Distribution_C3H5 Distribution_C3H6 Distribution_C3H7 Distribution_C3H8 Distribution_CH 
+Distribution_CH2O Distribution_CH3 Distribution_CH4 Distribution_CHCO Distribution_CHO 
+Distribution_CO Distribution_CO2 Distribution_H Distribution_H2 Distribution_H2O 
+Distribution_H2O2 Distribution_HO2 Distribution_IPRO Distribution_O Distribution_O2 
+Distribution_OH 
+END
+%% ----------------------------------------
+%% OperationRoot    String
+%% ----------------------------------------
+NormOp
+%% ----------------------------------------
+%% OperationClass    String
+%% ----------------------------------------
+ParameterizedNormalize
+%% ----------------------------------------
+%% ExpressionTreeClass String
+%% ----------------------------------------
+NormalizeParameters
+%% ----------------------------------------
+END

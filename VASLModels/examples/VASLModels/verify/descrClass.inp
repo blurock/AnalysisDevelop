@@ -1,0 +1,72 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: NValued   The pass condition
+Pass  Pass1 0.1 Pass2 0.2 Pass3 0.3 Pass4 0.4 Pass5 0.5 Pass6 0.6 Pass7 0.7 Pass8 0.8 Pass9 0.9 Done 1.0 END
+%% -------------------------------------------------
+DataType: ExactlyEqualPredicate   The Production Stage Checker
+PassCheck  TrueFalse  Pass
+%% -------------------------------------------------
+DataType: ExpressionTree  A Numeric Tree
+VerifyExpression
++    NumOpPlus
+-    NumOpMinus
+*    NumOpMultiply
+/    NumOpDivide
+AND            LogicalAND
+OR             LogicalOR
+NOT            LogicalNOT
+ToLogic        RealToLogic
+ToReal         LogicToReal
+Set            ParameterSetOperation
+LCoerce        LogicToReal
+Power          Power
+Gaussian       Gaussian
+Line                      Line
+Pred                      FuzzyPredicate
+DogBoneModel              VASLDogBoneModel
+KashimaModel              VASLKashimaModel
+WidthModel                VASLWidthModel
+Pass1                     PassCheck
+Pass2                     PassCheck
+Pass3                     PassCheck
+Pass4                     PassCheck
+Pass5                     PassCheck
+Done                      PassCheck
+GreaterThanZero           FuzzyPredicate
+LessThanZero              FuzzyPredicate
+EqualToZero               FuzzyPredicate
+Verify                    DoOperation
+END
+ODReal -Infinity T +Infinity T PowerODReal 0.0
+ODReal -Infinity T +Infinity T GaussianODReal 0.0 0.0 0.0
+ODReal -Infinity T +Infinity T LinearODReal 0.0 0.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  -1.0 3.0 3.0
+ExactlyEqualPredicate: Pass Pass1
+ExactlyEqualPredicate: Pass Pass2
+ExactlyEqualPredicate: Pass Pass3
+ExactlyEqualPredicate: Pass Pass4
+ExactlyEqualPredicate: Pass Pass5
+ExactlyEqualPredicate: Pass Done
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  -1.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 1.0 0.0  -1.0 -1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 0.0  -1.0 0.0 1.0
+%% -------------------------------------------------
+DataType: ParameterizedExpression    A new numeric parameterized function
+RuleExpression   ParameterSet VerifyExpression Object
+%% -------------------------------------------------
+DataType: ActionRule    Expression Action
+RuleAction              ParameterSet Operation Continuous 
+                        RuleExpression ParameterSet
+%% -------------------------------------------------
+DataType: ProductionSystem
+NormalProductionSystem ParameterSet VerifyExpression Object
+                       SetOfRules ProductionSystemNode DirectedTree
+END
+ClassNamePairs:
+ProductionSystem        NormalProductionSystem
+MaximumNumberOfNodes    Integer
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END

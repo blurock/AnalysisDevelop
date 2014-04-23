@@ -1,0 +1,17 @@
+DescriptionGoals
+PartitionTable-Rows
+Predicate: Var3 Continuous
+-Infinity T +Infinity T 0.0 1.0 1.0  0.0 1.0 1.0
+Predicate: Var3 Continuous
+-Infinity T +Infinity T 1.0 0.0 0.0 -1.0 0.0 0.0
+Predicate: Var3 Continuous
+-Infinity T +Infinity T 0.0 1.0 0.0 -1.0 0.0 1.0
+END
+PartitionTable-Columns
+Predicate: Var1 Continuous
+-Infinity T +Infinity T 0.0 1.0 1.0  0.0 1.0 1.0
+Predicate: Var1 Continuous
+-Infinity T +Infinity T 1.0 0.0 0.0 -1.0 0.0 0.0
+Predicate: Var1 Continuous
+-Infinity T +Infinity T 0.0 1.0 0.0 -1.0 0.0 1.0
+END

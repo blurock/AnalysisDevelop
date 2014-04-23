@@ -1,0 +1,22 @@
+ObjectClasses:
+END
+ClassNamePairs:
+RunID          Real
+%%RunID2       Integer
+%%RunID3       Integer
+END
+ObjectClasses:
+END
+ClassNamePairs:
+ID Integer
+Thick Real
+Width Integer
+Hard Integer
+Edges Integer
+Measure Integer
+Cuts Integer
+LSpeed Integer
+USpeed Integer
+ASpeed Integer
+Type Integer
+END

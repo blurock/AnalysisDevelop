@@ -1,0 +1,18 @@
+CP.Pass0-5RelDiff_Temperatur               
+CriticalPoints: Pass0-5RelDiff_Temperatur           [0.06,.005] [0.08,0.005] [0.10,0.005] [0.12,0.005] [0.14,0.005] END
+CP.Ratio-DickeBreite_nach_stich_warm_1     
+CriticalPoints: Ratio-DickeBreite_nach_stich_warm_1     [4,3] [5,3] [6,3] [7,3] [8,3] [9,3] [10,3] [11,3] [12,3] [13,3] [14,3] END
+CP.Pass1-2Difference_Dicke_nach_Stich_warm 
+CriticalPoints: Pass1-2Difference_Dicke_nach_Stich_warm [0.01,.01] [0.02,0.03] [0.03,0.03] [0.04,0.03] [0.05,0.03] END
+%%% CP.Walzkraft_Horizontalgeruest_5          
+%%% CriticalPoints: Walzkraft_Horizontalgeruest_5          [16000,500] [18000,500] [22000,500] [24000,500] [26000,500] END
+CP.Dicke_nach_Stich_warm_5      
+CriticalPoints: Dicke_nach_Stich_warm_5      [32.0,5] [34.0,5] [36.0,5] [38.0,5] [40.0,5] [42.0,5] END
+%%% CP.Breite_vor_Stich_warm_5      
+%%% CriticalPoints: Breite_vor_Stich_warm_5      [1000.0,50] [1100.0,50] [1200.0,50] 
+%%%                                              [1300.0,50] [1400.0,50] [1500.0,50] [1600.0,50] END
+CP.Temperatur_5                 
+CriticalPoints: Temperatur_5                 [700,100] [800,100] [900,100] [1000,100] [1100,100] [1200,100] END
+CP.Anstichgeschwindigkeit_5     
+CriticalPoints: Anstichgeschwindigkeit_5     [2.0,1] [3.0,1] [4.0,1] [5.0,1] [6.0,1] [7.0,1] END
+END

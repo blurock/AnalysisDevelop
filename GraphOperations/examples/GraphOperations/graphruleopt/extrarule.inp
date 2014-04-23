@@ -1,0 +1,34 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%% Rule2   ExpressionAction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ActionRule:
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+
+          ActionRuleCondition:
+
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+                Ref     TrueFalse
+                END
+                True
+                ( Expand Stage )
+
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                Stage         StandardExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%%Action1: Set to next Stage
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        Finish     Steps
+                        END
+                        Finish
+                        ( AND Finish )

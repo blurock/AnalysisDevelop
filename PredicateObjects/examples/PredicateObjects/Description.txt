@@ -1,0 +1,7 @@
+DescriptionExample
+Predicate: Var3 Continuous
+-Infinity T +Infinity T 0.0 1.0 1.0  0.0 1.0 1.0
+Predicate: Var3 Continuous
+-Infinity T +Infinity T 1.0 0.0 0.0 -1.0 0.0 0.0
+Predicate: Var3 Continuous
+-Infinity T +Infinity T 0.0 1.0 0.0 -1.0 0.0 1.0

@@ -1,0 +1,16 @@
+ObjectClasses:
+END
+%%%%----------------------------------------------------------------------------------
+ClassNamePairs:
+Distribution_P1     AttributeDistribution
+Distribution_P2     AttributeDistribution
+Distribution_P3     AttributeDistribution
+END
+% ----------------------------------------------------------
+%  Parameter classes for each instance
+% ----------------------------------------------------------
+ObjectClasses:
+END
+% ----------------------------------------------------------
+ClassNamePairs:
+END

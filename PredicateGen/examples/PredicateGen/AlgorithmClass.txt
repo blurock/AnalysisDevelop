@@ -1,0 +1,8 @@
+ObjectClasses:
+END
+Routines Initial
+     PredGen Initial#Routines
+         CrPnts Initial#Routines#PredGen
+             ReadCriticalPoints           Initial#Routines#PredGen#CrPnts Read
+             PartitionsFromCriticalPoints Initial#Routines#PredGen#CrPnts Partitions
+END

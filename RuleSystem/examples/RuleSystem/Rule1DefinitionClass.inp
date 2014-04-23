@@ -1,0 +1,44 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: ExpressionTree  A Numeric Tree
+ConditionTree
+AND   LogicalAND
+OR    LogicalOR
+NOT   LogicalNOT
++     NumOpPlus
+-     NumOpMinus
+*     NumOpMultiply
+/     NumOpDivide
+Set            ParameterSetOperation
+GreaterThanZero FuzzyPredicate
+LessThanZero    FuzzyPredicate
+EqualToZero     FuzzyPredicate
+END
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 0.0 1.0  -1.0 0.0 0.0
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 0.0 -1.0 0.0 0.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 0.0 -1.0 0.0 1.0
+%% -------------------------------------------------
+DataType: ParameterizedExpression    A new numeric parameterized function
+ConditionExpression    
+      ParameterSet ConditionTree Continuous 
+      END
+%% -------------------------------------------------
+DataType: ActionRule    Expression Action
+PredicateAction      
+        ParameterSet Operation Continuous 
+        END
+        ConditionExpression ParameterSet
+%% -------------------------------------------------
+DataType: ProductionSystem
+NormalProductionSystem 
+          ParameterSet ConditionTree Continuous 
+          END
+SetOfRules ProductionSystemNode DirectedTree
+END
+ClassNamePairs:
+END
+%%% New Instance Values
+ObjectClasses:
+END
+ClassNamePairs:
+END

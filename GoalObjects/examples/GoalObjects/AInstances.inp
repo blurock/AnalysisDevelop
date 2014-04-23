@@ -1,0 +1,16 @@
+The Set Of Read In Instances
+Attributes:
+1001
+Instance: 1 FirstObject  The first object
+1 2 4.1 8.45
+Instance: 2 SecondObject The second object
+10 20 40.1 80.45
+Instance: 3 ThirdObject  The third object
+105 201 600.1 800.45
+Instance: 4 FourthObject The fourth object
+110 202 700.1 900.45
+Instance: 5 FifthObject  The fifth object
+112 203 800.1 800.45
+Instance: 5 AdditionalObject  The first object
+1 2 4.1 8.45
+END

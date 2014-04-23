@@ -1,0 +1,21 @@
+% **********************************************************
+% The Attributes and Instances to be read in
+% **********************************************************
+%
+The Set Of Read In Instances
+%
+% ----------------------------------------------------------
+%  The set of attributes (as specified by the class)
+% ----------------------------------------------------------
+Attributes:
+%%     MaxLevel                    Integer
+1
+%%     LogicType                   KeyWords
+Continuous END
+%%     GoalNameList                KeyWords
+ColorIsRed    ColorIsGreen  ColorIsBlue   ColorIsWhite  END
+%%%ColorsPartition  END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% No Instances
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+END

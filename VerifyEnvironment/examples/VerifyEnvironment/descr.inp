@@ -1,0 +1,86 @@
+Expression Test
+Attributes:
+%% -------------------------------------------------
+%%    LDescr1         ContinuousLogicDescription
+%% -------------------------------------------------
+LogicDescription:
+L1    Continuous
+L2    Continuous
+L3    Continuous
+END
+0.5 0.5 0.0
+%% -------------------------------------------------
+%%    LDescr2         ContinuousLogicDescription
+%% -------------------------------------------------
+LogicDescription:
+L1    Continuous
+L2    Continuous
+L3    Continuous
+END
+0.5 0.5 0.0
+PredicateDescription       ExpDescription
+END
+                %% -------------------------------------------------
+                %%    ParameterizedDescription     ExpDescription
+                %% -------------------------------------------------
+        DescriptionExpressions:
+        ParameterSet:
+        ClassNamePairs:
+        Bottom    Real
+        Top       Real
+        Width     Real
+        X2         Real
+        X3         Real
+        X4         Real
+        END
+        0.0 1.0 1.0 3.0 5.0 8.0
+        Operation:
+        Post: NoPostOperation
+        BeginDescription:
+                ClassNamePairs:
+                AroundEight              PVerifyExpression
+                GreaterThanFive           PVerifyExpression
+                LessThanThree            PVerifyExpression
+                END
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        END
+                     ( GenericPredicate ( Set Bottom Top Bottom ( - X4 Width ) X4             ( + X4 Width ) )  Var4 )
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        END
+                     ( GenericPredicate ( Set Bottom Bottom Top ( - X3 Width ) ( - X3 Width ) ( + X3 Width ) )  Var3 )
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        END
+                     ( GenericPredicate ( Set Top Top Bottom    X2 X2 ( + X2 Width ) ) Var2 )
+        EndDescription:
+        ( Do PredicateDescription INSTANCE_VALUES )
+%% -------------------------------------------------
+%%    VarsAndExps   KeyWords
+%% -------------------------------------------------
+Instance LogicDescription LogicDescriptionExp END
+%% -------------------------------------------------
+%%    VerificationOperation                    StandardVerify
+%% -------------------------------------------------
+VerifyOperation: 
+IndividualCutOff:  .90
+TotalCutOff:       .90
+%% -------------------------------------------------
+%%    LogicalDescriptionNames   KeyWords
+%% -------------------------------------------------
+VerificationError LogicDescription END
+%% -------------------------------------------------
+%%    InstanceNames             KeyWords
+%% -------------------------------------------------
+Instance1 Instance2 Instance3 Instance4 Instance5 END
+%% =================================================
+%%      The Instances
+%% =================================================
+END

@@ -1,0 +1,22 @@
+ObjectClasses:
+END
+Routines Initial
+     PredGen Initial#Routines
+             Generate Initial#Routines#PredGen
+             PartitionsFromCriticalPoints Initial#Routines#PredGen#Generate Normal
+END
+Initial Routines PredGen END
+Level0 END
+Normal END
+PartitionTypesFromPoints               KeyWords
+CriticalPointsList                     KeyWords
+END
+PartitionPredicatesFromPoints          KeyWords
+PartitionFromPoints                    KeyWords
+END
+END
+END
+END
+END
+END
+END

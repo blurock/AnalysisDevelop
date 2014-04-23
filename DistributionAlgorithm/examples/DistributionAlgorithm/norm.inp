@@ -1,0 +1,24 @@
+op Definitions ---------------- ParameterizeNormalization Demo ------------------------
+Attributes:
+%% ----------------------------------------
+%% NormOpVar1   NormalizeParameters
+%% ----------------------------------------
+END
+( NormOpVar1 Var1 )
+%% ----------------------------------------
+%% NormOpVar3   NormalizeParameters
+%% ----------------------------------------
+END
+( NormOpVar3 Var3 )
+%% ----------------------------------------
+%% VarsAndExps   KeyWords
+%% ----------------------------------------
+Instance   
+NormedVar3  NormOpVar3
+END
+%% ----------------------------------------
+%% InstanceNameList KeyWords
+%% ----------------------------------------
+Instance1 Instance2 Instance3 Instance4 Instance5 Instance6 Instance7 
+END
+END

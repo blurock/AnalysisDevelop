@@ -1,0 +1,6 @@
++    NumOpPlus
+-    NumOpMinus
+*    NumOpMultiply
+/    NumOpDivide
+END
+

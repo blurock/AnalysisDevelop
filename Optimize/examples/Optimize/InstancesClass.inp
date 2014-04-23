@@ -1,0 +1,25 @@
+ObjectClasses:
+DataType: AlgorithmRun  A sample goal run class
+TestGoalRun
+% **********************************************************
+% The Definition of the GoalRunClass
+% **********************************************************
+%
+% ----------------------------------------------------------
+OptimizeAlgs Initial
+       1-OptimizeMain  Initial#OptimizeAlgs
+             OptimizeOperation Initial#OptimizeAlgs#1-OptimizeMain     SimpleOpt
+END
+END
+ClassNamePairs:
+MaximumNumberOfIterations     Integer
+TrainInstanceNameList         KeyWords
+ObjectToOptimize              Real
+Optimize                     AlgorithmSummary
+END
+ObjectClasses:
+END
+ClassNamePairs:
+p1   Real
+p2   Real
+END

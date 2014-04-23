@@ -1,0 +1,26 @@
+ObjectClasses:
+DataType: AlgorithmRun  A sample goal run class
+AlgorithmTestRun
+% **********************************************************
+% The Definition of the GoalRunClass
+% **********************************************************
+%
+% ----------------------------------------------------------
+InstanceAlgs Initial
+             MatAlgorithms Initial#InstanceAlgs
+             DescriptionMat Initial#InstanceAlgs
+                  DescriptionMatrixSetUp Initial#InstanceAlgs#DescriptionMat Matrix
+             Cluster Initial#InstanceAlgs
+                  CobwebBestGroup        Initial#InstanceAlgs#Cluster        Cobweb
+END
+%%%%----------------------------------------------------------------------------------
+END
+% ----------------------------------------------------------
+ClassNamePairs:
+SetUp             AlgorithmSummary
+Cobweb            AlgorithmSummary
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END

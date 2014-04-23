@@ -1,0 +1,31 @@
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+ExpBreite_Difference_Squared                       NumericTree
+ExpBreite_Difference_SquaredRatio                  NumericTree
+ExpPass0-5RelDiff_Temperatur                       NumericTree
+ExpPass1-5Difference_Breite_nach_Stich_warm        NumericTree
+ExpPass1-2Difference_Dicke_nach_Stich_warm         NumericTree
+ExpPass2-3Difference_Dicke_nach_Stich_warm         NumericTree
+ExpPass3-4Difference_Dicke_nach_Stich_warm         NumericTree
+ExpPass4-5Difference_Dicke_nach_Stich_warm         NumericTree
+ExpPass1Difference_Breite_Stich_warmAve            NumericTree
+ExpRatio-DickeBreite_nach_stich_warm_1             NumericTree
+ExpRatio-DickeBreite_nach_stich_warm_2             NumericTree
+ExpRatio-DickeBreite_nach_stich_warm_3             NumericTree
+ExpRatio-DickeBreite_nach_stich_warm_4             NumericTree
+ExpRatio-DickeBreite_nach_stich_warm_5             NumericTree
+ExpRatio-DickeBreite_nach_stich_warmAve            NumericTree
+
+VarsAndExps                                        KeyWords
+RootName                                           KeyWords
+AttributeSpecs                                     KeyWords
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

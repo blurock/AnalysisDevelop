@@ -1,0 +1,12 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+1000
+CriticalPointSet.txt    END
+Root                    END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The List of Instances
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 Instance1    The First Instance
+0.5 2    0.5 8.45
+END
+

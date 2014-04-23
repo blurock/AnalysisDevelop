@@ -1,0 +1,18 @@
+ObjectClasses:
+END
+ClassNamePairs:
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+VarT1 TrueFalse 
+VarT2 TrueFalse 
+Var1 Integer
+Var2 Integer
+Var3 Real
+Var4 Real
+X    Real
+END
+%% -------------------------------------------------

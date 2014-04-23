@@ -1,0 +1,17 @@
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+RunID          Integer
+Average        NumericTree
+Var3           Real
+Var4           Real
+VarsAndExps    KeyWords
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

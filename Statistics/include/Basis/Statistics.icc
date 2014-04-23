@@ -1,0 +1,23 @@
+/*  FILE     Statistics.icc
+**  PACKAGE  Statistics
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    Inline functions for the "Statistics" package.
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C)  REACTION Project, Edward S. Blurock
+*/
+ 
+#ifndef REACTIONSRC_STATISTICS_ICC
+#define REACTIONSRC_STATISTICS_ICC
+ 
+#pragma interface
+
+
+
+
+
+
+#endif

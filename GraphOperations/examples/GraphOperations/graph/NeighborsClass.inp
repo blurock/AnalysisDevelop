@@ -1,0 +1,16 @@
+ObjectClasses:
+DataType: GraphNodePair The continuous graph node pair
+ContinuousGraphNodePair Continuous
+DataType: GraphNodePairs The continuous set of graph node pairs
+ContinuousGraphNodePairs ContinuousGraphNodePair
+END
+ClassNamePairs:
+NodePair               ContinuousGraphNodePair
+NodePairs              ContinuousGraphNodePairs
+NeighborExpression     GraphExpression
+VarsAndExps         KeyWords
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END

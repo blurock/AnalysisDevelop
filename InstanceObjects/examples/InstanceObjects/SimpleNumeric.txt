@@ -1,0 +1,54 @@
+ObjectClasses:
+END
+ClassNamePairs:
+RunID Integer
+END
+ObjectClasses:
+DataType: NValued An Assortment of Colors
+Colors Red 0.0 Green 0.5 Blue 1.0
+DataType: NValued True-False Logic
+TrueFalse True 1.0 False 0.0
+% DataType: ConstantODRead A Constant Function
+% TestConstant
+DataType: LinearODReal A Linear Function
+TestLinear
+DataType: NumericPredicate A sample predicate
+Predicate Logical PyramidODReal
+DataType: NumericPredicate An exact Predicate
+PredicateExact TrueFalse PyramidODReal
+END
+ClassNamePairs:
+Color Colors
+VarT TrueFalse 
+Var1 Integer
+Var2 Integer
+Var3 Real
+Var4 Integer
+Diagonal TestLinear
+GreaterThan Predicate
+LessThan Predicate
+LessThanEqualExact Predicate
+END
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+1000
+Instance: 1 Instance1    The First Instance
+Green True 1 2 4.1 8.45
+ODReal 0.0 F +Infinity T LinearODReal 0.0 0.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0 -1.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 0.0 -1.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 1.0 0.0 0.0 0.0 0.0
+Instance: 2 Instance2    The Second Instance
+Red True 10 20 40.1 80.45
+ODReal 0.0 F +Infinity T LinearODReal 0.0 0.0 -1.0 -1.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0 -1.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 0.0 -1.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 1.0 0.0 0.0 0.0 0.0
+Instance: 3 Instance3    The Third Instance
+Blue False 100 200 400.1 800.45
+ODReal 0.0 F +Infinity T LinearODReal 0.0 0.0 -1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0 -1.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 0.0 -1.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 1.0 0.0 0.0 0.0 0.0
+END
+

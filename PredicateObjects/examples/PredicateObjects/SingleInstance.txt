@@ -1,0 +1,58 @@
+ObjectClasses:
+DataType:
+NValued An Assortment of Colors
+Colors Red 0.0 Green 0.5 Blue 1.0
+DataType:
+NValued True-False Logic
+TrueFalse True 1.0 False 0.0
+DataType:
+ConstantODReal A Constant Function
+TestConstant
+DataType:
+LinearODReal A Linear Function
+TestLinear
+DataType:
+NumericPredicate A sample predicate
+FuzzyPredicate Continuous PyramidODReal
+DataType:
+NumericPredicate An exact Predicate
+PredicateExact TrueFalse PyramidODReal
+DataType:
+Predicate A predicate of a numeric predicate function
+FuzzyParameterPredicate FuzzyPredicate
+END
+ClassNamePairs:
+Color Colors
+VarT TrueFalse 
+Var1 Real
+Var2 Integer
+Var3 Real
+Var4 Integer
+Var3.GreaterThanZero FuzzyParameterPredicate
+%%Var3.LessThanZero    FuzzyParameterPredicate
+%%Var3.EqualToZero     FuzzyParameterPredicate
+%%Var1.GreaterThanZero FuzzyParameterPredicate
+%%Var1.LessThanZero    FuzzyParameterPredicate
+%%Var1.EqualToZero     FuzzyParameterPredicate
+%%Partition.Var3       KeyWords
+%%Partition.Var1       KeyWords
+%%PartitionTable.Var3.Var1 KeyWords
+%%Conjunction KeyWords
+END
+Green True 0.7 2 0.5 8.45
+Predicate: Var3 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  0.0 1.0 1.0
+Predicate: Var3 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 0.0 -1.0 0.0 0.0
+Predicate: Var3 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 0.0 -1.0 0.0 1.0
+Predicate: Var1 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  0.0 1.0 1.0
+Predicate: Var1 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 0.0 -1.0 0.0 0.0
+Predicate: Var1 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 0.0 -1.0 0.0 1.0
+Var3.GreaterThanZero Var3.LessThanZero    Var3.EqualToZero     END
+Var1.GreaterThanZero Var1.LessThanZero    Var1.EqualToZero     END
+Partition.Var3       Partition.Var1       END
+Var3.GreaterThanZero END

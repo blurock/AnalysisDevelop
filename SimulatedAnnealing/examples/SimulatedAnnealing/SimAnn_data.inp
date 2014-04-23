@@ -1,0 +1,67 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes: 
+
+
+
+%%% TheInstanceMatrix:
+  %% Matrix:
+   4 1 
+   999 
+   -1007 
+   1001 
+   -903 
+   %% Parameters:
+   x1 x2 x3 x4 END 
+   %% Instances:
+   Inst1 END 
+
+
+
+
+%%% TheUpperLower:
+  %% Upper:
+   4 
+   10000 10000 10000 10000 
+   %% Lower:
+   4 
+   -10000 -10000 -10000 -10000 
+
+
+
+%%% TheFunctionToOptimize:
+  %% TheParDim:
+  4
+  %% TheUpLow:
+    %% Upper:
+    4 
+    10000 10000 10000 10000 
+    %% Lower:
+    4 
+    -10000 -10000 -10000 -10000 
+  %% TheParVec:
+  4
+  999.0 -1007.0 1001.0 -903.0
+  %% TheOptMat:
+    4 1 
+    999 
+    -1007 
+    1001 
+    -903 
+    %% Lines:
+    x1 x2 x3 x4 END 
+    %% Columns:
+    Inst1 END 
+  %% TheCostTanVec:
+  4
+  0.0 0.0 0.0 0.0
+  %% TheParIntRealVec:
+  4
+  -1 -1 -1 -1
+                %%%%%------------------------------
+                %% INTEGER_TYPE		((int) 1)
+                %% REAL_TYPE		((int) -1)
+                %% INTEGER_NO_REANNEAL	((int) 2)
+                %% REAL_NO_REANNEAL	((int) -2)
+                %%%%%------------------------------
+END 
+

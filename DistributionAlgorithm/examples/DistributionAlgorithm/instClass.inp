@@ -1,0 +1,53 @@
+ObjectClasses:
+DataType: AlgorithmRun  A sample goal run class
+TestAlgorithmRun
+% **********************************************************
+% The Definition of the AlgorithmRunClass
+% **********************************************************
+InstanceAlgs Initial
+             Algorithms Initial#InstanceAlgs
+                        InstanceReadASCIIAlg Initial#InstanceAlgs#Algorithms Read
+                        InstanceInstancesAlg Initial#InstanceAlgs#Algorithms Instances
+                        InstanceAttributesAlg Initial#InstanceAlgs#Algorithms Attributes
+                        InstanceMatrixAlg Initial#InstanceAlgs#Algorithms Matrix
+VariableGen Initial
+       Algorithms Initial#VariableGen
+            DistributionAlgorithm Initial#VariableGen#Algorithms Distribution
+            NormalizeOpFromDistribution Initial#VariableGen#Algorithms NormalizationOps
+            ExpressionAlgorithm Initial#VariableGen#Algorithms Expression
+END
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+RunID                                  Integer
+Var3                                   Real
+Var4                                   Real
+TotalInstanceNameList                  KeyWords
+AttributeNames                         KeyWords
+RootName                               KeyWords
+DistributionAlg                        AlgorithmSummary
+NormalizeFromDistAlg                   AlgorithmSummary
+Normalize                              AlgorithmSummary
+ReadInstancesAlg                       AlgorithmSummary
+InstanceSetUpAlg                       AlgorithmSummary
+AttributeSetUpAlg                      AlgorithmSummary
+MatrixSetUpAlg                         AlgorithmSummary
+END
+%% -------------------------------------------------
+ObjectClasses:
+DataType: NValued An Assortment of Colors
+Colors Red 0.0 Green 0.5 Blue 1.0 END
+DataType: NValued True-False Logic
+TrueFalse True 1.0 False 0.0 END
+END
+%% -------------------------------------------------
+ClassNamePairs:
+Color Colors
+VarT TrueFalse 
+Var1 Integer
+Var2 Integer
+Var3 Real
+Var4 Real
+END
+%% -------------------------------------------------

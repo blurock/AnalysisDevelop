@@ -1,0 +1,41 @@
+% ----------------------------------------------------------
+%  Parameter classes for entire set of instances
+% ----------------------------------------------------------
+ObjectClasses:
+%% -------------------------------------------------
+DataType: GeneticDistribution GeneticObject based on Real Distribution
+GeneticReal Real
+%% -------------------------------------------------
+DataType: ActionRule    Expression Action
+ExpressionAction     ParameterSet Operation Continuous 
+                     SimpleParameterizedExpression ParameterSet
+%% -------------------------------------------------
+DataType: GeneticSetOfParameters Genetic Object based on Set of Parameters
+GeneticSet ParameterSet
+%% -------------------------------------------------
+DataType: Population a real population
+RPopulation
+PopulationObject GeneticSet
+%% ---------------------------------------------------------
+DataType: PopulationCost The cost of a sample population
+PopulationRuleCostFunction 
+% Data Population Object
+RPopulation
+% Cost Expression
+ExpressionAction
+END
+% ----------------------------------------------------------
+ClassNamePairs:
+TrainInstanceNameList         KeyWords
+MaximumNumberOfIterations     Integer
+OptimizationCost              PopulationRuleCostFunction
+OptimizeObject                PopulationObject
+END
+% ----------------------------------------------------------
+%  Parameter classes for each instance
+% ----------------------------------------------------------
+ObjectClasses:
+END
+% ----------------------------------------------------------
+ClassNamePairs:
+END

@@ -1,0 +1,16 @@
+END
+Routines Initial
+AlgorithmsTest Initial#Routines
+AlgorithmOperation Initial#Routines#AlgorithmsTest Dummy
+AlgorithmTest Initial#Routines#AlgorithmsTest Test
+Numbers Initial
+END
+Initial Routines END
+Parameter Level0 END
+Test END
+Test Integer
+Param Real
+END
+ResultParam1 ResultParam2 END
+
+

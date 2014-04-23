@@ -1,0 +1,14 @@
+ObjectClasses:
+END
+ClassNamePairs:
+RunID          Integer
+TrainInstanceNameList      KeyWords
+Rule               ExpressionAction
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

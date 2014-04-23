@@ -1,0 +1,157 @@
+Expression Test
+Attributes:
+%% -------------------------------------------------
+%%     ExpPass3    NumericTree
+%% -------------------------------------------------
+Ref      Real
+%%   -------------------------------------------------
+cdb1     Real
+cdb2    Real
+cdb3    Real
+cdb4    Real
+cdb5    Real
+ck1     Real
+ck2     Real
+ck3     Real
+ck4     Real
+cw1     Real
+cw2     Real
+diameterOfRoughingRolls    Real
+pass    Real
+Two    Integer
+END
+16.5468
+
+-1.8173  0.05833 0.5752  0.9881  7.6555  
+-1.5400 0.3072  0.01515 0.0205  
+%%40.0  400.0
+40.0 800.0
+%%880.0
+450.0
+5
+2.0
+%% -------------------------------------------------
+               ( WidthModel     ( Set Breite_nach_Stich_warm_2
+                                      Breite_vor_Stich_warm_3
+                                      Dicke_nach_Stich_warm_3
+                                      Breite_nach_Stich_warm_2
+                                      Dicke_nach_Stich_warm_2
+                                      Dicke_nach_Stich_warm_3
+                                      diameterOfRoughingRolls
+               %% curWidth           
+                                     Breite_nach_Stich_warm_2
+               %% curHeight          
+                                     Dicke_nach_Stich_warm_2
+               %% curTemp            
+                                     Temperatur_3
+               %% curSpeed           
+                                     Anstichgeschwindigkeit_3
+               %% curLength          
+                                     Laenge_nach_Stich_warm_3
+               %% widthBeforeEdger   
+               %%                      Breite_vor_Stich_warm_2
+               %% widthAfterEdger    
+               %%                      Breite_nach_Stich_warm_3
+               %% widthAfterPass     
+                                     Breite_nach_Stich_warm_3
+               %% forceHG            
+                                     Walzkraft_Horizontalgeruest_3
+               %% forceLE            
+                                     Walzkraft_Egalisierungsgeruest_3
+               %% forceHE            
+                                     Walzkraft_Egalisierungsgeruest_3
+               %% finalWidth         
+                                     Breite_nach_Stich_warm_3
+               %% pass            
+                                     pass
+               )
+                             ( Set cdb1 cdb2 cdb3 cdb4 cdb5 
+                                   ck1  ck2  ck3  ck4 
+                                   cw1  cw2 )       
+               )
+%% -------------------------------------------------
+%%     ExpPass5    NumericTree
+%% -------------------------------------------------
+Ref      Real
+%%   -------------------------------------------------
+cdb1     Real
+cdb2    Real
+cdb3    Real
+cdb4    Real
+cdb5    Real
+ck1     Real
+ck2     Real
+ck3     Real
+ck4     Real
+cw1     Real
+cw2     Real
+diameterOfRoughingRolls    Real
+pass    Real
+Two    Integer
+END
+16.5468
+
+-1.877    0.063   0.441   0.989  7.591
+-1.64   0.376   0.016    0.015
+40.0  400.0
+
+450.0
+5
+2.0
+%% -------------------------------------------------
+              ( WidthModel     ( Set 
+               %% DogBone Model
+                                      Breite_nach_Stich_warm_4
+%%                                      Breite_vor_Stich_warm_5
+                                      Breite_vor_Stich_warm_5
+                                      Dicke_nach_Stich_warm_4
+               %% Kashima Model
+                                      Breite_nach_Stich_warm_4
+                                      Dicke_nach_Stich_warm_4
+                                      Dicke_nach_Stich_warm_5
+                                      diameterOfRoughingRolls
+               %% curWidth           
+                                     Breite_nach_Stich_warm_4
+%%                                     Breite_vor_Stich_warm_5
+               %% curHeight          
+                                     Dicke_nach_Stich_warm_4
+               %% curTemp            
+                                     Temperatur_5
+               %% curSpeed           
+                                     Anstichgeschwindigkeit_5
+               %% curLength          
+                                     Laenge_nach_Stich_warm_5
+               %% widthBeforeEdger   
+               %%                      Breite_vor_Stich_warm_5
+               %% widthAfterEdger    
+               %%                      Breite_nach_Stich_warm_5
+               %% widthAfterPass     
+                                     Breite_nach_Stich_warm_5
+               %% forceHG            
+                                     Walzkraft_Horizontalgeruest_5
+               %% forceLE            
+                                     Walzkraft_Egalisierungsgeruest_5
+               %% forceHE            
+                                     Walzkraft_Egalisierungsgeruest_5
+               %% finalWidth         
+                                     Breite_nach_Stich_warm_5
+               %% pass            
+                                     pass
+               )
+                             ( Set cdb1 cdb2 cdb3 cdb4 cdb5 
+                                   ck1  ck2  ck3  ck4 
+                                   cw1  cw2 )       
+               )
+
+%% -------------------------------------------------
+%%    VarsAndExps   KeyWords
+%% -------------------------------------------------
+Instance 
+Pass3Width          ExpPass3 
+Pass5Width          ExpPass5 
+END
+%% ================================================
+%%      The Instances
+%% =================================================
+%% -------------------------------------------------
+END

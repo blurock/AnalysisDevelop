@@ -1,0 +1,33 @@
+ObjectClasses:
+DataType: NValued An Assortment of Colors
+Colors Red 0.0 Green 0.5 Blue 1.0 END
+DataType: NValued True-False Logic
+TrueFalse True 1.0 False 0.0 END
+DataType: NumericPredicate A sample predicate
+NewPredicate Logical PyramidODReal
+DataType: NumericPredicate An exact Predicate
+PredicateExact TrueFalse PyramidODReal
+DataType: ExactlyEqualPredicate Equal to a value
+EqualIntegerOp TrueFalse Integer
+END
+ClassNamePairs:
+Color Colors
+VarT TrueFalse 
+Var1 Integer
+Var2 Integer
+Var3 Real
+Var4 Integer
+Diagonal LinearODReal
+GreaterThan NewPredicate
+LessThan NewPredicate
+LessThanEqualExact NewPredicate
+EqualTo NewPredicate
+EqualToVar1 EqualIntegerOp
+END
+Green True 1 2 4.1 8.45
+ODReal 0.0 F Infinity T LinearODReal 0.0 0.0 1.0 1.0
+ODReal  -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0 -1.0 1.0 1.0
+ODReal  -Infinity T +Infinity T PyramidODReal 1.0 0.0 0.0 -1.0 1.0 1.0
+ODReal  -Infinity T +Infinity T PyramidODReal 1.0 1.0 0.0  0.0 0.0 0.0
+ODReal  -Infinity T +Infinity T PyramidODReal 0.0 1.0 0.0 -1.0 0.0 1.0
+ExactlyEqualPredicate: Var1 2.0

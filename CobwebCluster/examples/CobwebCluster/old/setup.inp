@@ -1,0 +1,19 @@
+Setup Setup of Instance Names and Attribute Names
+Attributes:
+%%% InstanceNameList      KeyWords
+Instance1 Instance2 Instance3 Instance4 Instance5
+Instance6 Instance7 Instance8 Instance9 Instance10 
+Instance11 Instance12 Instance13 Instance14 Instance15
+Instance16 Instance17 Instance18 Instance19 Instance20
+Instance21 Instance22 Instance23 Instance24
+END
+%%% AttributeSpecs        KeyWords
+VarT VarC 
+Var1 Var2   
+END
+%%% TestPercentage        Real
+20.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% No Instances
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+END

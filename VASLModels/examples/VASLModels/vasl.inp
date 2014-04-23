@@ -1,0 +1,92 @@
+Expression Test
+Attributes:
+%% -------------------------------------------------
+%%     Exp    NumericTree
+%% -------------------------------------------------
+cdb1     Real
+cdb2    Real
+cdb3    Real
+cdb4    Real
+cdb5    Real
+ck1     Real
+ck2     Real
+ck3     Real
+ck4     Real
+cw1     Real
+cw2     Real
+diameterOfRoughingRolls    Real
+pass    Real
+Two    Integer
+END
+-1.877  0.063   0.441   0.989   7.591
+-1.64  0.376   0.016   0.15
+40.0  400.0
+450.0
+5
+2.0
+( WidthModel     ( Set Breite_nach_Stich_warm_4
+                       Breite_vor_Stich_warm_5
+                       Dicke_nach_Stich_warm_5
+                       Breite_nach_Stich_warm_4
+                       Dicke_nach_Stich_warm_4
+                       Dicke_nach_Stich_warm_5
+                       diameterOfRoughingRolls
+%% curWidth           
+                      Breite_nach_Stich_warm_4
+%% curHeight          
+                      Dicke_nach_Stich_warm_4
+%% curTemp            
+                      Temperatur_5
+%% curSpeed           
+                      Anstichgeschwindigkeit_5
+%% curLength          
+                      Laenge_nach_Stich_warm_5
+%% widthBeforeEdger   
+%%                      Breite_vor_Stich_warm_4
+%% widthAfterEdger    
+%%                      Breite_nach_Stich_warm_5
+%% widthAfterPass     
+                      Breite_nach_Stich_warm_5
+%% forceHG            
+                      Walzkraft_Horizontalgeruest_5
+%% forceLE            
+                      Walzkraft_Egalisierungsgeruest_5
+%% forceHE            
+                      Walzkraft_Egalisierungsgeruest_5
+%% finalWidth         
+                      Breite_nach_Stich_warm_5
+%% pass            
+                      pass
+)
+              ( Set cdb1 cdb2 cdb3 cdb4 cdb5 
+                    ck1 ck2 ck3 ck4 
+                    cw1 cw2 )       
+)
+%% -------------------------------------------------
+%%    VarsAndExps   KeyWords
+%% -------------------------------------------------
+Instance NewVariable Exp END
+%% ================================================
+%%      The Instances
+%% =================================================
+Instance: 1 Instance1    The First Instance
+True True 1 2 0.0 8.45
+0059.9 01321
+18964  044 0035.4 01293 01084 04.2 057881 01317 01314
+%% -------------------------------------------------
+Instance: 2 Instance2    The Second Instance
+False True 10 20 5.0 80.45
+0059.7  01571
+ 23027  020 0035.4 01538 01073 04.2 070157 01569 01566
+%% -------------------------------------------------
+Instance: 3 Instance3    The Third Instance
+True False 100 200 6.0 800.45
+0059.5  01559
+20419  043 0035.2 01538 01089 04.3 071433 01556 01557
+%% -------------------------------------------------
+Instance: 4 Instance4    The Fourth Instance
+False False 1000 2000 7.0 8000.45
+0059.5  01559
+20419  043 0035.2 01538 01089 04.3 071433 01556 01557
+%% -------------------------------------------------
+END

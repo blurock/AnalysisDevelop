@@ -1,0 +1,88 @@
+% ----------------------------------------------------------
+%  Parameters for entire set of instances
+% ----------------------------------------------------------
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+1000 200
+%%%%-----------------------------------------------------------------------------
+%%     ExpressionTreeAlg   AlgorithmSummary
+                                    % The name of the Algorithm
+Initial VariableGen Expression END             % The Algorithm Category
+END                                 % The Algorithm Keywords
+Calculate END                       % Algorithm Specification
+                                    % Algorithm Input Parameters
+VarsAndExps      KeyWords
+InstanceNameList KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%%%%-----------------------------------------------------------------------------
+%%%%   InstanceSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END    % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Instances END                          % Algorithm Specification
+                                              % Algorithm Input Parameters
+       InstanceNameList KeyWords              % (Name-Class Pairs)
+       TestPercentage   Real
+       END
+                                              % Algorithm Result Parameters
+       TotalInstanceNameList %%KeyWords              % (Name-Class Pairs)
+       TestInstanceNameList  %%KeyWords
+       TrainInstanceNameList %%KeyWords
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%-----------------------------------------------------------------------------
+%%%% AttributeByNameAlg    AlgorithmSummary
+       Initial InstanceAlgs END               % Algorithm Category
+       AttributesByName END                   % Algorithm KeyWords
+       Attributes END                         % Algorithm Specification
+                                              % Algorithm Input Parameters
+                                              % (Name-Class Pairs)
+        AttributeSpecs        KeyWords
+        TotalInstanceNameList KeyWords
+        END
+                                              % Algorithm Result Parameters
+       AttributeNames
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%   MatrixSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END               % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Matrix END                             % Algorithm Specification
+                                              % Algorithm Input Parameters
+       TotalInstanceNameList KeyWords
+       AttributeNames KeyWords
+       END
+                                              % Algorithm Result Parameters
+       MatrixObject                           % (Name-Class Pairs)
+       END
+%%%%-----------------------------------------------------------------------------
+%%     RuleSystemSearch     AlgorithmSummary
+                                    % The name of the Algorithm
+Initial RuleSystem END              % The Algorithm Category
+END                                 % The Algorithm Keywords
+Calculate  END                      % Algorithm Specification
+                                    % Algorithm Input Parameters
+ProductionSystem        NormalProductionSystem
+TrainInstanceNameList      KeyWords
+MaximumNumberOfNodes       Integer
+END
+                                    % Algorithm Output Parameters
+END
+%%%%-----------------------------------------------------------------------------
+%%     RuleSystemSearch     AlgorithmSummary
+                                    % The name of the Algorithm
+Initial RuleSystem END              % The Algorithm Category
+END                                 % The Algorithm Keywords
+Action  END                         % Algorithm Specification
+                                    % Algorithm Input Parameters
+Rule                       ExpressionAction
+TrainInstanceNameList      KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%%%%-----------------------------------------------------------------------------
+%  Parameters for each instance
+% ----------------------------------------------------------
+END
+

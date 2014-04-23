@@ -1,0 +1,86 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+1000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  The List of Predicates
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%   Var3.GreaterThanZero
+Predicate: Var3 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  0.0 1.0 1.0
+%%   Var3.LessThanZero
+Predicate: Var3 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 0.0 -1.0 0.0 0.0
+%%   Var3.EqualToZero
+Predicate: Var3 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 0.0 -1.0 0.0 1.0
+%%   Var1.GreaterThanZero
+Predicate: Var1 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  0.0 1.0 1.0
+%%   Var1.LessThanZero
+Predicate: Var1 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 0.0 -1.0 0.0 0.0
+%%   Var1.EqualToZero
+Predicate: Var1 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 0.0 -1.0 0.0 1.0
+%%   Var1.NotEqualToZero
+Predicate: Var1 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 1.0 -1.0 0.0 1.0
+%%   Var3.NotEqualToZero
+Predicate: Var3 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 1.0 -1.0 0.0 1.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The List of Partitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Var1.NotEqualToZero  Var1.EqualToZero                          END
+Var3.NotEqualToZero  Var3.EqualToZero                          END
+Var3.GreaterThanZero Var3.LessThanZero    Var3.EqualToZero     END
+Var1.GreaterThanZero Var1.LessThanZero    Var1.EqualToZero     END
+%% Goal.Var1
+Var1.NotEqualToZero  Var1.EqualToZero                          END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Partition.Var3       Partition.Var1       END
+%%Var1.EqualToZero END
+Goal.Var1  END
+Partition.Var3.Zero.2 Partition.Var3 END
+%% Partition.Var1.Zero.2 Partition.Var1 
+StandardEntropyAlg#ZEntropy SelectAlg#SimpleSelect Filter END
+Instance1 Instance2 Instance3 Instance4 Instance5 Instance6 Instance7
+Instance8 Instance9 
+END
+%%     DecisionTreeMinimumInstances  Real
+2
+%%     DecisionTreePartitionPercent  Real
+.1
+%%     DecisionTreeMinimumEntropy    Real
+.1
+%%     DecisionTreeMaximumNodes      Real
+3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The List of Instances
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 Instance1    The First Instance
+Red True    10.     2.0 
+Instance: 2 Instance2    The Second Instance
+Red True    8.0     4.0
+Instance: 3 Instance3    The Third Instance
+Red True    6.0     6.0
+Instance: 4 Instance4    The First Instance
+Green True  4.0     8.0
+Instance: 5 Instance5    The Second Instance
+Green True  5.0     10.0
+Instance: 6 Instance6    The Third Instance
+Green True  6.0     12.0
+Instance: 7 Instance7    The First Instance
+Blue False  10.0    2.9
+Instance: 8 Instance8    The Second Instance
+Blue False  11.0    3.0
+Instance: 9 Instance9    The Third Instance
+Blue False  12.0    3.1
+Instance: 10 Instance10    The First Instance
+White False 13      1.0
+Instance: 11 Instance11    The Second Instance
+White False 14.0    5.0
+Instance: 12 Instance12    The Third Instance
+White False 15.0    10.0
+END
+

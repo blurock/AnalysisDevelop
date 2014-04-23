@@ -1,0 +1,16 @@
+ObjectClasses:
+DataType:
+BaseType This is type One
+BaseType1
+DataType:
+BaseType This is type Two
+BaseType2
+END
+ClassNamePairs:
+Var1 BaseType
+Var2 BaseType1
+Var3 BaseType2
+Var4 BaseType1
+Var5 BaseType2
+END
+V1 V2 V3 V4 V5

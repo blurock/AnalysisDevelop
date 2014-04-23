@@ -1,0 +1,17 @@
+Expression Test
+Attributes:
+%% -------------------------------------------------
+%%    Operation   AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial VariableGen END             % The Algorithm Category
+END                                 % The Algorithm Keywords
+Expression END                      % Algorithm Specification
+                                    % Algorithm Input Parameters
+VarsAndExps   KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+END
+

@@ -1,0 +1,9 @@
+ObjectClasses:
+END
+InstanceAlgs Initial
+Algorithms Initial#InstanceAlgs
+InstanceReadASCII Initial#InstanceAlgs#Algorithms Read
+InstanceInstances Initial#InstanceAlgs#Algorithms Instances
+InstanceAttributes Initial#InstanceAlgs#Algorithms Attributes
+InstanceMatrix Initial#InstanceAlgs#Algorithms Matrix
+END

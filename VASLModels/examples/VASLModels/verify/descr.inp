@@ -1,0 +1,256 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+%%% ProductionSystem        NormalProductionSystem
+ProductionSystem:
+GeneratedNode: GeneratedNode
+NumberOfGoals: 1
+GoalResults:  
+             LogDescription
+             END
+GoalCondition:
+                ParameterSet:
+                ClassNamePairs:
+                Pass                Pass
+                CurrentPass         Pass
+                Two                 Real
+                END
+                Pass3 Pass3 2.0
+                Operation:
+                END
+                ( Done CurrentPass )
+SetOfRules:
+ClassNamePairs:
+Pass2         RuleAction
+Pass3         RuleAction
+Pass4         RuleAction
+Pass5         RuleAction
+END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%% Pass2   RuleAction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ActionRule:             ParameterSet: ClassNamePairs: END Operation:
+        ActionRuleCondition:     ParameterSet: ClassNamePairs: END Operation:
+                     END
+                    ( Pass2 CurrentPass )
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                ExpVolume_Breite_Difference_Squared     RuleExpression
+                Soll_Breite_Difference_Squared          RuleExpression
+                L.ExpVolume_Breite_Difference_Squared   RuleExpression
+                L.Soll_Breite_Difference_Squared        RuleExpression
+                LogDescription                          RuleExpression
+                CurrentPass                             RuleExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%% ExpVolume_Breite_Difference_Squared     RuleExpression
+                ParameterSet: ClassNamePairs: END Operation:
+Two     Real
+END
+2.0
+( Power ( Set Two )
+     ( -  ( * Dicke_nach_Stich_warm_2 Laenge_nach_Stich_warm_2 Breite_nach_Stich_warm_2 )
+          ( * Dicke_nach_Stich_warm_1 Laenge_nach_Stich_warm_1 Breite_nach_Stich_warm_1 )
+     ) )
+%%%%%%%%%%%%%%%%%%%%%%%% Soll_Breite_Difference_Squared          RuleExpression
+                ParameterSet: ClassNamePairs: END Operation:
+Two  Real
+END
+2.0
+( Power ( Set Two )
+        ( - Breite_nach_Stich_warm_2  Sollbreite_Vorstreifen ) 
+ )
+%%%%%%%%%%%%%%%%%%%%%%%% L.ExpVolume_Breite_Difference_Squared   RuleExpression
+                        ParameterSet: ClassNamePairs: END Operation:
+                        StdDev    Real
+                        END
+                        4.6e+12
+                  ( LessThanZero ( - ( / Volume_Breite_Difference_Squared  StdDev ) Two ) )
+%%%%%%%%%%%%%%%%%%%%%%%% L.Soll_Breite_Difference_Squared        RuleExpression
+                        ParameterSet: ClassNamePairs: END Operation:
+                        StdDev    Real
+                        END
+                        107
+                  ( LessThanZero ( - ( / Soll_Breite_Difference_Squared  StdDev ) Two ) )
+%%%%%%%%%%%%%%%%%%%%%%%% Pass1Values                             ParameterSet
+                ParameterSet: ClassNamePairs: END Operation:
+END
+( Verify ( Set L.ExpVolume1_Breite_Difference_Squared L.Soll2_Breite_Difference_Squared ) ) 
+%%%%%%%%%%%%%%%%%%%%%%%% Done                             ParameterSet
+                ParameterSet: ClassNamePairs: END Operation:
+Done Pass
+END
+Done
+( AND Done )
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%% Pass3   RuleAction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ActionRule:             ParameterSet: ClassNamePairs: END Operation:
+        ActionRuleCondition:     ParameterSet: ClassNamePairs: END Operation:
+                     END
+                    ( Pass3 CurrentPass )
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                Volume_Breite_Difference_Squared       RuleExpression
+                Soll_Breite_Difference_Squared         RuleExpression
+                L.ExpVolume_Breite_Difference_Squared  RuleExpression
+                L.Soll_Breite_Difference_Squared       RuleExpression
+                LogDescription                         RuleExpression
+                CurrentPass                            RuleExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%% ExpVolume1_Breite_Difference_Squared   RuleExpression
+                ParameterSet: ClassNamePairs: END Operation:
+Two     Real
+END
+2.0
+( Power ( Set Two )
+     ( -  ( * Dicke_nach_Stich_warm_2 Laenge_nach_Stich_warm_2 Breite_nach_Stich_warm_2 )
+          ( * Dicke_nach_Stich_warm_3 Laenge_nach_Stich_warm_3 Breite_nach_Stich_warm_3 )
+     ) )
+%%%%%%%%%%%%%%%%%%%%%%%% Soll_Breite_Difference_Squared          RuleExpression
+                ParameterSet: ClassNamePairs: END Operation:
+Two  Real
+END
+2.0
+( Power ( Set Two )
+        ( - Breite_nach_Stich_warm_3  Sollbreite_Vorstreifen ) 
+ )
+%%%%%%%%%%%%%%%%%%%%%%%% L.ExpVolume_Breite_Difference_Squared   RuleExpression
+                        ParameterSet: ClassNamePairs: END Operation:
+                        StdDev    Real
+                        END
+                        2.0e+13
+                  ( LessThanZero ( - ( / Volume_Breite_Difference_Squared  StdDev ) Two ) )
+%%%%%%%%%%%%%%%%%%%%%%%% L.Soll_Breite_Difference_Squared        RuleExpression
+                        ParameterSet: ClassNamePairs: END Operation:
+                        StdDev    Real
+                        END
+                        107
+                  ( LessThanZero ( - ( / Soll_Breite_Difference_Squared  StdDev ) Two ) )
+%%%%%%%%%%%%%%%%%%%%%%%% Pass3Values                             ParameterSet
+                ParameterSet: ClassNamePairs: END Operation:
+END
+( Verify ( Set L.ExpVolume_Breite_Difference_Squared L.Soll_Breite_Difference_Squared ) )
+%%%%%%%%%%%%%%%%%%%%%%%% Done                             ParameterSet
+                ParameterSet: ClassNamePairs: END Operation:
+Done Pass
+END
+Done
+( AND Done )
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%% Pass4   RuleAction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ActionRule:             ParameterSet: ClassNamePairs: END Operation:
+        ActionRuleCondition:     ParameterSet: ClassNamePairs: END Operation:
+                     END
+                    ( Pass4 CurrentPass )
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                ExpVolume_Breite_Difference_Squared     RuleExpression
+                Soll_Breite_Difference_Squared          RuleExpression
+                L.ExpVolume_Breite_Difference_Squared   RuleExpression
+                L.Soll_Breite_Difference_Squared        RuleExpression
+                LogDescription                          RuleExpression
+                CurrentPass                             RuleExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%% ExpVolume1_Breite_Difference_Squared   RuleExpression
+                ParameterSet: ClassNamePairs: END Operation:
+Two     Real
+END
+2.0
+( Power ( Set Two )
+     ( -  ( * Dicke_nach_Stich_warm_3 Laenge_nach_Stich_warm_3 Breite_nach_Stich_warm_3 )
+          ( * Dicke_nach_Stich_warm_4 Laenge_nach_Stich_warm_4 Breite_nach_Stich_warm_4 )
+     ) )
+%%%%%%%%%%%%%%%%%%%%%%%% Soll_Breite_Difference_Squared          RuleExpression
+                ParameterSet: ClassNamePairs: END Operation:
+Two  Real
+END
+2.0
+( Power ( Set Two )
+        ( - Breite_nach_Stich_warm_4  Sollbreite_Vorstreifen ) 
+ )
+%%%%%%%%%%%%%%%%%%%%%%%% L.ExpVolume_Breite_Difference_Squared   RuleExpression
+                        ParameterSet: ClassNamePairs: END Operation:
+                        StdDev    Real
+                        END
+                        1.4052e+14
+                  ( LessThanZero ( - ( / Volume_Breite_Difference_Squared  StdDev ) Two ) )
+%%%%%%%%%%%%%%%%%%%%%%%% L.Soll_Breite_Difference_Squared        RuleExpression
+                        ParameterSet: ClassNamePairs: END Operation:
+                        StdDev    Real
+                        END
+                        44.5638
+                  ( LessThanZero ( - ( / Soll_Breite_Difference_Squared  StdDev ) Two ) )
+%%%%%%%%%%%%%%%%%%%%%%%% Pass3Values                             ParameterSet
+                ParameterSet: ClassNamePairs: END Operation:
+END
+( Verify ( Set L.ExpVolume_Breite_Difference_Squared L.Soll_Breite_Difference_Squared ) )
+%%%%%%%%%%%%%%%%%%%%%%%% Done                             ParameterSet
+                ParameterSet: ClassNamePairs: END Operation:
+Done Pass
+END
+Done
+( AND Done )
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%% Pass5   RuleAction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ActionRule:             ParameterSet: ClassNamePairs: END Operation:
+        ActionRuleCondition:     ParameterSet: ClassNamePairs: END Operation:
+                     END
+                    ( Pass5 CurrentPass )
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                ExpVolume_Breite_Difference_Squared   RuleExpression
+                Soll_Breite_Difference_Squared        RuleExpression
+                L.ExpVolume_Breite_Difference_Squared   RuleExpression
+                L.Soll_Breite_Difference_Squared        RuleExpression
+                LogDescription                          RuleExpression
+                CurrentPass                             RuleExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%% ExpVolume1_Breite_Difference_Squared   RuleExpression
+                ParameterSet: ClassNamePairs: END Operation:
+Two     Real
+END
+2.0
+( Power ( Set Two )
+     ( -  ( * Dicke_nach_Stich_warm_4 Laenge_nach_Stich_warm_4 Breite_nach_Stich_warm_4 )
+          ( * Dicke_nach_Stich_warm_5 Laenge_nach_Stich_warm_5 Breite_nach_Stich_warm_5 )
+     ) )
+%%%%%%%%%%%%%%%%%%%%%%%% Soll_Breite_Difference_Squared          RuleExpression
+                ParameterSet: ClassNamePairs: END Operation:
+Two  Real
+END
+2.0
+( Power ( Set Two )
+        ( - Breite_nach_Stich_warm_5  Sollbreite_Vorstreifen ) 
+ )
+%%%%%%%%%%%%%%%%%%%%%%%% L.ExpVolume_Breite_Difference_Squared   RuleExpression
+                        ParameterSet: ClassNamePairs: END Operation:
+                        StdDev    Real
+                        END
+                        1.4052e+14
+                  ( LessThanZero ( - ( / Volume_Breite_Difference_Squared  StdDev ) Two ) )
+%%%%%%%%%%%%%%%%%%%%%%%% L.Soll_Breite_Difference_Squared        RuleExpression
+                        ParameterSet: ClassNamePairs: END Operation:
+                        StdDev    Real
+                        END
+                        21.8859
+                  ( LessThanZero ( - ( / Soll_Breite_Difference_Squared  StdDev ) Two ) )
+%%%%%%%%%%%%%%%%%%%%%%%% Pass5Values                             ParameterSet
+                ParameterSet: ClassNamePairs: END Operation:
+END
+( Verify ( Set L.ExpVolume_Breite_Difference_Squared L.Soll_Breite_Difference_Squared ) )
+%%%%%%%%%%%%%%%%%%%%%%%% Done                             ParameterSet
+                ParameterSet: ClassNamePairs: END Operation:
+Done Pass
+END
+Done
+( AND Done )
+%% ---------------------------------------------
+%% MaximumNumberOfNodes    Integer
+%% ---------------------------------------------
+3
+END

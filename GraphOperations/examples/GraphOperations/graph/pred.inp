@@ -1,0 +1,39 @@
+======================= Simple Predicate Objects =======================
+Attributes:
+%% =====================================================================
+%% -------------------------------------------------
+%% GreaterThanZero      FuzzyPredicate
+%% -------------------------------------------------
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 0.0 1.0  -1.0 0.0 0.0
+%% -------------------------------------------------
+%% LessThanZero         FuzzyPredicate
+%% -------------------------------------------------
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 0.0 -1.0 0.0 0.0
+%% -------------------------------------------------
+%% EqualToZero          FuzzyPredicate
+%% -------------------------------------------------
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 0.0 -1.0 0.0 1.0
+%% -------------------------------------------------
+%%    PDescription     Description
+%% -------------------------------------------------
+Description:
+GreaterThanThree            FuzzyParameterPredicate
+LessThanThree               FuzzyParameterPredicate
+EqualToThree                FuzzyParameterPredicate
+END
+Predicate:  Var1 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 0.0 1.0  -1.0 0.0 0.0
+Predicate:  Var1 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 0.0  -1.0 0.0 0.0
+Predicate:  Var1 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 0.0  -1.0 0.0 1.0
+%% -------------------------------------------------
+%%    PDescription     Description
+%% -------------------------------------------------
+LogicDescription:
+L1       TrueFalse
+L2       Continuous
+END
+True 1.0
+%% =====================================================================
+END

@@ -1,0 +1,70 @@
+% ----------------------------------------------------------
+%  Parameters for entire set of instances
+% ----------------------------------------------------------
+InstanceSet  ===================== A Set of Optimization Parameters ==========================
+Attributes:
+%% -------------------------------------------------
+%% TrainInstanceNameList KeyWords
+%% -------------------------------------------------
+Instance1 Instance2 Instance3 Instance4 
+Instance5 Instance6 Instance7 Instance8 
+Instance9 Instance10 Instance11 Instance12 
+END
+%% -------------------------------------------------
+% MaximumNumberOfIterations
+10
+%% -------------------------------------------------
+%% OptimizeCost PopulationCostFunction
+CostFunction:
+Genetic:
+%% Genetic Objects in GeneticSet
+GeneticParameters:
+P1  GeneticReal
+END
+P1 Distribution_P1
+Population: 50
+ActionRule:
+                ParameterSet:
+                ClassNamePairs:
+                P1   Real
+                Ref     Real
+                END
+                0.0 0.0
+                Operation:
+
+          ActionRuleCondition:
+
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+                Ref     Real
+                END
+                10.0
+                ( LessThanZero ( - Ref Var3 ) )
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                Diff    SimpleParameterizedExpression
+                Cost    SimpleParameterizedExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%%Action1: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                          END
+        ( - P1 Var3 )
+%%%%%%%%%%%%%%%%%%%%%%%%Action1: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                          Zero               Real
+                          END
+                          0.0
+ ( - Zero ( * Diff Diff ) )
+%% =================================================
+%%      No  Instance Data
+%% =================================================
+END

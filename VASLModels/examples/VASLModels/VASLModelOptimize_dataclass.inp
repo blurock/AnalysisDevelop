@@ -1,0 +1,14 @@
+ObjectClasses: 
+
+END 
+ClassNamePairs: 
+AttributeNames        KeyWords
+TheInstanceMatrix     InstanceMatrix 
+TheFunctionToOptimize WidthModelOptimization  
+%% TheFunctionToOptimize TestFunction1 !!! change this also in the other *.inp file!!!
+TheUpperLower SimAnnUpperLower 
+END 
+ObjectClasses: 
+END 
+ClassNamePairs: 
+END 

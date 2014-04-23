@@ -1,0 +1,17 @@
+PredicateSet  ===================== Predicate Information ==========================
+Attributes:
+%% GoalNameList                    KeyWords
+Var1.NotEqualToZero  Var1.EqualToZero    END
+%%   Var1.EqualToZero  FuzzyParameterPredicate
+Predicate: Var1 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 0.0 -1.0 0.0 1.0
+%%   Var1.NotEqualToZero   FuzzyParameterPredicate
+Predicate: Var1 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 1.0 -1.0 0.0 1.0
+%% CriticalPointsFileName              KeyWords
+CriticalPointSet.inp    END
+%% CriticalPointsRootName              KeyWords
+Root                    END
+% PartititionTypesFromPoints           KeyWords
+LTGT                END
+END

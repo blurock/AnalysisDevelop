@@ -1,0 +1,11 @@
+ObjectClasses:
+END
+ClassNamePairs:
+InstanceNameList      KeyWords
+AttributeSpecs        KeyWords
+TestPercentage        Real
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END

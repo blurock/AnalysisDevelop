@@ -1,0 +1,34 @@
+% ----------------------------------------------------------
+%  Parameter classes for entire set of instances
+% ----------------------------------------------------------
+ObjectClasses:
+%% ---------------------------------------------------------
+DataType: PopulationCost The cost of a sample population
+PopulationRuleCostFunction 
+% Data Population Object
+RPopulation
+% Cost Expression
+ExpressionAction
+END
+% ----------------------------------------------------------
+ClassNamePairs:
+Distribution_P1               AttributeDistribution
+Distribution_P2               AttributeDistribution
+Distribution_P3               AttributeDistribution
+InstanceNameList              KeyWords
+TestPercentage                Real
+AttributeSpecs                KeyWords
+RootName                      KeyWords
+MaximumNumberOfIterations     Integer
+OptimizationCost              PopulationRuleCostFunction
+OptimizeObject                PopulationObject
+%% Rule1                         ExpressionAction
+END
+% ----------------------------------------------------------
+%  Parameter classes for each instance
+% ----------------------------------------------------------
+ObjectClasses:
+END
+% ----------------------------------------------------------
+ClassNamePairs:
+END

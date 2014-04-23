@@ -1,0 +1,34 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: NodeEdgeOperation The Node and Edge Operation
+NodeEdgeLogicDescription DoOperation
+%% -------------------------------------------------
+DataType: GraphElementMatch The Node and Edge Matching Operation
+NodeEdgeMatch LogicalDescriptionCompare
+%% -------------------------------------------------
+DataType: IntrinsicExpression  A Numeric Tree
+GraphExpression
+LDescription   NodeEdgeLogicDescription
+Match          NodeEdgeMatch
+Neighbors      GraphNeighbors
+END
+NodeEdgeOperation: LogicDescription NodeOperation
+GraphElementMatch: LogicDescription Matches 0.4 NodeMatch
+GraphNeighbors:    Matches: Matches Pairs: Pair
+%% -------------------------------------------------
+DataType: ParameterizedExpression    A new numeric parameterized function
+StandardExpression   ParameterSet GraphExpression Object
+END
+%% -------------------------------------------------
+END
+ClassNamePairs:
+VarsAndExps               KeyWords
+SimpleNodeDescription     ContinuousDescription
+Expression                GraphExpression
+NodeDescription           ExpDescription
+END
+ObjectClasses:
+%% -------------------------------------------------
+END
+ClassNamePairs:
+END

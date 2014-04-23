@@ -1,0 +1,16 @@
+ObjectClasses:
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+MaximumNumberOfIterations    Integer
+Distribution_C                AttributeDistribution
+OptimizationCost              PopulationCostFunction
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

@@ -1,0 +1,358 @@
+@defop {Procedure on} {xxClass_35xx} {BaseDataAlgorithmRun} 
+ empty constructor: @code{BaseDataAlgorithmRun()}
+
+
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Procedure on} {xxClass_36xx} {BaseDataAlgorithmRun} 
+ copy constructor: @code{BaseDataAlgorithmRun(@var{data})}
+
+@table @code
+@item @var{data}: xxType_61xx
+ data to be copied
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Procedure on} {xxClass_37xx} {Read} 
+ Read in BaseDataAlgorithmRun: @code{Read(@var{in}, @var{objc})}
+
+@table @code
+@item @var{in}: xxType_62xx
+ The input stream
+@item @var{objc}: xxType_63xx
+ The class definition
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Procedure on} {xxClass_38xx} {Read} 
+ Read in BaseDataAlgorithmRun: @code{Read(@var{in}, @var{objc}, @var{name})}
+
+@table @code
+@item @var{in}: xxType_64xx
+ The input stream
+@item @var{objc}: xxType_65xx
+ The class definition
+@item @var{name}: xxType_66xx
+ The name of the object (already assigned)
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_39xx} {print} 
+ BaseDataAlgorithmRun: @code{@var{out1} = print(@var{out})}
+
+@table @code
+@item @var{out}, @var{out1}: xxType_68xx
+ The output buffer
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_40xx} {Clone} 
+ BaseDataAlgorithmRun: @code{@var{obj} = Clone()}
+
+@table @code
+@item @var{obj}: xxType_69xx
+ The copy
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Procedure on} {xxClass_41xx} {CopyClone} 
+BaseDataAlgorithmRun: @code{CopyClone(@var{obj})}
+
+@table @code
+@item @var{obj}: xxType_70xx
+ The object to be copied
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_42xx} {EncodeThis} 
+ BaseDataAlgorithmRun: @code{@var{ans} = EncodeThis(@var{buffer})}
+
+@table @code
+@item @var{buffer}: xxType_71xx
+ The buffer
+@item @var{ans}: xxType_72xx
+ True if successful
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_43xx} {DecodeThis} 
+ BaseDataAlgorithmRun: @code{@var{ans} = DecodeThis(@var{buffer})}
+
+@table @code
+@item @var{buffer}: xxType_73xx
+ The buffer
+@item @var{ans}: xxType_74xx
+ True if successful
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_44xx} {AddParameter} 
+ Add attribute to intermediate results: @code{@var{ans} = AddParameter(@var{obj})}
+
+@table @code
+@item @var{obj}: xxType_75xx
+ Attribute to add to intermediate results
+@item @var{ans}: xxType_76xx
+ True if successful
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_45xx} {ParameterValue} 
+ get parameter object: @code{@var{obj} = ParameterValue(@var{name})}
+
+@table @code
+@item @var{name}: xxType_77xx
+ The name of the parameter
+@item @var{obj}: xxType_78xx
+ The parameter object
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_46xx} {ParameterInList} 
+ is the parameter available?: @code{@var{ans} = ParameterInList(@var{name})}
+
+@table @code
+@item @var{name}: xxType_79xx
+ The name of the parameter
+@item @var{ans}: xxType_80xx
+ True if available
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Procedure on} {xxClass_47xx} {Instantiate} 
+ instantiate AlgorithmRun: @code{Instantiate(@var{summary}, @var{runclass})}
+
+@table @code
+@item @var{summary}: xxType_81xx
+ The AlgorithmSummary information
+@item @var{runclass}: xxType_82xx
+ The AlgorithmRunClass information
+
+@end table
+The AlgorithmRun is instantiated by instantiating the 
+selected SubAlgorithms according to the keywords.
+
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_48xx} {Run} 
+ run algorithm: @code{@var{ans} = Run(@var{algorithm}, @var{instances}, @var{instancesclass}, @var{runclass})}
+
+@table @code
+@item @var{algorithm}: xxType_83xx
+ The algorithm category
+@item @var{instances}: xxType_84xx
+ The set of instances
+@item @var{instancesclass}: xxType_85xx
+ The classes
+@item @var{runclass}: xxType_86xx
+ The class information of the run
+@item @var{ans}: xxType_87xx
+ true if successful
+
+@end table
+The algorithm category is specifies the algorithm type.  For this
+particular run, a specific algorithm was selected and will be executed.
+The algorithm name is without the base category information of this run
+(The full name will be built).  That means to use this, the subtree 
+structure of the algorithm selection tree must be known.
+
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_49xx} {Run} 
+ run a sequence of algorithms: @code{@var{ans} = Run(@var{algorithms}, @var{instances}, @var{instancesclass}, @var{runclass})}
+
+@table @code
+@item @var{algorithms}: xxType_88xx
+ The list of algorithm categories (see Run(algorithm,...) for name details
+@item @var{instances}: xxType_89xx
+ The set of instances
+@item @var{instancesclass}: xxType_90xx
+ The classes
+@item @var{runclass}: xxType_91xx
+ The class information of the run
+@item @var{ans}: xxType_92xx
+ true if successful
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_50xx} {Run} 
+ run the first algorithm: @code{@var{ans} = Run(@var{instances}, @var{instancesclass}, @var{runclass})}
+
+@table @code
+@item @var{instances}: xxType_93xx
+ The set of instances
+@item @var{instancesclass}: xxType_94xx
+ The classes
+@item @var{runclass}: xxType_95xx
+ The classes of the run objects
+@item @var{ans}: xxType_96xx
+ true if successful
+
+@end table
+This routine defaults to running the first algorithm listed
+(The rest of the algorithms are considered auxillary)
+
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_51xx} {BuildFullAlgorithmCategory} 
+ full name from category name: @code{@var{fullname} = BuildFullAlgorithmCategory(@var{cat})}
+
+@table @code
+@item @var{category}: xxType_97xx
+ The algorithm category
+@item @var{fullname}: xxType_98xx
+ The name under which the algorithm is stored in the list of algorithms
+
+@end table
+The algorithms are stored under their full path names.  The front part of the path 
+has to be added get the corresponding category name
+
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_52xx} {GetListOfSubAlgorithms} 
+ list of subalgorithms: @code{@var{names} = GetListOfSubAlgorithms()}
+
+@table @code
+@item @var{names}: xxType_99xx
+ The list of names
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_53xx} {GetSubAlgorithm} 
+ the subalgorithm: @code{@var{subalg} = GetSubAlgorithm(@var{name})}
+
+@table @code
+@item @var{name}: xxType_100xx
+ The name of the subalgorithm category
+@item @var{subalg}: xxType_101xx
+ The subalgorithm
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_54xx} {TransferInputParameters} 
+ transfer to current run: @code{@var{notfound} = TransferInputParameters(@var{run}, @var{instances})}
+
+@table @code
+@item @var{run}: xxType_102xx
+ The run information
+@item @var{instances}: xxType_103xx
+ The set of instances
+@item @var{notfound}: xxType_104xx
+ The parameters not found
+
+@end table
+This transfers parameters that are to be used in the current run.
+
+This transfers the input parameters
+from the input run to the current run.  The parameters
+that are transfered are those listed in the summary of the 
+current run.
+
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_55xx} {TransferBackResultParameters} 
+ return result parameters: @code{@var{notfound} = TransferBackResultParameters(, @var{instances})}
+
+@table @code
+@item @var{run}: xxType_105xx
+ The run information
+@item @var{instances}: xxType_106xx
+ The set of instances
+@end table
+notfound: Those parameters not found (i.e. not generated)
+
+This transfers the information created by the current run to 
+that of the listed run.
+
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Procedure on} {xxClass_56xx} {PrintParameters} 
+ print out list of parameters: @code{PrintParameters(@var{out})}
+
+@table @code
+@item @var{out}: xxType_107xx
+ The output stream
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+

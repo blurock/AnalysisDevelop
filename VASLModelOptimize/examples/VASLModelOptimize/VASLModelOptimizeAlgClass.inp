@@ -1,0 +1,46 @@
+ObjectClasses:
+DataType: AlgorithmRun  A sample goal run class
+TestGoalRun
+% **********************************************************
+% The Definition of the GoalRunClass
+% **********************************************************
+%
+% ----------------------------------------------------------
+InstanceAlgs Initial
+             Algorithms Initial#InstanceAlgs
+                        InstanceReadASCIIAlg Initial#InstanceAlgs#Algorithms Read
+                        InstanceInstancesAlg Initial#InstanceAlgs#Algorithms Instances
+                        InstanceAttributesAlg Initial#InstanceAlgs#Algorithms Attributes
+                        InstanceMatrixAlg Initial#InstanceAlgs#Algorithms Matrix
+SAAlgs   Initial
+         Algorithms Initial#SAAlgs
+                    SimulatedAnnealingAlgorithm Initial#SAAlgs#Algorithms SimAnn 
+VASLAlgs Initial
+         Algorithms Initial#VASLAlgs
+                    WidthModelMatrixSetUp Initial#VASLAlgs#Algorithms VASLMatrix 
+% StatisticsAlgs  Initial 
+%                      Distribution Initial#StatisticsAlgs
+%                      DistributionAlgorithm Initial#StatisticsAlgs#Distribution Calculate
+END 
+END
+ClassNamePairs:
+RunID     Integer
+RootName  KeyWords
+ReadInstancesAlg                       AlgorithmSummary
+InstanceSetUpAlg                       AlgorithmSummary
+AttributeSetUpAlg                      AlgorithmSummary
+AttributeByTypeAlg                     AlgorithmSummary
+AttributeByNameAlg                     AlgorithmSummary
+MatrixSetUpAlg                         AlgorithmSummary
+MatrixSetUpAlg10Percents               AlgorithmSummary
+SATestAlg                              AlgorithmSummary
+SAOptAlg                              AlgorithmSummary
+
+% DistributionAlg                        AlgorithmSummary
+
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END
+

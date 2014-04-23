@@ -1,0 +1,243 @@
+Expression Test
+Attributes:
+%% -------------------------------------------------
+%% LogicDescriptionExp        VerifyExpression
+%% -------------------------------------------------
+PredicateDescription       ExpDescription
+END
+  %%    ParameterizedDescription     ExpDescription
+        DescriptionExpressions:
+        ParameterSet:
+        ClassNamePairs:
+        Bottom   Real
+        Top      Real
+        StdMultFactorShift   Real
+        StdMultFactorBottom  Real
+        END
+        0.0 1.0  1.0 2.0
+        Operation:
+        Post: NoPostOperation
+        BeginDescription:
+                ClassNamePairs:
+                OriginalPass5MeasuredDiff_Check              PVerifyExpression
+                Pass3WidthDiff_Check                         PVerifyExpression
+                Pass5MeasuredDiff_Check                      PVerifyExpression
+                Pass5WidthDiff_Check                         PVerifyExpression
+                END
+                 %%%%%   OriginalPass5MeasuredDiff_Check              PVerifyExpression
+                        ParameterSet: ClassNamePairs: END Operation:
+                        Average  Real
+                        Std   Real
+                        END
+                        5.63758 12.0552
+                     ( GenericPredicate ( Set Top Top Bottom
+                                            ( + Average ( * StdMultFactorShift Std ) )
+                                            ( + Average ( * StdMultFactorShift Std ) )
+                                            ( + Average ( * StdMultFactorBottom Std ) ) )
+                               OriginalPass5MeasuredDiff )
+                 %%%%%   Pass3WidthDiff_Check              PVerifyExpression
+                        ParameterSet: ClassNamePairs: END Operation:
+                        Average  Real
+                        Std   Real
+                        END
+                        157.982 53.9199
+                     ( GenericPredicate ( Set Top Top Bottom
+                                            ( + Average ( * StdMultFactorShift Std ) )
+                                            ( + Average ( * StdMultFactorShift Std ) )
+                                            ( + Average ( * StdMultFactorBottom Std ) ) )
+                               Pass3WidthDiff )
+                 %%%%%   Pass5MeasuredDiff_Check              PVerifyExpression
+                        ParameterSet: ClassNamePairs: END Operation:
+                        Average  Real
+                        Std   Real
+                        END
+                        8.49487 15.8724
+                     ( GenericPredicate ( Set Top Top Bottom
+                                            ( + Average ( * StdMultFactorShift Std ) )
+                                            ( + Average ( * StdMultFactorShift Std ) )
+                                            ( + Average ( * StdMultFactorBottom Std ) ) )
+                               Pass5MeasuredDiff )
+                 %%%%%   Pass5WidthDiff_Check              PVerifyExpression
+                        ParameterSet: ClassNamePairs: END Operation:
+                        Average  Real
+                        Std   Real
+                        END
+                        2.73044 3.42202
+                     ( GenericPredicate ( Set Top Top Bottom
+                                            ( + Average ( * StdMultFactorShift Std ) )
+                                            ( + Average ( * StdMultFactorShift Std ) )
+                                            ( + Average ( * StdMultFactorBottom Std ) ) )
+                               Pass5WidthDiff )
+        EndDescription:
+        ( Do PredicateDescription INSTANCE_VALUES )
+%% -------------------------------------------------
+%%    VarsAndExps   KeyWords
+%% -------------------------------------------------
+Instance LogicDescription LogicDescriptionExp END
+%% -------------------------------------------------
+%%    VerificationOperation                    StandardVerify
+%% -------------------------------------------------
+VerifyOperation: 
+IndividualCutOff:  .90
+TotalCutOff:       .90
+%% -------------------------------------------------
+%%    LogicalDescriptionNames   KeyWords
+%% -------------------------------------------------
+VerificationError LogicDescription END
+%% -------------------------------------------------
+%%    InstanceNames             KeyWords
+%% -------------------------------------------------
+ BandNumber425136
+ BandNumber425138
+ BandNumber425139
+ BandNumber425140
+ BandNumber425141
+ BandNumber425142
+ BandNumber425143
+ BandNumber425144
+ BandNumber425145
+ BandNumber425146
+ BandNumber425147
+ BandNumber425148
+ BandNumber425149
+ BandNumber425150
+ BandNumber425151
+ BandNumber425152
+ BandNumber425153
+ BandNumber425154
+ BandNumber425155
+ BandNumber425156
+ BandNumber425157
+ BandNumber425158
+ BandNumber425159
+ BandNumber425160
+ BandNumber425161
+ BandNumber425162
+ BandNumber425163
+ BandNumber425164
+ BandNumber425165
+ BandNumber425166
+ BandNumber425167
+ BandNumber425168
+ BandNumber425169
+ BandNumber425170
+ BandNumber425171
+ BandNumber425172
+ BandNumber425173
+ BandNumber425174
+ BandNumber425175
+ BandNumber425176
+ BandNumber425177
+ BandNumber425178
+ BandNumber425179
+ BandNumber425180
+ BandNumber425181
+ BandNumber425182
+ BandNumber425183
+ BandNumber425184
+ BandNumber425185
+ BandNumber425186
+ BandNumber425187
+ BandNumber425188
+ BandNumber425189
+ BandNumber425190
+ BandNumber425191
+ BandNumber425192
+ BandNumber425193
+ BandNumber425194
+ BandNumber425195
+ BandNumber425196
+ BandNumber425197
+ BandNumber425198
+ BandNumber425199
+ BandNumber425200
+ BandNumber425201
+ BandNumber425202
+ BandNumber425203
+ BandNumber425204
+ BandNumber425205
+ BandNumber425206
+ BandNumber425207
+ BandNumber425208
+ BandNumber425209
+ BandNumber425210
+ BandNumber425211
+ BandNumber425212
+ BandNumber425213
+ BandNumber425214
+ BandNumber428092
+ BandNumber428093
+ BandNumber428544
+ BandNumber428546
+ BandNumber428547
+ BandNumber428548
+ BandNumber428549
+ BandNumber428550
+ BandNumber428551
+ BandNumber428552
+ BandNumber428554
+ BandNumber428555
+ BandNumber428556
+ BandNumber428557
+ BandNumber428558
+ BandNumber428559
+ BandNumber428560
+ BandNumber428561
+ BandNumber428562
+ BandNumber428563
+ BandNumber428564
+ BandNumber428568
+ BandNumber428569
+ BandNumber428570
+ BandNumber428571
+ BandNumber428573
+ BandNumber428574
+ BandNumber428575
+ BandNumber428576
+ BandNumber428577
+ BandNumber428578
+ BandNumber428579
+ BandNumber428580
+ BandNumber428581
+ BandNumber428583
+ BandNumber428584
+ BandNumber428585
+ BandNumber428586
+ BandNumber428587
+ BandNumber428588
+ BandNumber428589
+ BandNumber428590
+ BandNumber428591
+ BandNumber428592
+ BandNumber428593
+ BandNumber428594
+ BandNumber428595
+ BandNumber428598
+ BandNumber428612
+ BandNumber428613
+ BandNumber428616
+ BandNumber428617
+ BandNumber428618
+ BandNumber428619
+ BandNumber428620
+ BandNumber428621
+ BandNumber428624
+ BandNumber428625
+ BandNumber428626
+ BandNumber428627
+ BandNumber428628
+ BandNumber428629
+ BandNumber428630
+ BandNumber428635
+ BandNumber428642
+ BandNumber428643
+ BandNumber428645
+ BandNumber428646
+ BandNumber428647
+ BandNumber428648
+ BandNumber428649
+END
+%% =================================================
+%%      The Instances
+%% =================================================
+END

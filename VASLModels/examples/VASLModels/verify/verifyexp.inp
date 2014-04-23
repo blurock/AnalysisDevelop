@@ -1,0 +1,148 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+%% 1-------------------------------------------------
+%%     ExpVolume1_Breite_Difference_Squared
+%% 1-------------------------------------------------
+Two     Real
+END
+2.0
+( Power ( Set Two )
+     ( -  ( * Dicke_nach_Stich_warm_2 Laenge_nach_Stich_warm_2 Breite_nach_Stich_warm_2 )
+          ( * Dicke_nach_Stich_warm_1 Laenge_nach_Stich_warm_1 Breite_nach_Stich_warm_1 )
+     ) )
+%% 2-------------------------------------------------
+%%     ExpVolume2_Breite_Difference_Squared
+%% 2-------------------------------------------------
+Two Real
+END
+2.0
+( Power ( Set Two )
+     ( -  ( * Dicke_nach_Stich_warm_2 Laenge_nach_Stich_warm_2 Breite_nach_Stich_warm_2 )
+          ( * Dicke_nach_Stich_warm_3 Laenge_nach_Stich_warm_3 Breite_nach_Stich_warm_3 )
+     ) )
+%% 3-------------------------------------------------
+%%     ExpVolume3_Breite_Difference_Squared
+%% 3-------------------------------------------------
+Two Real
+END
+2.0
+( Power ( Set Two )
+     ( -  ( * Dicke_nach_Stich_warm_3 Laenge_nach_Stich_warm_3 Breite_nach_Stich_warm_3 )
+          ( * Dicke_nach_Stich_warm_4 Laenge_nach_Stich_warm_4 Breite_nach_Stich_warm_4 )
+     ) )
+%% 4-------------------------------------------------
+%%     ExpVolume4_Breite_Difference_Squared
+%% 4-------------------------------------------------
+Two Real
+END
+2.0
+( Power ( Set Two )
+     ( -  ( * Dicke_nach_Stich_warm_4 Laenge_nach_Stich_warm_4 Breite_nach_Stich_warm_4 )
+          ( * Dicke_nach_Stich_warm_5 Laenge_nach_Stich_warm_5 Breite_nach_Stich_warm_5 )
+     ) )
+%% 5-------------------------------------------------
+%%     Soll1_Breite_Difference_Squared
+%% -------------------------------------------------
+Two  Real
+END
+2.0
+( Power ( Set Two )
+        ( - Breite_nach_Stich_warm_1  Sollbreite_Vorstreifen ) 
+ )
+%% -------------------------------------------------
+%%     Soll2_Breite_Difference_Squared
+%% -------------------------------------------------
+Two  Real
+END
+2.0
+( Power ( Set Two )
+        ( - Breite_nach_Stich_warm_2  Sollbreite_Vorstreifen ) 
+ )
+%% -------------------------------------------------
+%%     Soll3_Breite_Difference_Squared
+%% -------------------------------------------------
+Two  Real
+END
+2.0
+( Power ( Set Two )
+        ( - Breite_nach_Stich_warm_3  Sollbreite_Vorstreifen ) 
+ )
+%% -------------------------------------------------
+%%     Soll4_Breite_Difference_Squared
+%% -------------------------------------------------
+Two  Real
+END
+2.0
+( Power ( Set Two )
+        ( - Breite_nach_Stich_warm_4  Sollbreite_Vorstreifen ) 
+ )
+%% -------------------------------------------------
+%%     Soll5_Breite_Difference_Squared
+%% -------------------------------------------------
+Two  Real
+END
+2.0
+( Power ( Set Two )
+        ( - Breite_nach_Stich_warm_5  Sollbreite_Vorstreifen ) 
+ )
+%% -------------------------------------------------
+%%     VorNach_Breite_Difference_Squared_23
+%% -------------------------------------------------
+Two  Real
+END
+2.0
+( Power ( Set Two )
+        ( - Breite_nach_Stich_warm_2  Breite_vor_Stich_warm_3 ) 
+ )
+%% -------------------------------------------------
+%%     VorNach_Breite_Difference_Squared_45
+%% -------------------------------------------------
+Two  Real
+END
+2.0
+( Power ( Set Two )
+        ( - Breite_nach_Stich_warm_4  Breite_vor_Stich_warm_5 ) 
+ )
+%% 8-------------------------------------------------
+%%    VarsAndExps   KeyWords
+%% 7-------------------------------------------------
+Instance
+Volume1_Breite_Difference_Squared     ExpVolume1_Breite_Difference_Squared     
+Volume2_Breite_Difference_Squared     ExpVolume2_Breite_Difference_Squared     
+Volume3_Breite_Difference_Squared     ExpVolume3_Breite_Difference_Squared     
+Volume4_Breite_Difference_Squared     ExpVolume4_Breite_Difference_Squared     
+Soll1_Breite_Difference_Squared       ExpSoll1_Breite_Difference_Squared       
+Soll2_Breite_Difference_Squared       ExpSoll2_Breite_Difference_Squared       
+Soll3_Breite_Difference_Squared       ExpSoll3_Breite_Difference_Squared       
+Soll4_Breite_Difference_Squared       ExpSoll4_Breite_Difference_Squared       
+Soll5_Breite_Difference_Squared       ExpSoll5_Breite_Difference_Squared       
+VorNach_Breite_Difference_Squared_23  ExpVorNach_Breite_Difference_Squared_23  
+VorNach_Breite_Difference_Squared_45  ExpVorNach_Breite_Difference_Squared_45  
+END
+%% 6-------------------------------------------------
+%%% RootName                              KeyWords
+%% 5-------------------------------------------------
+Verify_       END
+%% 4-------------------------------------------------
+%%% AttributeSpecs                             KeyWords
+%% 3-------------------------------------------------
+Volume1_Breite_Difference_Squared     
+Volume2_Breite_Difference_Squared     
+Volume3_Breite_Difference_Squared     
+Volume4_Breite_Difference_Squared     
+Soll1_Breite_Difference_Squared       
+Soll2_Breite_Difference_Squared       
+Soll3_Breite_Difference_Squared       
+Soll4_Breite_Difference_Squared       
+Soll5_Breite_Difference_Squared       
+VorNach_Breite_Difference_Squared_23  
+VorNach_Breite_Difference_Squared_45  
+END
+%% 4-------------------------------------------------
+%%% TestPercentage                        Real
+%% 3-------------------------------------------------
+50.0
+%% 1-------------------------------------------------
+%%                 No Instances
+%% 2-------------------------------------------------
+END

@@ -1,0 +1,18 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+1001
+Instance: 1 Instance1 The First Instance
+1 2 4.1 8.45 84
+Instance: 2 Instance2 Second Instance
+10 20 40.1 80.45 804
+Instance: 3 Instance3 Third Instance
+100 200 400.1 800.45 8004
+Instance: 4 Instance4 Fourth Instance
+104 204 400.4 400.45 8004
+Instance: 5 Instance5 Fifth Instance
+105 205 400.5 500.45 8005
+Instance: 6 Instance6 Sixth Instance
+106 206 400.6 600.45 8006
+Instance: 7 Instance7 Seventh Instance
+107 207 400.7 700.45 8007
+END

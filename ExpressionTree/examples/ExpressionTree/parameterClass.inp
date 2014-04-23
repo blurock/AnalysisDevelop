@@ -1,0 +1,32 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: ParameterizedFunction   Parameterized numeric function
+ParameterizedNumericFunction
+%%% Parameter Set Class
+ParameterSet
+%%%            ParameterSetKeys in ParameterSet
+%%%                     NoReadKeyWord            "NoRead"
+%%%                     PlaceHoldersKeyWord      "PlaceHolders"
+%%%                     NoClassNamePairsKeyWord  "NoClassNamePairsKeyWord"
+%%%                     ReadAsTripletKeyWord     "ReadAsTriplet"
+%%%                If no keywords given 
+%%% Operation Class
+NumericTree
+%%% Output Parameter Class
+Real
+%%%  FunctionKeys
+%%%%   ParamFunctionNoKeyWordsKeyWord "NoKeyWords"
+END
+END
+ClassNamePairs:
+InstanceNameList  KeyWords
+ParameterizedExp ParameterizedNumericFunction
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------
+Var3   Read

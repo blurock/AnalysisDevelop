@@ -1,0 +1,26 @@
+ObjectClasses:
+DataType: AlgorithmRun  A sample goal run class
+TestAlgorithmRun
+% **********************************************************
+% The Definition of the AlgorithmRunClass
+% **********************************************************
+VariableGen Initial
+       Algorithms Initial#VariableGen
+            ExpressionAlgorithm Initial#VariableGen#Algorithms Expression
+Verify  Initial
+       Algorithms Initial#Verify
+            VerifyErrorAlgorithm Initial#Verify#Algorithms  Verify
+END
+END
+%% -------------------------------------------------
+ClassNamePairs:
+CreateExpressions      AlgorithmSummary
+Verify                 AlgorithmSummary
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

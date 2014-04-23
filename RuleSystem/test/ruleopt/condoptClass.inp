@@ -1,0 +1,20 @@
+% ----------------------------------------------------------
+%  Parameter classes for entire set of instances
+% ----------------------------------------------------------
+ObjectClasses:
+END
+% ----------------------------------------------------------
+ClassNamePairs:
+TrainInstanceNameList         KeyWords
+MaximumNumberOfIterations     Integer
+OptimizationCost              PopulationRuleCostFunction
+OptimizeObject                PopulationObject
+END
+% ----------------------------------------------------------
+%  Parameter classes for each instance
+% ----------------------------------------------------------
+ObjectClasses:
+END
+% ----------------------------------------------------------
+ClassNamePairs:
+END

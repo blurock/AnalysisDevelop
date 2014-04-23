@@ -1,0 +1,25 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+1002
+Instance:
+1 Instance1 The first instance
+101 201
+Instance:
+2 Instance2 The second instance
+102 202 
+Instance:
+2 Instance3 The third instance
+103 203
+Instance:
+2 Instance4 The fourth instance
+104 204
+Instance:
+2 Instance5 The fifth instance
+105 205
+Instance:
+2 Instance6 The sixth instance
+106 206
+Instance:
+2 Instance7 The seventh instance
+107 207
+END

@@ -1,0 +1,200 @@
+/*  FILE     GraphCycle.icc
+**  PACKAGE  GraphCycle
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    Inline functions for the "GraphCycle" package.
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C)  REACTION Project, Edward S. Blurock
+*/
+ 
+#ifndef REACTIONSRC_GRAPHCYCLE_ICC
+#define REACTIONSRC_GRAPHCYCLE_ICC
+
+/*S Constructors
+*/ 
+/*F DetermineNextNode(current,conditions,srch)  . . . . . . . . . constructor
+**
+**  DESCRIPTION
+**    current: The current node to expand
+**    conditions: The search conditions
+**    srch: The search info
+**
+**  REMARKS
+**
+*/
+template <class KeyType, class T>
+inline DetermineNextNode<KeyType,T>::DetermineNextNode(PathsSearchNode<KeyType>& current,
+						       PathSearchConditions& conditions,
+						       FindPathsInGraph<KeyType,T>& srch)
+: Current(current),
+Conditions(conditions),
+search(srch)
+     {
+     }
+ 
+/*F PathsSearchNode() . . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**
+**  REMARKS
+**
+*/
+template <class KeyType>
+inline PathsSearchNode<KeyType>::PathsSearchNode()
+     {
+     }
+ 
+/*F PathsSearchNode(nodesleft,key)  . . . . . . . . . . . initial constructor
+**
+**  DESCRIPTION
+**    nodesleft: The set of available nodes in the graph
+**    key: The node to search from
+**
+**    This is used as the initial constructor for setting up the search.
+**
+**  REMARKS
+**
+*/
+template <class KeyType>
+inline PathsSearchNode<KeyType>::PathsSearchNode(const ObjectList<KeyType>& nodesleft,
+					       const KeyType& key)
+: NodesLeft(nodesleft)
+     {
+     Path.push_back(key);
+     NodesLeft.RemoveObject(key);
+     }
+ 
+/*F PathsSearchNode(searchnode)  . . . . . . . . . . . . . .  copy constructor
+**
+**  DESCRIPTION
+**    searchnode: The search node to copy
+**
+**  REMARKS
+**
+*/
+template <class KeyType>
+inline 
+PathsSearchNode<KeyType>::PathsSearchNode(const PathsSearchNode<KeyType>& searchnode)
+: NodesLeft(searchnode.NodesLeft),
+Path(searchnode.Path)
+     {
+     } 
+/*F PathSearchConditions(includeparents,includeincomplete,maxnumiter,cycles,paths)  conditions
+**
+**  DESCRIPTION
+**     includeparents: Both Parents and Sons (IncludeParents)
+**     includeincomplete: Include all incomplete paths also (IncludeIncompletePaths)
+**     maxnumiter: Limit the number of iterations (MaxNumberOfIterations)
+**     cycles: Note cycles
+**     paths: Note paths
+**
+**     The search and whether certain types of paths should
+**     be included in the search are constrolled by a set of conditions:
+**
+**  REMARKS
+**
+*/
+PathSearchConditions::PathSearchConditions(bool includeparents,
+					   bool includeincomplete,
+					   int maxnumiter,
+					   bool cycles,
+					   bool paths)
+: IncludeParents(includeparents),
+IncludeIncompletePaths(includeincomplete),
+MaxNumberOfIterations(maxnumiter),
+Cycles(cycles),
+Paths(paths)
+     {
+     }
+
+
+
+/*S Utility
+*/
+/*F operator()(key) . . . . . . . . . . . . . . add next node to current path
+**
+**  DESCRIPTION
+**    key: The node to attempt to add
+**
+**    This determines how to add node to path:
+**    - if key is not in current available node list, then 
+**      - If the first node in the path, then it is a cycle
+**      - else, it is a finished path
+**    - Make a new search node and add to Unfinished list
+**
+**  REMARKS
+**
+*/
+template <class KeyType, class T>
+inline void
+DetermineNextNode<KeyType,T>::operator()(const KeyType& key)
+     {
+//      cout << "\n=====================================\n";
+//      cout << "DetermineNextNode<KeyType,T>::operator()\n";
+     
+     ObjectList<KeyType>::iterator foundkey = find(Current.NodesLeft.begin(),
+					       Current.NodesLeft.end(),
+					       key);
+     if(foundkey == Current.NodesLeft.end())
+	  {
+// 	  cout << "End Of List\n";
+	  if(key == Current.Path.front())
+	       {
+	       if(Conditions.Cycles && Current.Path.size() > 2)
+		    {
+		    // 	       cout << "Add As Cycle\n";
+		    search.Cycle.AddObjectIfNotThere(Current);
+		    }
+	       }
+	  else
+	       {
+	       if(Conditions.Paths)
+		    {
+		    // 	       cout << "Add As Done\n";
+		    search.Done.AddObjectIfNotThere(Current);
+		    }
+	       }
+	  }
+     else
+	  {
+// 	  cout << "Not End of List\n";
+	  PathsSearchNode<KeyType> newsearchnode = Current;
+	  newsearchnode.NodesLeft.RemoveObject(key);
+	  newsearchnode.Path.push_back(key);
+	  
+	  search.NotFinished.AddObject(newsearchnode);
+	  }
+     
+//      cout << "\n=====================================\n";
+//      cout << "Done Paths\n";
+//      cout << search.Done;
+//      cout << "\n-------------------------------------\n";
+//      cout << "NotFinished Paths\n";
+//      cout << search.NotFinished;
+//      cout << "\n=====================================\n";
+     }
+ 
+/*F path = GetPath()  . . . . . . . . . . . . . . . . . . . Retrieve the path
+**
+**  DESCRIPTION
+**    path:  The path from PathSearchNode
+**
+**    retrieve path from structure
+**
+**  REMARKS
+**
+*/
+template <class KeyType> 
+inline ObjectList<KeyType> PathsSearchNode<KeyType>::GetPath()
+     {
+     return Path;
+     }
+
+/*I  . . . INCLUDES  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+*/
+
+
+#endif

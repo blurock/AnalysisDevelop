@@ -1,0 +1,20 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+1000
+data/ToolingClass.inp data/Tooling.inp END
+END
+50
+1.0
+Integer END
+%% LowerPower        Integer
+0
+%% UpperPower        Integer
+5
+%% XParameters           KeyWords
+LSpeed USpeed ASpeed 
+END
+%% YParameters           KeyWords
+Width Hard Edges Measure
+END
+END
+

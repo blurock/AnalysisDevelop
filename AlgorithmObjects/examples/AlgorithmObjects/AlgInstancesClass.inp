@@ -1,0 +1,23 @@
+% ----------------------------------------------------------
+%  Parameter classes for entire set of instances
+% ----------------------------------------------------------
+ObjectClasses:
+END
+% ----------------------------------------------------------
+ClassNamePairs:
+RunIDInstances        Integer
+TestInstances         Integer
+Param                 Real
+END
+% ----------------------------------------------------------
+%  Parameter classes for each instance
+% ----------------------------------------------------------
+ObjectClasses:
+END
+% ----------------------------------------------------------
+ClassNamePairs:
+Var1 Integer
+Var2 Integer
+Var3 Real
+Var4 Integer
+END

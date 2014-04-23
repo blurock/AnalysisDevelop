@@ -1,0 +1,20 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: ExpressionTree  A Numeric Tree
+SetTree
+Set            ParameterSetOperation
+Line           NumericLineSegmentFunction
+END
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+Set SetTree
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

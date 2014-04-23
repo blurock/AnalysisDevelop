@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  VASLModels
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for CoreObjects library package "VASLModels".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) CoreObjects Library
+
+@node     VASLModels Package
+@section  The "VASLModels" Package
+@cindex   package, VASLModels
+@cindex   VASLModels package
+@cindex   vas namespace
+@cindex   namespaces, vas
+
+@table @strong
+@item Package name
+@code{VASLModels}
+
+@item Namespace name
+@code{vas}
+
+@item Header files
+@file{VASLModels.hh}, @file{VASLModelsType.hh}
+@end table
+
+
+@include VASLModels/Overview.texi
+
+@include VASLModels/Classes.texi

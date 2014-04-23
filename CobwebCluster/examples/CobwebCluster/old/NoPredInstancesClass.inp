@@ -1,0 +1,25 @@
+ObjectClasses:
+END
+ClassNamePairs:
+InstanceNameList      KeyWords
+AttributeSpecs             KeyWords
+TestPercentage             Real
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+END
+ObjectClasses:
+DataType: NValued An Assortment of Colors
+Colors Red 0.0 Green 0.5 Blue 1.0 END
+DataType: NValued True-False Logic
+TrueFalse True 1.0 False 0.0 END
+DataType: LinearODReal A Linear Function
+TestLinear
+END
+ClassNamePairs:
+Color Colors
+VarT TrueFalse 
+Var1 Real
+Var2 Integer
+Var3 Real
+Var4 Integer
+END
+

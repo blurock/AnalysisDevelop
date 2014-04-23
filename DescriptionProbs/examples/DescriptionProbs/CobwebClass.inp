@@ -1,0 +1,11 @@
+ObjectClasses:
+END
+ClassNamePairs:
+GroupProbs        InstanceMatrix
+SingleDescription InstanceVector
+SingleMembership  Real
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END

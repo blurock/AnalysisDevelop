@@ -1,0 +1,54 @@
+%% -------------------------------------------------
+%% The Graphs in the Instances
+%% -------------------------------------------------
+ObjectClasses:
+%% -------------------------------------------------
+DataType: DescriptionExpressions   A set of expressions
+ExpDescription ParameterSet Operation Logical ParameterSet ContLogicDescription Logical
+%% -------------------------------------------------
+DataType: NValued True-False Logic 
+TrueFalse True 1.0 False 0.0 END
+%% -------------------------------------------------
+DataType: NValued The basic steps in the production system
+Steps Start 0.0 GenerateNodes 0.25 ExpandNodes 0.50 Compute 0.75 Finish 1.0 END
+%% -------------------------------------------------
+DataType: ExactlyEqualPredicate   The Step Checker
+StepCheck  TrueFalse  Steps
+%% -------------------------------------------------
+DataType: IntrinsicExpression  A Numeric Tree
+ConditionTree
+Start           StepCheck
+Finish          StepCheck
+Expand          StepCheck
+Compute         StepCheck
+END
+ExactlyEqualPredicate: Type Start
+ExactlyEqualPredicate: Type Finish
+ExactlyEqualPredicate: Type ExpandNodes
+ExactlyEqualPredicate: Type Compute
+%% -------------------------------------------------
+DataType: ParameterizedExpression    A new numeric parameterized function
+ConditionExpression    ParameterSet ConditionTree Continuous 
+%% -------------------------------------------------
+DataType: ActionRule    Expression Action
+PredicateAction      ParameterSet Operation Continuous 
+                     ConditionExpression ParameterSet
+%% -------------------------------------------------
+DataType: ProductionSystem
+NormalProductionSystem ParameterSet ConditionTree Continuous
+                       SetOfRules ProductionSystemNode DirectedTree
+END
+%% -------------------------------------------------
+ClassNamePairs:
+MaximumNumberOfNodes       Integer
+TrainInstanceNameList      KeyWords
+ProductionSystem        NormalProductionSystem
+END
+%% -------------------------------------------------
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

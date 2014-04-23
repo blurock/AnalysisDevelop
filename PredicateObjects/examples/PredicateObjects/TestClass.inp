@@ -1,0 +1,38 @@
+ObjectClasses:
+DataType:
+NumericPredicate A sample predicate
+FuzzyPredicate Continuous PyramidODReal
+DataType:
+Predicate A predicate of a numeric predicate function
+FuzzyParameterPredicate FuzzyPredicate 
+END
+ClassNamePairs:
+RunID                    Integer
+Conjunction              KeyWords
+DebugLevel               Integer
+Var3.GreaterThanZero     FuzzyParameterPredicate
+Var3.LessThanZero        FuzzyParameterPredicate
+Var3.EqualToZero         FuzzyParameterPredicate
+Var1.GreaterThanZero     FuzzyParameterPredicate
+Var1.LessThanZero        FuzzyParameterPredicate
+Var1.EqualToZero         FuzzyParameterPredicate
+Partition.Var3           KeyWords
+Partition.Var1           KeyWords
+ConjPartition            KeyWords
+PartitionTable.Var3.Var1 KeyWords
+END
+ObjectClasses:
+DataType: NValued An Assortment of Colors
+Colors Red 0.0 Green 0.5 Blue 1.0 END
+DataType: NValued True-False Logic
+TrueFalse True 1.0 False 0.0 END
+END
+ClassNamePairs:
+Color Colors
+VarT TrueFalse 
+Var1 Real
+Var2 Integer
+Var3 Real
+Var4 Integer
+END
+

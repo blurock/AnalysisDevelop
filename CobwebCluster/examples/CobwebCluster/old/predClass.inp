@@ -1,0 +1,26 @@
+ObjectClasses:
+%% --------------------------------------------------------
+DataType:
+NumericPredicate A sample predicate
+FuzzyPredicate Continuous PyramidODReal
+%% --------------------------------------------------------
+DataType:
+Predicate A predicate of a numeric predicate function
+FuzzyParameterPredicate FuzzyPredicate
+%% --------------------------------------------------------
+DataType: NumericPredicate An exact Predicate
+PredicateExact TrueFalse PyramidODReal
+END
+ClassNamePairs:
+GoalNameList                    KeyWords
+Var1.EqualToZero                FuzzyParameterPredicate
+Var1.NotEqualToZero             FuzzyParameterPredicate
+CriticalPointsFileName          KeyWords
+CriticalPointsRootName          KeyWords
+PartitionTypesFromPoints        KeyWords
+END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ObjectClasses:
+END
+ClassNamePairs:
+END

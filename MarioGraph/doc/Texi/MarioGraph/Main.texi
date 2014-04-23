@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  MarioGraph
+@c AUTHOR   Mario Drobics
+@c 
+@c CONTENT
+@c   Texinfo documentation for CoreObjects library package "MarioGraph".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) CoreObjects Library
+
+@node     MarioGraph Package
+@section  The "MarioGraph" Package
+@cindex   package, MarioGraph
+@cindex   MarioGraph package
+@cindex   ggg namespace
+@cindex   namespaces, ggg
+
+@table @strong
+@item Package name
+@code{MarioGraph}
+
+@item Namespace name
+@code{ggg}
+
+@item Header files
+@file{MarioGraph.hh}, @file{MarioGraphType.hh}
+@end table
+
+
+@include MarioGraph/Overview.texi
+
+@include MarioGraph/Classes.texi

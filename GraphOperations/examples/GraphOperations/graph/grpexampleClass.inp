@@ -1,0 +1,14 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: Graph My new Graph
+GraphExample Node Edge
+%% -------------------------------------------------
+END
+ClassNamePairs:
+GraphExample        GraphExample
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+ClassNamePairs:
+END

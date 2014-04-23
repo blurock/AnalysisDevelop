@@ -1,0 +1,240 @@
+op Definitions ---------------- ParameterizeNormalization Demo ------------------------
+Attributes:
+%% -------------------------------------------------
+%% NormOpy_dimless    NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpy_dimless y_dimless )
+%% -------------------------------------------------
+%% NormOp3-CH2  NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOp3-CH2 3-CH2 )
+%% -------------------------------------------------
+%% NormOpC2H    NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpC2H C2H )
+%% -------------------------------------------------
+%% NormOpC2H2   NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpC2H2 C2H2 )
+%% -------------------------------------------------
+%% NormOpC2H3   NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpC2H3 C2H3 )
+%% -------------------------------------------------
+%% NormOpC2H4   NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpC2H4 C2H4 )
+%% -------------------------------------------------
+%% NormOpC2H5   NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpC2H5 C2H5 )
+%% -------------------------------------------------
+%% NormOpC2H6   NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpC2H6 C2H6 )
+%% -------------------------------------------------
+%% NormOpC3H3   NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpC3H3 C3H3 )
+%% -------------------------------------------------
+%% NormOpC3H4   NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpC3H4 C3H4 )
+%% -------------------------------------------------
+%% NormOpC3H5   NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpC3H5 C3H5 )
+%% -------------------------------------------------
+%% NormOpC3H6   NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpC3H6 C3H6 )
+%% -------------------------------------------------
+%% NormOpC3H7   NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpC3H7 C3H7 )
+%% -------------------------------------------------
+%% NormOpC3H8   NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpC3H8 C3H8 )
+%% -------------------------------------------------
+%% NormOpCH     NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpCH CH )
+%% -------------------------------------------------
+%% NormOpCH2O   NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpCH2O CH2O )
+%% -------------------------------------------------
+%% NormOpCH3    NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpCH3 CH3 )
+%% -------------------------------------------------
+%% NormOpCH4    NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpCH4 CH4 )
+%% -------------------------------------------------
+%% NormOpCHCO   NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpCHCO CHCO )
+%% -------------------------------------------------
+%% NormOpCHO    NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpCHO CHO )
+%% -------------------------------------------------
+%% NormOpCO     NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpCO CO )
+%% -------------------------------------------------
+%% NormOpCO2    NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpCO2 CO2 )
+%% -------------------------------------------------
+%% NormOpH      NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpH H )
+%% -------------------------------------------------
+%% NormOpH2     NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpH2 H2 )
+%% -------------------------------------------------
+%% NormOpH2O2   NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpH2O2 H2O2 )
+%% -------------------------------------------------
+%% NormOpHO2    NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpHO2 HO2 )
+%% -------------------------------------------------
+%% NormOpIPRO   NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpIPRO IPRO )
+%% -------------------------------------------------
+%% NormOpO      NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpO O )
+%% -------------------------------------------------
+%% NormOpO2     NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpO2 O2 )
+%% -------------------------------------------------
+%% NormOpOH     NormalizeParameters                                                                          
+%% -------------------------------------------------
+END
+( NormOpOH OH )
+%% -------------------------------------------------
+%% NormOpO2     NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpO2 O2 )
+%% -------------------------------------------------
+%% NormOpOH     NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpOH OH )
+%% -------------------------------------------------
+%% NormOpO      NormalizeParameters
+%% -------------------------------------------------
+END
+( NormOpO O )
+%% -------------------------------------------------
+%% VarsAndExps   KeyWords
+%% -------------------------------------------------
+Instance
+Norm3-CH2 NormOp3-CH2 
+NormC2H   NormOpC2H   
+NormC2H2  NormOpC2H2  
+NormC2H3  NormOpC2H3  
+NormC2H4  NormOpC2H4  
+NormC2H5  NormOpC2H5  
+NormC2H6  NormOpC2H6  
+NormC3H3  NormOpC3H3  
+NormC3H4  NormOpC3H4  
+NormC3H5  NormOpC3H5  
+NormC3H6  NormOpC3H6  
+NormC3H7  NormOpC3H7  
+NormC3H8  NormOpC3H8  
+NormCH    NormOpCH    
+NormCH2O  NormOpCH2O  
+NormCH3   NormOpCH3   
+NormCH4   NormOpCH4   
+NormCHCO  NormOpCHCO  
+NormCHO   NormOpCHO   
+NormCO    NormOpCO    
+NormCO2   NormOpCO2   
+NormH     NormOpH     
+NormH2    NormOpH2    
+NormH2O2  NormOpH2O2  
+NormHO2   NormOpHO2   
+NormIPRO  NormOpIPRO  
+NormO     NormOpO     
+NormO2    NormOpO2    
+NormOH    NormOpOH 
+NormO2    NormOpO2    
+NormOH    NormOpOH    
+NormO     NormOpO     
+END
+%% -------------------------------------------------
+%% AttributeList KeyWords
+%% -------------------------------------------------
+y_dimless
+Norm3-CH2 
+NormC2H      
+NormC2H2  
+NormC2H3  
+NormC2H4  
+NormC2H5  
+NormC2H6  
+NormC3H3  
+NormC3H4  
+NormC3H5  
+NormC3H6  
+NormC3H7  
+NormC3H8  
+NormCH       
+NormCH2O  
+NormCH3      
+NormCH4      
+NormCHCO  
+NormCHO      
+NormCO       
+NormCO2      
+NormH        
+NormH2       
+NormH2O2  
+NormHO2      
+NormIPRO  
+NormO        
+NormO2       
+NormOH    
+END
+
+END

@@ -1,0 +1,40 @@
+ObjectClasses:
+END
+ClassNamePairs:
+END
+ObjectClasses:
+END
+ClassNamePairs:
+y_dimless         Real
+H                 Real
+CH3               Real
+CHCO              Real
+C2H3              Real
+C2H4              Real
+C2H5              Real
+C2H6              Real
+C3H3              Real
+C3H4              Real
+C3H5              Real
+C3H6              Real
+C3H7              Real
+IPRO              Real
+CO                Real
+3-CH2             Real
+CH                Real
+CH4               Real
+C2H               Real
+C2H2              Real
+CH2O              Real
+CO2               Real
+H2                Real
+O                 Real
+H2O               Real
+X                 Real
+CHO               Real
+H2O2              Real
+C3H8              Real
+OH                Real
+HO2               Real
+O2                Real
+END

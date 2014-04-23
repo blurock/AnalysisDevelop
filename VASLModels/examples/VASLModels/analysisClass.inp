@@ -1,0 +1,35 @@
+%%  Voest Analysis Data
+%%
+ObjectClasses:
+END
+ClassNamePairs:
+RunIDanalysis Integer
+END
+ObjectClasses:
+END
+ClassNamePairs:
+aluminium      Real
+bor            Real
+kohlenstoff    Real
+chrom          Real
+kupfer         Real
+mangan         Real
+molybden       Real
+stickstoff     Real
+niobium        Real
+nickel         Real
+phosphor       Real
+schwefel       Real
+silizium       Real
+zinn           Real
+titan          Real
+vanadium       Real
+END
+
+
+
+
+
+
+
+

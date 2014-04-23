@@ -1,0 +1,30 @@
+ObjectClasses:
+END
+% ----------------------------------------------------------
+ClassNamePairs:
+AttributeSetUp                  GoalSpec
+InstanceSetUp                   GoalSpec
+ReadInstances                   GoalSpec
+MatrixSetUp                     GoalSpec
+PartitionsFromCriticalPoints    GoalSpec
+CobwebClusterPredRead           GoalSpec
+CobwebClusterPredGen            GoalSpec
+END
+% **********************************************************
+% The Set up of the Instances Class Information
+% **********************************************************
+%
+% ----------------------------------------------------------
+%  The Type Definition of the Instances
+%  (no new types specified)
+% ----------------------------------------------------------
+ObjectClasses:
+END
+%
+% ----------------------------------------------------------
+%  The instance parameter specifications
+%  Five Parameters are to be read in
+%
+% ----------------------------------------------------------
+ClassNamePairs:
+END

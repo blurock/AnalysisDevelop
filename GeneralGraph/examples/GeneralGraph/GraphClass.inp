@@ -1,0 +1,18 @@
+ObjectClasses:
+DataType: Node my map node
+MyNode
+
+DataType: Graph My new Graph
+MyGraph MyNode Edge
+END
+
+ClassNamePairs:
+MyGraph    MyGraph
+END
+
+ObjectClasses:
+END
+ClassNamePairs:
+A    Integer
+b    Real
+END

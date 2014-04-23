@@ -1,0 +1,43 @@
+Graph Example
+Attributes:
+%% -------------------------------------------------
+%%    GraphExample   GraphExample
+%% -------------------------------------------------
+Simple:
+NodeCount: 23
+ClassNamePairs:
+I       Real
+J       Real
+END
+Node1
+1000 1
+Node2
+2000 2
+Node3
+3000 3
+Node4
+3000 4
+Node5
+3000 5
+END
+EdgeCount: 1110
+ClassNamePairs:
+E       Integer
+END
+Edge1   
+1000
+Node1 Node2
+Edge2   
+2000
+Node2 Node3
+Edge3   
+3000
+Node3 Node4
+Edge4   
+4000
+Node4 Node5
+END
+%% =================================================
+%%      The Instances
+%% =================================================
+END

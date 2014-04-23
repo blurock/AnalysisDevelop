@@ -1,0 +1,36 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: VerifyOperation   A standard verify operator
+StandardVerify    VerifyErrorOperation LogicalAND
+%% -------------------------------------------------
+DataType: IntrinsicExpression  A Numeric Tree
+VerifyExpression
+Verify                    StandardVerify
+END
+VerifyOperation: 
+IndividualCutOff:  .90
+TotalCutOff:       .75
+%% -------------------------------------------------
+DataType: ParameterizedExpression    A new numeric parameterized function
+PVerifyExpression   ParameterSet VerifyExpression Object
+%% -------------------------------------------------
+DataType: DescriptionExpressions   A set of expressions
+ExpDescription ParameterSet Operation Logical ParameterSet ContLogicDescription Logical
+%% -------------------------------------------------
+END
+ClassNamePairs:
+LogDescr1                  ContLogicDescription
+LogDescr2                  ContLogicDescription
+LogicDescriptionExp        VerifyExpression
+VarsAndExps                KeyWords
+VerificationOperation      StandardVerify
+LogicalDescriptionNames   KeyWords
+InstanceNames             KeyWords
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

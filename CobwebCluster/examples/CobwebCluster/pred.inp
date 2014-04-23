@@ -1,0 +1,36 @@
+Predicates Input of Fixed Predicate Values
+Attributes:
+%% -------------------------------------------------
+%% ColorIsRed           ColorCheck
+ExactlyEqualPredicate: VarC  Red
+%% -------------------------------------------------
+%% ColorIsGreen         ColorCheck
+ExactlyEqualPredicate: VarC  Green
+%% -------------------------------------------------
+%% ColorIsBlue          ColorCheck
+ExactlyEqualPredicate: VarC  Blue
+%% -------------------------------------------------
+%% ColorIsWhite         ColorCheck
+ExactlyEqualPredicate: VarC  White
+%% -------------------------------------------------
+%% ValueIsTrue          TrueFalseCheck
+ExactlyEqualPredicate: VarT True
+%% -------------------------------------------------
+%% ValueIsFalse         TrueFalseCheck
+ExactlyEqualPredicate: VarT  False
+%% -------------------------------------------------
+%%  EntropyGoal       KeyWords
+ColorsPartition  END
+%% -------------------------------------------------
+%%  ColorsPartition        KeyWords
+ColorIsRed    ColorIsGreen  ColorIsBlue   ColorIsWhite  END
+%% -------------------------------------------------
+%%  TFPartition          KeyWords
+ValueIsTrue   ValueIsFalse  END
+%% -------------------------------------------------
+%%  PartitionList        KeyWords
+TFPartition  END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% No Instances
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+END

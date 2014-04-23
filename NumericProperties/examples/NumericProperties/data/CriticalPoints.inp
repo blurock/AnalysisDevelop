@@ -1,0 +1,174 @@
+Norm3-CH2
+CriticalPoints: Norm3-CH2 [0.0,0.1] END
+NormC2H
+CriticalPoints: NormC2H [0.0,0.1] END
+NormC2H2
+CriticalPoints: NormC2H2 [0.0,0.1] END
+NormC2H3
+CriticalPoints: NormC2H3 [0.0,0.1] END
+NormC2H4
+CriticalPoints: NormC2H4 [0.0,0.1] END
+NormC2H5
+CriticalPoints: NormC2H5 [0.0,0.1] END
+NormC2H6
+CriticalPoints: NormC2H6 [0.0,0.1] END
+NormC3H3
+CriticalPoints: NormC3H3 [0.0,0.1] END
+NormC3H4
+CriticalPoints: NormC3H4 [0.0,0.1] END
+NormC3H5
+CriticalPoints: NormC3H5 [0.0,0.1] END
+NormC3H6
+CriticalPoints: NormC3H6 [0.0,0.1] END
+NormC3H7
+CriticalPoints: NormC3H7 [0.0,0.1] END
+NormC3H8
+CriticalPoints: NormC3H8 [0.0,0.1] END
+NormCH
+CriticalPoints: NormCH [0.0,0.1] END
+NormCH2O
+CriticalPoints: NormCH2O [0.0,0.1] END
+NormCH3
+CriticalPoints: NormCH3 [0.0,0.1] END
+NormCH4
+CriticalPoints: NormCH4 [0.0,0.1] END
+NormCHCO
+CriticalPoints: NormCHCO [0.0,0.1] END
+NormCHO
+CriticalPoints: NormCHO [0.0,0.1] END
+NormCO
+CriticalPoints: NormCO [0.0,0.1] END
+NormCO2
+CriticalPoints: NormCO2 [0.0,0.1] END
+NormH
+CriticalPoints: NormH [0.0,0.1] END
+NormH2
+CriticalPoints: NormH2 [0.0,0.1] END
+NormH2O2
+CriticalPoints: NormH2O2 [0.0,0.1] END
+NormHO2
+CriticalPoints: NormHO2 [0.0,0.1] END
+NormIPRO
+CriticalPoints: NormIPRO [0.0,0.1] END
+NormO
+CriticalPoints: NormO [0.0,0.1] END
+NormO2
+CriticalPoints: NormO2 [0.0,0.1] END
+NormOH
+CriticalPoints: NormOH [0.0,0.1] END
+y_dimless_NormO_1stDerivative
+CriticalPoints:   y_dimless_NormO_1stDerivative  [0.0,10.0] END
+y_dimless_NormO_2ndDerivative
+CriticalPoints: y_dimless_NormO_2ndDerivative [0.0,100.0] END
+y_dimless_NormOH_1stDerivative
+CriticalPoints:   y_dimless_NormOH_1stDerivative  [0.0,10.0] END
+y_dimless_NormOH_2ndDerivative
+CriticalPoints: y_dimless_NormOH_2ndDerivative [0.0,100.0] END
+y_dimless_NormO2_1stDerivative
+CriticalPoints:   y_dimless_NormO2_1stDerivative  [0.0,10.0] END
+y_dimless_NormO2_2ndDerivative
+CriticalPoints: y_dimless_NormO2_2ndDerivative [0.0,100.0] END
+y_dimless_NormH_1stDerivative
+CriticalPoints:   y_dimless_NormH_1stDerivative  [0.0,10.0] END
+y_dimless_NormH_2ndDerivative
+CriticalPoints: y_dimless_NormH_2ndDerivative [0.0,100.0] END
+y_dimless_NormH2_1stDerivative
+CriticalPoints:   y_dimless_NormH2_1stDerivative  [0.0,10.0] END
+y_dimless_NormH2_2ndDerivative
+CriticalPoints: y_dimless_NormH2_2ndDerivative [0.0,100.0] END
+y_dimless_NormCO_1stDerivative
+CriticalPoints:   y_dimless_NormCO_1stDerivative  [0.0,10.0] END
+y_dimless_NormCO_2ndDerivative
+CriticalPoints: y_dimless_NormCO_2ndDerivative [0.0,100.0] END
+y_dimless_NormCO2_1stDerivative
+CriticalPoints:   y_dimless_NormCO2_1stDerivative  [0.0,10.0] END
+y_dimless_NormCO2_2ndDerivative
+CriticalPoints: y_dimless_NormCO2_2ndDerivative [0.0,100.0] END
+y_dimless_NormH2O2_1stDerivative
+CriticalPoints:   y_dimless_NormH2O2_1stDerivative  [0.0,10.0] END
+y_dimless_NormH2O2_2ndDerivative
+CriticalPoints: y_dimless_NormH2O2_2ndDerivative [0.0,100.0] END
+y_dimless_NormHO2_1stDerivative
+CriticalPoints:   y_dimless_NormHO2_1stDerivative  [0.0,10.0] END
+y_dimless_NormHO2_2ndDerivative
+CriticalPoints: y_dimless_NormHO2_2ndDerivative [0.0,100.0] END
+y_dimless_NormIPRO_1stDerivative
+CriticalPoints:   y_dimless_NormIPRO_1stDerivative  [0.0,10.0] END
+y_dimless_NormIPRO_2ndDerivative
+CriticalPoints: y_dimless_NormIPRO_2ndDerivative [0.0,100.0] END
+y_dimless_Norm3-CH2_1stDerivative
+CriticalPoints:   y_dimless_Norm3-CH2_1stDerivative  [0.0,10.0] END
+y_dimless_Norm3-CH2_2ndDerivative
+CriticalPoints: y_dimless_Norm3-CH2_2ndDerivative [0.0,100.0] END
+y_dimless_NormC2H_1stDerivative
+CriticalPoints:   y_dimless_NormC2H_1stDerivative  [0.0,10.0] END
+y_dimless_NormC2H_2ndDerivative
+CriticalPoints: y_dimless_NormC2H_2ndDerivative [0.0,100.0] END
+y_dimless_NormC2H2_1stDerivative
+CriticalPoints:   y_dimless_NormC2H2_1stDerivative  [0.0,10.0] END
+y_dimless_NormC2H2_2ndDerivative
+CriticalPoints: y_dimless_NormC2H2_2ndDerivative [0.0,100.0] END
+y_dimless_NormC2H3_1stDerivative
+CriticalPoints:   y_dimless_NormC2H3_1stDerivative  [0.0,10.0] END
+y_dimless_NormC2H3_2ndDerivative
+CriticalPoints: y_dimless_NormC2H3_2ndDerivative [0.0,100.0] END
+y_dimless_NormC2H4_1stDerivative
+CriticalPoints:   y_dimless_NormC2H4_1stDerivative  [0.0,10.0] END
+y_dimless_NormC2H4_2ndDerivative
+CriticalPoints: y_dimless_NormC2H4_2ndDerivative [0.0,100.0] END
+y_dimless_NormC2H5_1stDerivative
+CriticalPoints:   y_dimless_NormC2H5_1stDerivative  [0.0,10.0] END
+y_dimless_NormC2H5_2ndDerivative
+CriticalPoints: y_dimless_NormC2H5_2ndDerivative [0.0,100.0] END
+y_dimless_NormC2H6_1stDerivative
+CriticalPoints:   y_dimless_NormC2H6_1stDerivative  [0.0,10.0] END
+y_dimless_NormC2H6_2ndDerivative
+CriticalPoints: y_dimless_NormC2H6_2ndDerivative [0.0,100.0] END
+y_dimless_NormC3H3_1stDerivative
+CriticalPoints:   y_dimless_NormC3H3_1stDerivative  [0.0,10.0] END
+y_dimless_NormC3H3_2ndDerivative
+CriticalPoints: y_dimless_NormC3H3_2ndDerivative [0.0,100.0] END
+y_dimless_NormC3H4_1stDerivative
+CriticalPoints:   y_dimless_NormC3H4_1stDerivative  [0.0,10.0] END
+y_dimless_NormC3H4_2ndDerivative
+CriticalPoints: y_dimless_NormC3H4_2ndDerivative [0.0,100.0] END
+y_dimless_NormC3H5_1stDerivative
+CriticalPoints:   y_dimless_NormC3H5_1stDerivative  [0.0,10.0] END
+y_dimless_NormC3H5_2ndDerivative
+CriticalPoints: y_dimless_NormC3H5_2ndDerivative [0.0,100.0] END
+y_dimless_NormC3H6_1stDerivative
+CriticalPoints:   y_dimless_NormC3H6_1stDerivative  [0.0,10.0] END
+y_dimless_NormC3H6_2ndDerivative
+CriticalPoints: y_dimless_NormC3H6_2ndDerivative [0.0,100.0] END
+y_dimless_NormC3H7_1stDerivative
+CriticalPoints:   y_dimless_NormC3H7_1stDerivative  [0.0,10.0] END
+y_dimless_NormC3H7_2ndDerivative
+CriticalPoints: y_dimless_NormC3H7_2ndDerivative [0.0,100.0] END
+y_dimless_NormC3H8_1stDerivative
+CriticalPoints:   y_dimless_NormC3H8_1stDerivative  [0.0,10.0] END
+y_dimless_NormC3H8_2ndDerivative
+CriticalPoints: y_dimless_NormC3H8_2ndDerivative [0.0,100.0] END
+y_dimless_NormCH_1stDerivative
+CriticalPoints:   y_dimless_NormCH_1stDerivative  [0.0,10.0] END
+y_dimless_NormCH_2ndDerivative
+CriticalPoints: y_dimless_NormCH_2ndDerivative [0.0,100.0] END
+y_dimless_NormCH2O_1stDerivative
+CriticalPoints:   y_dimless_NormCH2O_1stDerivative  [0.0,10.0] END
+y_dimless_NormCH2O_2ndDerivative
+CriticalPoints: y_dimless_NormCH2O_2ndDerivative [0.0,100.0] END
+y_dimless_NormCH3_1stDerivative
+CriticalPoints:   y_dimless_NormCH3_1stDerivative  [0.0,10.0] END
+y_dimless_NormCH3_2ndDerivative
+CriticalPoints: y_dimless_NormCH3_2ndDerivative [0.0,100.0] END
+y_dimless_NormCH4_1stDerivative
+CriticalPoints:   y_dimless_NormCH4_1stDerivative  [0.0,10.0] END
+y_dimless_NormCH4_2ndDerivative
+CriticalPoints: y_dimless_NormCH4_2ndDerivative [0.0,100.0] END
+y_dimless_NormCHCO_1stDerivative
+CriticalPoints:   y_dimless_NormCHCO_1stDerivative  [0.0,10.0] END
+y_dimless_NormCHCO_2ndDerivative
+CriticalPoints: y_dimless_NormCHCO_2ndDerivative [0.0,100.0] END
+y_dimless_NormCHO_1stDerivative
+CriticalPoints:   y_dimless_NormCHO_1stDerivative  [0.0,10.0] END
+y_dimless_NormCHO_2ndDerivative
+CriticalPoints: y_dimless_NormCHO_2ndDerivative [0.0,100.0] END

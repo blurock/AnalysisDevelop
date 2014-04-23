@@ -1,0 +1,76 @@
+Walzkraft
+Attributes:
+% --------------------------------------------
+%% MaximumNumberOfIterations    Integer
+% --------------------------------------------
+100
+% --------------------------------------------
+%% Distribution_C
+% --------------------------------------------
+PrimitiveStats:
+2
+-1.0 1.0
+% --------------------------------------------
+%% OptimizationCost              PopulationCostFunction
+% --------------------------------------------
+CostFunction:
+Genetic:
+GeneticParameters:
+C1         GeneticReal
+C2         GeneticReal
+C3         GeneticReal
+C4         GeneticReal
+END
+C1 Distribution_C
+C2 Distribution_C
+C3 Distribution_C
+C4 Distribution_C
+Population: 25
+ParameterSet:  ClassNamePairs: END Operation:
+Two                   Real
+Four                  Real
+Eight                 Real
+Three                 Real
+Nine                  Real
+Twentyseven           Real
+Sixteen               Real
+Sixtyfour             Real
+Five                  Real
+Twentyfive            Real
+HundredTwentyFive     Real
+END
+2.0 4.0 8.0
+3.0 9.0 27.0
+    16.0 64.0
+5.0 25.0 125.0
+( - Two 
+  ( Power ( Set Two )
+      ( - ( * Dicke_nach_Stich_warm_0 
+              ( + C1 C2 C3 C4 ) ) 
+          Dicke_nach_Stich_warm_1 )
+         )
+  ( Power ( Set Two )
+      ( - ( * Dicke_nach_Stich_warm_0 
+              ( + C1 ( * Two   C2 ) ( * C3 Four ) ( * C4 Eight ) ) ) 
+          Dicke_nach_Stich_warm_2  )
+         )
+  ( Power ( Set Two )
+      ( - ( * Dicke_nach_Stich_warm_0 
+              ( + C1 ( * Three C2 ) ( * C3 Nine ) ( * C4 Twentyseven ) ) ) 
+          Dicke_nach_Stich_warm_3 ) 
+         )
+  ( Power ( Set Two )
+      ( - ( * Dicke_nach_Stich_warm_0 
+              ( + C1 ( * Four  C2 ) ( * C3 Sixteen ) ( * C4 Sixtyfour ) ) ) 
+          Dicke_nach_Stich_warm_4 )
+         )
+  ( Power ( Set Two )
+      ( - ( * Dicke_nach_Stich_warm_0 
+              ( + C1 ( * Five  C2 ) ( * C3 Twentyfive ) ( * C4 HundredTwentyFive ) ) ) 
+          Dicke_nach_Stich_warm_5 )
+         )
+)
+%% =================================================
+%%      The Instances
+%% =================================================
+END

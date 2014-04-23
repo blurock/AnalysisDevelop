@@ -1,0 +1,21 @@
+ObjectClasses:
+END
+Routines Initial
+     PredGen Initial#Routines
+             Read Initial#Routines#PredGen
+             ReadCriticalPoints Initial#Routines#PredGen#Read Normal
+END
+Initial Routines PredGen END
+Level0 END
+Normal END
+CriticalPointsRootName               KeyWords
+CriticalPointsFileName               KeyWords
+END
+CriticalPointsList                   KeyWords
+END
+END
+END
+END
+END
+END
+END

@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  BasicIO
+@c AUTHOR   Mario Drobics
+@c 
+@c CONTENT
+@c   Texinfo documentation for Basis library package "BasicIO".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Basis Library
+
+@node     BasicIO Package
+@section  The "BasicIO" Package
+@cindex   package, BasicIO
+@cindex   BasicIO package
+@cindex   bio namespace
+@cindex   namespaces, bio
+
+@table @strong
+@item Package name
+@code{BasicIO}
+
+@item Namespace name
+@code{bio}
+
+@item Header files
+@file{BasicIO.hh}, @file{BasicIOType.hh}
+@end table
+
+
+@include BasicIO/Overview.texi
+
+@include BasicIO/Classes.texi

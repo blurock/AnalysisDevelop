@@ -1,0 +1,95 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: VASLDogBoneModelOperation   model
+VASLDogBoneModel   ParameterSet ParameterSet
+%% -------------------------------------------------
+DataType: VASLKashimaModelOperation   model
+VASLKashimaModel   ParameterSet ParameterSet
+%% -------------------------------------------------
+DataType: VASLWidthModelOperation   model
+VASLWidthModel   ParameterSet ParameterSet
+%% -------------------------------------------------
+DataType: RealPredicate  A real function based predicate
+ParPredicate  PyramidODReal Continuous 
+%% -------------------------------------------------
+DataType: ExpressionTree  A Numeric Tree
+NumericTree
++    NumOpPlus
+-    NumOpMinus
+*    NumOpMultiply
+/    NumOpDivide
+Set            ParameterSetOperation
+LCoerce        LogicToReal
+Gaussian       Gaussian
+Line           Line
+Pred           FuzzyPredicate
+Pow            Power
+DogBoneModel              VASLDogBoneModel
+KashimaModel              VASLKashimaModel
+WidthModel                VASLWidthModel
+END
+ODReal -Infinity T +Infinity T GaussianODReal 0.0 0.0 0.0
+ODReal -Infinity T +Infinity T LinearODReal 0.0 0.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  -1.0 3.0 3.0
+ODReal -Infinity T +Infinity T PowerODReal 0.0
+%% -------------------------------------------------
+DataType: ExpressionTree  A Numeric Tree
+LogicalTree
+AND   LogicalAND
+OR    LogicalOR
+NOT   LogicalNOT
+Set            ParameterSetOperation
+Pred       FuzzyPredicate
+PyPred     ParPredicate
+END
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  -1.0 3.0 3.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  -1.0 3.0 3.0
+%% -------------------------------------------------
+DataType: ExpressionTree  A Numeric Tree
+SetTree
+Set            ParameterSetOperation
+Line           NumericLineSegmentFunction
+END
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+RunID          Integer
+Exp            NumericTree
+Log            LogicalTree
+Set            SetTree
+Var3           Real
+Var4           Real
+VarsAndExps    KeyWords
+SampleVector   InstanceVector
+%%% Inp            ParameterSet
+%%% Out            ParameterSet
+END
+%% -------------------------------------------------
+ObjectClasses:
+DataType: NValued An Assortment of Colors
+Colors Red 0.0 Green 0.5 Blue 1.0 END
+DataType: NValued True-False Logic 
+TrueFalse True 1.0 False 0.0 END
+END
+%% -------------------------------------------------
+ClassNamePairs:
+VarT1 TrueFalse 
+VarT2 TrueFalse 
+Var1 Integer
+Var2 Integer
+Var3 Real
+Var4 Real
+Dicke_nach_Stich_warm_4                 Real
+Breite_nach_Stich_warm_4                Real
+Walzkraft_Horizontalgeruest_5           Real
+Walzkraft_Egalisierungsgeruest_5        Real
+Dicke_nach_Stich_warm_5                 Real
+Breite_vor_Stich_warm_5                 Real
+Temperatur_5                            Real
+Anstichgeschwindigkeit_5                Real
+Laenge_nach_Stich_warm_5                Real
+Breite_nach_Stich_warm_5                Real
+Breite_nach_Stich_gemessen_5            Real
+END
+%% -------------------------------------------------

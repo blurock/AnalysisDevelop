@@ -1,0 +1,50 @@
+Expression Test
+Attributes:
+%% -------------------------------------------------
+%%    SimpleANDORNOT         SimpleExpression
+%% -------------------------------------------------
+END
+( OR ( AND ( NOT VarT1 ) VarT2 ) ( AND VarT1 ( NOT VarT2 ) ) )
+%% -------------------------------------------------
+%%    SimpleParameterizedANDORNOT         SimpleParLogicalExpression
+%% -------------------------------------------------
+ ParameterSet: 
+ ClassNamePairs:
+ ATrueValue     Continuous
+ DontKnow       Continuous
+ END
+ 1.0  0.5
+ Operation:
+ END
+ ( OR DontKnow ( AND VarT1 VarT2 ) )
+%% -------------------------------------------------
+%%    GreaterThanFive         SimpleExpression
+%% -------------------------------------------------
+Ref    Real
+END
+5.0
+( AND ( ParGreaterThanZero ( - Var3 Ref ) )  ( ParLessThanZero ( - Var4 Ref ) ) )
+%% -------------------------------------------------
+%%    TwoModels         SimpleExpression
+%% -------------------------------------------------
+ModelOne   Real
+ModelTwo   Real
+Ref        Real
+Good       Continuous
+END
+100.0 200.0 5.0  1.0
+ ( + ( * ModelOne 
+          ( ToReal  ( LongGreaterThanZero ( - Var3 Ref ) ) )
+        )
+    ( * ModelTwo
+          ( ToReal ( NOT ( LongGreaterThanZero ( - Var3 Ref ) ) ) )
+        )
+)
+%% -------------------------------------------------
+%%    VarsAndExps   KeyWords
+%% -------------------------------------------------
+ Instance ModelValue TwoModels END
+%% =================================================
+%%      The Instances
+%% =================================================
+END

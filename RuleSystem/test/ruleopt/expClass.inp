@@ -1,0 +1,42 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: NumericPredicate A sample predicate
+FuzzyPredicate Continuous PyramidODReal
+%% -------------------------------------------------
+DataType: Predicate A numeric predicate
+FuzzyParameterPredicate FuzzyPredicate
+%% -------------------------------------------------
+DataType: ExpressionTree  A Numeric Tree
+SimpleExpression
++              NumOpPlus
+-              NumOpMinus
+*              NumOpMultiply
+/              NumOpDivide
+AND            LogicalAND
+OR             LogicalOR
+NOT            LogicalNOT
+ToLogic        RealToLogic
+ToReal         LogicToReal
+GreaterThanZero    FuzzyPredicate
+LessThanZero       FuzzyPredicate
+EqualToZero        FuzzyPredicate
+LongGreaterThanZero   FuzzyPredicate
+END
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  -1.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 1.0 0.0  -1.0 -1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 0.0  -1.0 0.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  -3.0 3.0 3.0
+%% -------------------------------------------------
+DataType: ParameterizedExpression    A new numeric parameterized function
+SimpleParameterizedExpression   ParameterSet SimpleExpression Object
+%% -------------------------------------------------
+END
+ClassNamePairs:
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

@@ -1,0 +1,49 @@
+ObjectClasses:
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+NormOpy_dimless    NormalizeParameters
+NormOp3-CH2  NormalizeParameters
+NormOpC2H    NormalizeParameters
+NormOpC2H2   NormalizeParameters
+NormOpC2H3   NormalizeParameters
+NormOpC2H4   NormalizeParameters
+NormOpC2H5   NormalizeParameters
+NormOpC2H6   NormalizeParameters
+NormOpC3H3   NormalizeParameters
+NormOpC3H4   NormalizeParameters
+NormOpC3H5   NormalizeParameters
+NormOpC3H6   NormalizeParameters
+NormOpC3H7   NormalizeParameters
+NormOpC3H8   NormalizeParameters
+NormOpCH     NormalizeParameters
+NormOpCH2O   NormalizeParameters
+NormOpCH3    NormalizeParameters
+NormOpCH4    NormalizeParameters
+NormOpCHCO   NormalizeParameters
+NormOpCHO    NormalizeParameters
+NormOpCO     NormalizeParameters
+NormOpCO2    NormalizeParameters
+NormOpH      NormalizeParameters
+NormOpH2     NormalizeParameters
+NormOpH2O2   NormalizeParameters
+NormOpHO2    NormalizeParameters
+NormOpIPRO   NormalizeParameters
+NormOpO      NormalizeParameters
+NormOpO2     NormalizeParameters
+NormOpOH     NormalizeParameters                                                                          
+NormOpO2     NormalizeParameters
+NormOpOH     NormalizeParameters
+NormOpO      NormalizeParameters
+VarsAndExps   KeyWords
+AttributeNames   KeyWords
+END
+%% -------------------------------------------------
+ObjectClasses:
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

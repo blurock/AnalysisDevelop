@@ -1,0 +1,41 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: ExpressionTree  A Numeric Tree
+NumericTree
++    NumOpPlus
+-    NumOpMinus
+*    NumOpMultiply
+/    NumOpDivide
+END
+%% -------------------------------------------------
+DataType: GeneticDistribution
+GeneticReal  Real
+%% -------------------------------------------------
+DataType: GeneticSetOfParameters
+ParGeneticSetOfParameters ParameterSet
+%% -------------------------------------------------
+DataType: ParameterizedExpression    A new numeric parameterized function
+SimpleParExpression   ParameterSet NumericTree Numeric
+%% -------------------------------------------------
+DataType: Population a real population
+RPopulation
+PopulationObject ParGeneticSetOfParameters
+%% -------------------------------------------------
+DataType: PopulationCost The cost of a sample population
+PopulationCostFunction RPopulation SimpleParExpression
+END
+%%%%----------------------------------------------------------------------------------
+ClassNamePairs:
+MaximumNumberOfIterations    Integer
+TrainInstanceNameList         KeyWords
+OptimizationCost              PopulationCostFunction
+OptimizeObject                PopulationObject
+END
+% ----------------------------------------------------------
+%  Parameter classes for each instance
+% ----------------------------------------------------------
+ObjectClasses:
+END
+% ----------------------------------------------------------
+ClassNamePairs:
+END

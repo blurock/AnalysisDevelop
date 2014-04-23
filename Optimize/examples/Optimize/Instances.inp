@@ -1,0 +1,27 @@
+No attributes
+Attributes:
+%%%%-----------------------------------------------------------------------------
+2
+I1 I2 I3 END
+5.0
+%%%%-----------------------------------------------------------------------------
+%%    Optimize                     AlgorithmSummary
+                                       % The name of the Algorithm
+Initial OptimizeAlgs   END         % The Algorithm Category
+ END                                   % The Algorithm Keywords
+SimpleOpt SimpleCost          END                    % Algorithm Specification
+                                       % Algorithm Input Parameters
+MaximumNumberOfIterations     Integer
+TrainInstanceNameList         KeyWords
+OptimizeObject              Real
+END
+                                       % Algorithm Output Parameters
+OptimizedObject          %  Continuous
+END
+Instance: 1 I1   The first Instance
+1.0 2.0
+Instance: 2 I2   The second Instance
+1.0 2.0
+Instance: 3 I3   The third Instance
+1.0 2.0
+END

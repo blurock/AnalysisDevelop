@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  MatrixClusterTree
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for CoreObjects library package "MatrixClusterTree".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) CoreObjects Library
+
+@node     MatrixClusterTree Package
+@section  The "MatrixClusterTree" Package
+@cindex   package, MatrixClusterTree
+@cindex   MatrixClusterTree package
+@cindex   mcls namespace
+@cindex   namespaces, mcls
+
+@table @strong
+@item Package name
+@code{MatrixClusterTree}
+
+@item Namespace name
+@code{mcls}
+
+@item Header files
+@file{MatrixClusterTree.hh}, @file{MatrixClusterTreeType.hh}
+@end table
+
+
+@include MatrixClusterTree/Overview.texi
+
+@include MatrixClusterTree/Classes.texi

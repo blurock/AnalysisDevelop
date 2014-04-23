@@ -1,0 +1,16 @@
+ObjectClasses:
+END
+ClassNamePairs:
+CriticalPointsFileName            KeyWords
+CriticalPointsRootName            KeyWords
+PartitionTypesFromPoints          KeyWords
+Breite_Difference_Squared.EQ      FuzzyParameterPredicate
+Breite_Difference_Squared.GT      FuzzyParameterPredicate
+Breite_Difference_Squared.LT      FuzzyParameterPredicate
+BreitePartition                   KeyWords
+EntropyGoal                       KeyWords
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END

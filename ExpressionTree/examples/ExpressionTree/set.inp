@@ -1,0 +1,16 @@
+Expression Test
+Attributes:
+%% -------------------------------------------------
+%%     Set    SetTree
+%% -------------------------------------------------
+LocalExpressionKeyWords:
+Z4   Real
+Z3   Real
+Z2   Real
+Z1   Real
+END
+5.0 0.0      5.0 1.0
+( Line ( Set Var3 Z4 Z3 Z2 Z1 ) )
+%% =================================================
+END
+

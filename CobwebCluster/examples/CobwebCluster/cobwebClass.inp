@@ -1,0 +1,26 @@
+% **********************************************************
+% The Set up of the Attribute Class Information
+% **********************************************************
+%
+% ----------------------------------------------------------
+%  The Type Definition of the Attributes
+%  (no new types specified)
+% ----------------------------------------------------------
+ObjectClasses:
+END
+% ----------------------------------------------------------
+ClassNamePairs:
+     MaxLevel                    Integer
+     LogicType                   KeyWords
+     GoalNameList                KeyWords
+END
+ObjectClasses:
+END
+%
+% ----------------------------------------------------------
+%  The instance parameter specifications
+%  Five Parameters are to be read in
+%
+% ----------------------------------------------------------
+ClassNamePairs:
+END

@@ -1,0 +1,54 @@
+% **********************************************************
+% The Set up of the Attribute Class Information
+% **********************************************************
+%
+% ----------------------------------------------------------
+%  The Type Definition of the Attributes
+%  (no new types specified)
+% ----------------------------------------------------------
+ObjectClasses:
+DataType:
+NumericPredicate A sample predicate
+FuzzyPredicate Continuous PyramidODReal
+DataType:
+Predicate A predicate of a numeric predicate function
+FuzzyParameterPredicate FuzzyPredicate
+DataType: NValued An Assortment of Colors
+Colors Red 0.0 Green 0.5 Blue 1.0 END
+DataType: NValued True-False Logic
+TrueFalse True 1.0 False 0.0 END
+DataType: LinearODReal A Linear Function
+TestLinear
+DataType: NumericPredicate An exact Predicate
+PredicateExact TrueFalse PyramidODReal
+END
+ClassNamePairs:
+RunIDInitial          Integer
+InstanceReadFiles     KeyWords
+Test                  Real
+InstanceNameList      KeyWords
+AttributeSpecs        KeyWords
+TestPercentage        Real
+DecisionTreeRead      GoalSpec
+MatrixSetUp           GoalSpec
+AttributeSetUp        GoalSpec
+END
+% **********************************************************
+% The Set up of the Instances Class Information
+% **********************************************************
+%
+% ----------------------------------------------------------
+%  The Type Definition of the Instances
+%  (no new types specified)
+% ----------------------------------------------------------
+ObjectClasses:
+END
+%
+% ----------------------------------------------------------
+%  The instance parameter specifications
+%  Five Parameters are to be read in
+%
+% ----------------------------------------------------------
+ClassNamePairs:
+END
+

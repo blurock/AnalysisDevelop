@@ -1,0 +1,95 @@
+% ----------------------------------------------------------
+%  Parameters for entire set of instances
+% ----------------------------------------------------------
+InstanceSet  ===================== A Set of Optimization Parameters ==========================
+Attributes:
+%% -------------------------------------------------
+%% TrainInstanceNameList KeyWords
+%% -------------------------------------------------
+Instance1 Instance2 Instance3 Instance4 
+END
+%% P1_Distribution  AttributeDistribution
+PrimitiveStats:
+3
+0.0 2.5 5.0
+%% -------------------------------------------------
+%% P2_Distribution  AttributeDistribution
+PrimitiveStats:
+2
+1.0 10.0
+%% -------------------------------------------------
+%% P3_Distribution  AttributeDistribution
+PrimitiveStats:
+10
+100.0 200.0 300.0 400.0 500.0 600.0 700.0 800.0 900.0 1000.0
+%% -------------------------------------------------
+%% InstanceNameList KeyWords
+Instance1 Instance2 Instance3 Instance4 
+%%Instance5 Instance6 Instance7 Instance8 
+%%Instance9 Instance10 Instance11 Instance12 
+END
+%% -------------------------------------------------
+%% TestPercentage Real
+100.0
+%% -------------------------------------------------
+%% AttributeSpecs KeyWords
+Var1 Var2 Var3 Var4 END
+%% -------------------------------------------------
+%% RootName KeyWords
+Distribution_ END
+%% -------------------------------------------------
+% MaximumNumberOfIterations
+30
+%% -------------------------------------------------
+%% OptimizeCost PopulationCostFunction
+CostFunction:
+Genetic:
+%% Genetic Objects in GeneticSet
+GeneticParameters:
+P1  GeneticReal
+P2  GeneticReal
+END
+P1 Distribution_P1
+Population: 50
+ActionRule:
+                ParameterSet:
+                ClassNamePairs:
+                P1   Real
+                Ref     Real
+                END
+                0.0 0.0
+                Operation:
+
+          ActionRuleCondition:
+
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+                Ref     Real
+                END
+                1.0
+                ( LessThanZero ( - Ref Var3 ) )
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                Diff    NumericExpression
+                Cost    NumericExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%%Action1: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                          END
+        ( - P1 Var3 )
+%%%%%%%%%%%%%%%%%%%%%%%%Action1: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                          Zero               Real
+                          END
+                          0.0
+ ( - Zero ( * Diff Diff ) )
+END

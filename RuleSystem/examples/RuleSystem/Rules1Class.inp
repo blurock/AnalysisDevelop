@@ -1,0 +1,12 @@
+ObjectClasses:
+END
+ClassNamePairs:
+MaximumNumberOfNodes    Integer
+TrainInstanceNameList      KeyWords
+ProductionSystem        NormalProductionSystem
+END
+%%% New Instance Values
+ObjectClasses:
+END
+ClassNamePairs:
+END

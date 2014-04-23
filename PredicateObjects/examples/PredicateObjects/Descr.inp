@@ -1,0 +1,37 @@
+Descriptions Example
+%%% ---------------------------------------------------
+%%%  Description
+%%% ---------------------------------------------------
+Attributes:
+Description:
+Var3.GreaterThanZero FuzzyParameterPredicate
+Var3.LessThanZero    FuzzyParameterPredicate
+Var3.EqualToZero     FuzzyParameterPredicate
+END
+Predicate: Var3 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  0.0 1.0 1.0
+Predicate: Var3 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 0.0 -1.0 0.0 0.0
+Predicate: Var3 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 0.0 -1.0 0.0 1.0
+%%% ---------------------------------------------------
+%%%  Disjunction
+%%% ---------------------------------------------------
+ConjunctionPredicates:
+Description:
+GreaterThanZero FuzzyParameterPredicate
+LessThanZero    FuzzyParameterPredicate
+END
+Predicate: Var3 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  0.0 1.0 1.0
+Predicate: Var3 Continuous
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 0.0 -1.0 0.0 0.0
+%%% ---------------------------------------------------
+%%%  Disjunction
+%%% ---------------------------------------------------
+PartitionTable-Rows:
+GreaterThanZero LessThanZero END
+PartitionTable-Columns:
+Var3.GreaterThanZero Var3.LessThanZero Var3.EqualToZero END
+END
+END

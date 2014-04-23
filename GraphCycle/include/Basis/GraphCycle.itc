@@ -1,0 +1,115 @@
+/*  FILE     
+**  PACKAGE     REACTION    
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1995  REACTION Project / Edward S. Blurock 
+*/
+ 
+/*I  . . . INCLUDES  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+*/
+#include "Basis/System.hh"
+#include "Basis/Pairs.hh"
+#include "Basis/Graph.hh"
+#include "Basis/GraphCycle.hh"
+ 
+/*S EncodeDecode
+*/ 
+/*F ans = Encode(buffer,node) . . . . . . . . . . . . . . . . PathsSearchNode
+**
+**  DESCRIPTION
+**    buffer: the buffer
+**    node: The search node
+**    ans: True if successful
+**
+**  REMARKS
+**
+*/
+template <class KeyType>
+bool Encode(CommBuffer& buffer, PathsSearchNode<KeyType>& node)
+     {
+     return node.DecodeThis(buffer);
+     }
+/*F ans = Encode(buffer,node) . . . . . . . . . . . . . . . . PathsSearchNode
+**
+**  DESCRIPTION
+**    buffer: the buffer
+**    node: The search node
+**    ans: True if successful
+**
+**  REMARKS
+**
+*/
+template <class KeyType>
+bool Decode(CommBuffer& buffer, PathsSearchNode<KeyType>& node)
+     {
+     return node.DecodeThis(buffer);
+     }
+ 
+/* IO
+*/
+ 
+/*F newout = operator<<(out,node) . . . . . . . . . . . . . . PathsSearchNode
+**
+**  DESCRIPTION
+**    out: The output stream
+**    node: the search node
+**    newout: The output stream
+**
+**  REMARKS
+**
+*/
+template <class KeyType>
+ostream& operator<<(ostream& out, const PathsSearchNode<KeyType>& node)
+     {
+     ostream_iterator< KeyType > os(out, " ");
+     copy(node.Path.begin(),node.Path.end(),os);
+     return out;
+     }
+/* Boolean
+*/
+ 
+/*F ans = operator<(searchnode1,searchnode2)  . . . . . . . . PathsSearchNode
+**
+**  DESCRIPTION
+**    searchnode1,searchnode2: The nodes to be compared with
+**    ans: true if the path is less than
+**
+**  REMARKS
+**
+*/
+template <class KeyType>
+inline bool 
+operator<(const PathsSearchNode<KeyType>& searchnode1,
+	  const PathsSearchNode<KeyType>& searchnode2)
+     {
+     if(searchnode1.Path.size() < searchnode2.Path.size())
+	  return true;
+     else if(searchnode1.Path.size() > searchnode2.Path.size())
+	  return false;
+     else
+	  return lexicographical_compare(searchnode1.Path.begin(),
+					 searchnode1.Path.end(),
+					 searchnode2.Path.begin(),
+					 searchnode2.Path.end());
+     }
+/*F ans = operator==(searchnode1,searchnode2) . . . . . . . . PathsSearchNode
+**
+**  DESCRIPTION
+**    searchnode1,searchnode2: The nodes to be compared
+**    ans: true if the path is the same
+**
+**  REMARKS
+**
+*/
+template <class KeyType>
+inline bool 
+operator==(const PathsSearchNode<KeyType>& searchnode1,
+	   const PathsSearchNode<KeyType>& searchnode2)
+     {
+     return searchnode1.Path == searchnode2.Path;
+     }

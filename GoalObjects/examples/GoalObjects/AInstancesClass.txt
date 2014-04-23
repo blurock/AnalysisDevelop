@@ -1,0 +1,31 @@
+% ----------------------------------------------------------
+%  The Type Definition of the Attributes
+%  (no new types specified)
+% ----------------------------------------------------------
+ObjectClasses:
+END
+ClassNamePairs:
+RunID1 Integer
+END
+% **********************************************************
+% The Set up of the Instances Class Information
+% **********************************************************
+%
+% ----------------------------------------------------------
+%  The Type Definition of the Instances
+%  (no new types specified)
+% ----------------------------------------------------------
+ObjectClasses:
+END
+%
+% ----------------------------------------------------------
+%  The instance parameter specifications
+%  Five Parameters are to be read in
+%
+% ----------------------------------------------------------
+ClassNamePairs:
+Var1 Integer
+Var2 Integer
+Var3 Real
+Var4 Integer
+END

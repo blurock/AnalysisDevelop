@@ -1,0 +1,99 @@
+ObjectClasses:
+DataType: AlgorithmRun  A sample goal run class
+TestAlgorithmRun
+% **********************************************************
+% The Definition of the AlgorithmRunClass
+% **********************************************************
+VariableGen Initial
+       Algorithms Initial#VariableGen
+            ExpressionAlgorithm Initial#VariableGen#Algorithms Expression
+END
+%% -------------------------------------------------
+DataType: LogicDescription  A real function based predicate
+ContLogicDescription Continuous
+%% -------------------------------------------------
+DataType: RealPredicate  A real function based predicate
+ParPredicate  PyramidODReal Continuous 
+%% -------------------------------------------------
+DataType:
+NumericPredicate A sample predicate
+FuzzyPredicate Continuous PyramidODReal
+%% -------------------------------------------------
+DataType:
+Predicate A predicate of a numeric predicate function
+FuzzyParameterPredicate FuzzyPredicate 
+%% -------------------------------------------------
+DataType: RealFunctionParameterized   A Gaussian Function
+Gaussian GaussianODReal
+%% -------------------------------------------------
+DataType: RealFunctionParameterized   A Linear Function
+Line LinearODReal
+%% -------------------------------------------------
+DataType: ExpressionTree  A Numeric Tree
+NumericTree
++    NumOpPlus
+-    NumOpMinus
+*    NumOpMultiply
+/    NumOpDivide
+Set            ParameterSetOperation
+LCoerce        LogicToReal
+Vector         FormVector
+Gaussian       Gaussian
+Line           Line
+Pred           FuzzyPredicate
+END
+ODReal -Infinity T +Infinity T GaussianODReal 0.0 0.0 0.0
+ODReal -Infinity T +Infinity T LinearODReal 0.0 0.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  -1.0 3.0 3.0
+%% -------------------------------------------------
+DataType: ExpressionTree  A Numeric Tree
+LogicalTree
+AND   LogicalAND
+OR    LogicalOR
+NOT   LogicalNOT
+Set            ParameterSetOperation
+Pred           FuzzyPredicate
+PyPred         ParPredicate
+Compare        LogicalDescriptionCompare
+END
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  -1.0 3.0 3.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  -1.0 3.0 3.0
+%% -------------------------------------------------
+DataType: ExpressionTree  A Numeric Tree
+SetTree
+Set            ParameterSetOperation
+Line           NumericLineSegmentFunction
+END
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+RunID          Integer
+Operation      AlgorithmSummary
+Exp            NumericTree
+Log            LogicalTree
+Set            SetTree
+Var3           Real
+Var4           Real
+VarsAndExps    KeyWords
+SampleVector   InstanceVector
+LDescr1         ContLogicDescription
+LDescr2         ContLogicDescription
+END
+%% -------------------------------------------------
+ObjectClasses:
+DataType: NValued An Assortment of Colors
+Colors Red 0.0 Green 0.5 Blue 1.0 END
+DataType: NValued True-False Logic 
+TrueFalse True 1.0 False 0.0 END
+END
+%% -------------------------------------------------
+ClassNamePairs:
+VarT1 TrueFalse 
+VarT2 TrueFalse 
+Var1 Integer
+Var2 Integer
+Var3 Real
+Var4 Real
+END
+%% -------------------------------------------------

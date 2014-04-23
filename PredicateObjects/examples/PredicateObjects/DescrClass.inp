@@ -1,0 +1,17 @@
+ObjectClasses:
+DataType:
+NumericPredicate A sample predicate
+FuzzyPredicate Continuous PyramidODReal
+DataType:
+Predicate A predicate of a numeric predicate function
+FuzzyParameterPredicate FuzzyPredicate
+END
+ClassNamePairs:
+Descr Description
+Conj  Conjunction
+PTable PartitionTable
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END

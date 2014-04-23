@@ -1,0 +1,126 @@
+RuleSet  =====================A Set of Action RulesAttributes: ==========================
+Attributes:
+%%% MaximumNumberOfNodes    Integer
+30
+%%% ProductionSystem        NormalProductionSystem
+ProductionSystem:
+GeneratedNode: GeneratedNode
+NumberOfGoals: 2
+GoalResults:  
+             Cost
+             END
+GoalCondition:
+     ParameterSet:
+     ClassNamePairs:
+     Cost    Real
+     Plus    Real
+     Mult    Real
+     END
+     0.0 0.0 1.0
+     Operation:
+     Ref      Real
+     END
+     2.0
+        ( GreaterThanZero ( - Cost Ref ) )
+SetOfRules:
+ClassNamePairs:
+Rule1   PredicateAction
+Rule2   PredicateAction
+END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%% Rule1   ExpressionAction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ActionRule:
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+
+          ActionRuleCondition:
+
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+                Ref       Real
+                END
+                2.0
+                ( AND ( GreaterThanZero ( - Ref Plus ) ) ( GreaterThanZero ( - Ref Mult ) ) )
+%%%                ( GreaterThanZero ( - Ref ( + Mult Plus ) ) )
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                Plus    NumericExpression
+                Cost    NumericExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%%Action1: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        END
+                        ( + Mult ( / ( * Mult X ) Factor ) )
+%%%%%%%%%%%%%%%%%%%%%%%%Cost: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        END
+                        ( * ( - Plus Mult ) ( - Plus Mult ) )
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%% Rule2   PredicateAction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ActionRule:
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+
+          ActionRuleCondition:
+
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+                Ref     Real
+                END
+                2.0
+                ( AND ( GreaterThanZero ( - Ref Plus ) ) ( GreaterThanZero ( - Ref Mult ) ) )
+%%                ( GreaterThanZero ( - Ref ( + Mult Plus ) ) )
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                Plus    NumericExpression
+                Cost    NumericExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%%Plus: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        END
+                        ( / ( + Plus X ) Factor )
+%%%%%%%%%%%%%%%%%%%%%%%%Cost: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        END
+                        ( * ( - Plus Mult ) ( - Plus Mult ) )
+
+%% =================================================
+%%      New Instance Values
+%% =================================================
+Instance: 1 Instance1    The First Instance
+0.0  0.0 1.0 2.0  1.0
+%% -------------------------------------------------
+Instance: 2 Instance2    The Second Instance
+0.0  0.0 1.0 3.0  2.0
+%% -------------------------------------------------
+Instance: 3 Instance3    The Third Instance
+0.0   0.0 1.0  3.0  2.0
+%% -------------------------------------------------
+Instance: 4 Instance4    The Fourth Instance
+0.0    0.0 1.0 3.0  3.0
+%% -------------------------------------------------
+END

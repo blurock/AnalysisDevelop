@@ -1,0 +1,221 @@
+		ADAPTIVE SIMULATED ANNEALING
+
+/* $Id: myASA_out,v 1.1.1.1 2002/02/23 15:01:04 blurock Exp $ */
+
+OPTIONS_FILE = 0
+OPTIONS_FILE_DATA = 0
+RECUR_OPTIONS_FILE = 0
+RECUR_OPTIONS_FILE_DATA = 0
+COST_FILE = 0
+ASA_LIB = 0
+HAVE_ANSI = 1
+IO_PROTOTYPES = 0
+TIME_CALC = 0
+TIME_STD = 0
+TIME_GETRUSAGE = 1
+INT_LONG = 1
+INT_ALLOC = 0
+SMALL_FLOAT =        1e-18
+MIN_DOUBLE =        1e-18
+MAX_DOUBLE =        1e+18
+EPS_DOUBLE =        1e-18
+CHECK_EXPONENT = 0
+NO_PARAM_TEMP_TEST = 0
+NO_COST_TEMP_TEST = 0
+SELF_OPTIMIZE = 0
+ASA_TEST = 0
+ASA_TEST_POINT = 0
+ASA_TEMPLATE = 0
+MY_TEMPLATE = 1
+ASA_TEMPLATE_LIB = 0
+ASA_TEMPLATE_ASA_OUT_PID = 0
+ASA_TEMPLATE_MULTIPLE = 0
+ASA_TEMPLATE_SELFOPT = 0
+ASA_TEMPLATE_SAMPLE = 0
+ASA_TEMPLATE_QUEUE = 0
+ASA_TEMPLATE_PARALLEL = 0
+ASA_TEMPLATE_SAVE = 0
+USER_INITIAL_COST_TEMP = 0
+RATIO_TEMPERATURE_SCALES = 0
+USER_INITIAL_PARAMETERS_TEMPS = 0
+DELTA_PARAMETERS = 0
+QUENCH_PARAMETERS = 0
+QUENCH_COST = 0
+QUENCH_PARAMETERS_SCALE = 1
+QUENCH_COST_SCALE = 1
+OPTIONAL_DATA = 0
+OPTIONAL_DATA_INT = 0
+USER_COST_SCHEDULE = 0
+USER_ACCEPT_ASYMP_EXP = 0
+USER_ACCEPTANCE_TEST = 0
+USER_GENERATING_FUNCTION = 0
+USER_REANNEAL_COST = 0
+USER_REANNEAL_PARAMETERS = 0
+MAXIMUM_REANNEAL_INDEX = 50000
+REANNEAL_SCALE =           10
+ASA_SAMPLE = 0
+ASA_QUEUE = 0
+ASA_RESOLUTION = 0
+FITLOC = 0
+FITLOC_ROUND = 1
+ASA_PARALLEL = 0
+ASA_SAVE = 0
+SYSTEM_CALL = 1
+FDLIBM_POW = 0
+FDLIBM_LOG = 0
+FDLIBM_EXP = 0
+
+ASA_PRINT = 1
+ASA_OUT = myASA_out
+USER_ASA_OUT = 0
+ASA_PRINT_INTERMED = 1
+ASA_PRINT_MORE = 0
+G_FIELD = 12
+G_PRECISION = 7
+
+OPTIONS->Limit_Acceptances = 1000
+OPTIONS->Limit_Generated = 10
+OPTIONS->Limit_Invalid_Generated_States = 1000
+OPTIONS->Accepted_To_Generated_Ratio =       0.0001
+
+OPTIONS->Cost_Precision =        1e-07
+OPTIONS->Maximum_Cost_Repeat = 5
+OPTIONS->Number_Cost_Samples = 5
+OPTIONS->Temperature_Ratio_Scale =        1e-05
+OPTIONS->Cost_Parameter_Scale_Ratio =            1
+OPTIONS->Temperature_Anneal_Scale =          100
+OPTIONS->Include_Integer_Parameters = 0
+OPTIONS->User_Initial_Parameters = 0
+OPTIONS->Sequential_Parameters = -1
+OPTIONS->Initial_Parameter_Temperature =            1
+OPTIONS->Acceptance_Frequency_Modulus = 100
+OPTIONS->Generated_Frequency_Modulus = 10000
+OPTIONS->Reanneal_Cost = 1
+OPTIONS->Reanneal_Parameters = 1
+
+OPTIONS->Delta_X =        0.001
+OPTIONS->User_Tangents = 0
+OPTIONS->Curvature_0 = 0
+
+
+Initial Random Seed = 377
+
+*number_parameters = 11
+
+index_v parameter_minimum parameter_maximum parameter_value parameter_type 
+ 0        -1.977       		 -1.777       	 -1.877       -1     
+ 1        0.05         		 0.07         	 0.063        -1     
+ 2        0.2          		 0.6          	 0.441        -1     
+ 3        0.979        		 0.99         	 0.989        -1     
+ 4        7.3          		 7.7          	 7.591        -1     
+ 5        -1.74        		 -1.54        	 -1.64        -1     
+ 6        0.276        		 0.476        	 0.376        -1     
+ 7        0.006        		 0.026        	 0.016        -1     
+ 8        0.005        		 0.025        	 0.015        -1     
+ 9        40           		 40           	 40           -1     
+ 10       400          		 400          	 400          -1     
+
+
+temperature_scale =     7.574736
+temperature_scale_parameters[0] =     7.574736
+*temperature_scale_cost =     7.574736
+
+
+
+*index_cost_acceptances = 0, *current_cost_temperature = 0.0004304198
+*accepted_to_generated_ratio =            1, *number_invalid... = 0
+*number_generated = 0, *number_accepted = 0
+best...->cost = 6.870413e-05, last...->cost = 6.870413e-05
+index_v  best...->parameter current_parameter_temp	tangent
+0	   -1.820106		           1	           0
+1	  0.05186275		           1	           0
+2	   0.4046954		           1	           0
+3	    0.980846		           1	           0
+4	     7.63618		           1	           0
+5	   -1.582572		           1	           0
+6	   0.3679522		           1	           0
+7	  0.01451632		           1	           0
+8	  0.01910373		           1	           0
+
+
+best...->cost=9.058202e-08  *number_accepted=2  *number_generated=2
+
+*index_cost_acceptances = 2, *current_cost_temperature = 1.349779e-07
+*accepted_to_generated_ratio =          0.1, *number_invalid... = 0
+*number_generated = 11, *number_accepted = 2
+best...->cost = 9.058202e-08, last...->cost = 9.058202e-08
+index_v  best...->parameter current_parameter_temp	tangent
+0	   -1.862182		8.110595e-05	4.155356e-07
+1	  0.06519813		8.110595e-05	3.713237e-06
+2	   0.4551585		8.110595e-05	 1.55878e-06
+3	    0.980694		8.110595e-05	1.327436e-06
+4	    7.469335		8.110595e-05	-6.783316e-09
+5	   -1.689446		8.110595e-05	1.976412e-07
+6	   0.4460138		8.110595e-05	-1.708109e-06
+7	  0.01510192		8.110595e-05	-8.053692e-05
+8	  0.01921258		8.110595e-05	 6.48938e-05
+
+curvature[0][0] = 1.413157e-05
+
+curvature[1][0] = 0.0001080539 	 = curvature[0][1]
+curvature[1][1] = 0.0008400164
+
+curvature[2][0] = 4.907773e-05 	 = curvature[0][2]
+curvature[2][1] = 0.0003809458 	 = curvature[1][2]
+curvature[2][2] = 0.0001733916
+
+curvature[3][0] = 3.044196e-05 	 = curvature[0][3]
+curvature[3][1] = 0.0002370343 	 = curvature[1][3]
+curvature[3][2] = 0.0001073239 	 = curvature[2][3]
+curvature[3][3] = 6.750662e-05
+
+curvature[4][0] =  -4.0567e-07 	 = curvature[0][4]
+curvature[4][1] = -3.136969e-06 	 = curvature[1][4]
+curvature[4][2] = -1.430214e-06 	 = curvature[2][4]
+curvature[4][3] = -8.75246e-07 	 = curvature[3][4]
+curvature[4][4] = 1.200927e-08
+
+curvature[5][0] = 3.636761e-05 	 = curvature[0][5]
+curvature[5][1] = 0.0002811553 	 = curvature[1][5]
+curvature[5][2] = 0.0001284152 	 = curvature[2][5]
+curvature[5][3] = 7.824945e-05 	 = curvature[3][5]
+curvature[5][4] = -1.082962e-06 	 = curvature[4][5]
+curvature[5][5] =  0.000101038
+
+curvature[6][0] = -0.0001872952 	 = curvature[0][6]
+curvature[6][1] = -0.001449706 	 = curvature[1][6]
+curvature[6][2] = -0.0006613626 	 = curvature[2][6]
+curvature[6][3] = -0.0004047279 	 = curvature[3][6]
+curvature[6][4] = 5.549401e-06 	 = curvature[4][6]
+curvature[6][5] = -0.0005088708 	 = curvature[5][6]
+curvature[6][6] =  0.002666669
+
+curvature[7][0] =  -0.00321977 	 = curvature[0][7]
+curvature[7][1] =  -0.02502074 	 = curvature[1][7]
+curvature[7][2] =  -0.01137028 	 = curvature[2][7]
+curvature[7][3] = -0.007056555 	 = curvature[3][7]
+curvature[7][4] = 9.381908e-05 	 = curvature[4][7]
+curvature[7][5] = -0.008684487 	 = curvature[5][7]
+curvature[7][6] =   0.04482676 	 = curvature[6][7]
+curvature[7][7] =    0.7924842
+
+curvature[8][0] =  0.002772911 	 = curvature[0][8]
+curvature[8][1] =   0.02151688 	 = curvature[1][8]
+curvature[8][2] =  0.009792628 	 = curvature[2][8]
+curvature[8][3] =  0.006045897 	 = curvature[3][8]
+curvature[8][4] = -8.12997e-05 	 = curvature[4][8]
+curvature[8][5] =  0.007570977 	 = curvature[5][8]
+curvature[8][6] =  -0.03900516 	 = curvature[6][8]
+curvature[8][7] =   -0.6767769 	 = curvature[7][8]
+curvature[8][8] =    0.5788389
+
+
+
+ NORMAL_EXIT exit_status = 0
+ Locate_Cost = 5, calculating curvatures while exiting asa ()
+final_cost = best_generated_state->cost = 9.058202e-08
+*number_accepted at best_generated_state->cost = 2
+*number_generated at best_generated_state->cost = 2
+
+
+

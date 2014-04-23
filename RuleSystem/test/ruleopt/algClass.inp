@@ -1,0 +1,28 @@
+ObjectClasses:
+DataType: AlgorithmRun  A sample goal run class
+AlgorithmTestRun
+% **********************************************************
+% The Definition of the GoalRunClass
+% **********************************************************
+OptimizeAlgs Initial
+       1-OptimizeMain  Initial#OptimizeAlgs
+             GeneticAlgorithm  Initial#OptimizeAlgs#1-OptimizeMain     Genetic
+END
+%%%%----------------------------------------------------------------------------------
+END
+% ----------------------------------------------------------
+ClassNamePairs:
+Genetic               AlgorithmSummary
+END
+% ----------------------------------------------------------
+%  Parameter classes for each instance
+% ----------------------------------------------------------
+ObjectClasses:
+END
+% ----------------------------------------------------------
+ClassNamePairs:
+END
+Empty Set Name
+END
+
+

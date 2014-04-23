@@ -1,0 +1,56 @@
+Expression Test
+Attributes:
+%% -------------------------------------------------
+%%    ExpPass3WidthDiff               VASLTree
+%% -------------------------------------------------
+Two Real
+END
+2.0
+( * 
+    ( - Pass3Width  Breite_nach_Stich_warm_3 )
+    ( - Pass3Width  Breite_nach_Stich_warm_3 )
+  )
+%% -------------------------------------------------
+%%    ExpPass5WidthDiff               VASLTree
+%% -------------------------------------------------
+Two Real
+END
+2.0
+( *   
+      ( - Pass5Width  Breite_nach_Stich_warm_5 )
+      ( - Pass5Width  Breite_nach_Stich_warm_5 )
+  )
+%% -------------------------------------------------
+%%    ExpPass5MeasuredDiff            VASLTree
+%% -------------------------------------------------
+Two Real
+END
+2.0
+( * 
+      ( - Pass5Width  Breite_nach_Stich_gemessen_5 )
+      ( - Pass5Width  Breite_nach_Stich_gemessen_5 )
+   )
+%% -------------------------------------------------
+%%    ExpOriginalPass5MeasuredDiff            VASLTree
+%% -------------------------------------------------
+Two Real
+END
+2.0
+( * 
+      ( - Breite_nach_Stich_warm_5  Breite_nach_Stich_gemessen_5 )
+      ( - Breite_nach_Stich_warm_5  Breite_nach_Stich_gemessen_5 )
+ )
+%% -------------------------------------------------
+%%    VarsAndExps   KeyWords
+%% -------------------------------------------------
+Instance 
+Pass3WidthDiff      ExpPass3WidthDiff
+Pass5WidthDiff      ExpPass5WidthDiff
+Pass5MeasuredDiff   ExpPass5MeasuredDiff
+OriginalPass5MeasuredDiff   ExpOriginalPass5MeasuredDiff
+END
+%% ================================================
+%%      The Instances
+%% =================================================
+%% -------------------------------------------------
+END

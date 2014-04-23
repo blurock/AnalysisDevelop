@@ -1,0 +1,191 @@
+/*  FILE     FindPaths.icc
+**  PACKAGE     REACTION    
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1995  REACTION Project / Edward S. Blurock 
+*/
+/*S Constructors
+*/ 
+/*F FindPathsInGraph(graph,conditions)  . . . . . . . . . . . . .  find paths
+**
+**  DESCRIPTION
+**    graph: The graph
+**    conditions: conditions to guide graph search
+**
+**    The class is created and NotFinished is filled with all the nodes
+**    converted to PathsSearchNode
+**
+**  REMARKS
+**
+*/
+template <class KeyType, class T>
+inline
+FindPathsInGraph<KeyType,T>::FindPathsInGraph(Graph<KeyType,T>& graph,
+					      const PathSearchConditions& conditions)
+: Conditions(conditions),
+GraphToSearch(graph)
+     {
+     ObjectList<KeyType> nodes = graph.GetSetOfGraphKeys();
+
+     ObjectList<KeyType>::iterator key;
+     for(key = nodes.begin();
+	 key != nodes.end();
+	 key++)
+	  {
+	  PathsSearchNode<KeyType> snode(nodes,*key);
+	  NotFinished.AddObject(snode);
+	  }
+     Iterate();
+     }
+ 
+/*F FindPathsInGraph(key,graph,conditions)  . . . . . . . . . . .  find paths
+**
+**  DESCRIPTION
+**    key: The key in graph to start from
+**    graph: The graph
+**    conditions: conditions guiding the search
+**
+**    The graph search is set up to search from the key node
+**
+**  REMARKS
+**
+*/
+template <class KeyType, class T>
+FindPathsInGraph<KeyType,T>::FindPathsInGraph(const KeyType& key,
+					      Graph<KeyType,T>& graph,
+					      const PathSearchConditions& conditions)
+: Conditions(conditions),
+GraphToSearch(graph)
+     {
+     ObjectList<KeyType> nodes = graph.GetSetOfGraphKeys();
+     PathsSearchNode<KeyType> snodes(nodes,key);
+     NotFinished.AddObject(snodes);
+     Iterate();
+     }
+/*F FindPathsInGraph(searchnodes,graph,conditions)  . . . . . . .  find paths
+**
+**  DESCRIPTION
+**    searchnodes: The set of starting points
+**    graph: The graph
+**    conditions: The conditions of the search
+**
+**  REMARKS
+**
+*/
+template <class KeyType, class T>
+inline 
+FindPathsInGraph<KeyType,T>::FindPathsInGraph(const ObjectList<PathsSearchNode<KeyType> >& searchnodes,
+					      Graph<KeyType,T>& graph,
+					      const PathSearchConditions& conditions)
+: Conditions(conditions),
+GraphToSearch(graph),
+NotFinished(searchnodes)
+
+     {
+     Iterate();
+     } 
+/*S Utility
+*/
+/*F AddNextLevel()  . . . . . . . . . . . . . . . . . .  next level in search
+**
+**  DESCRIPTION
+**    The general flow is:
+**    - Get the first NotFinished search node
+**    - In the search path, get the last graph node dealt with
+**    - If incomplete paths are to be included, add path (without node)
+**    - Set up next node search 
+**    - If the graph has no Sons as nodes, add as Done
+**    - else, loop through sons for next node
+**    - If parents are to be included (IncludeParents flag) loop through parents
+**    - Take the current node off the NotFinished list
+**
+**  REMARKS
+**
+*/
+template <class KeyType, class T>
+inline void
+FindPathsInGraph<KeyType,T>::AddNextLevel()
+     {
+//     cout << "--------AddNextLevel()------------\n";
+     PathsSearchNode<KeyType>
+	  searchnode = NotFinished.front();
+
+//     cout << "-------------------------------------\n";
+//     cout << "PathsSearchNode<KeyType>\n";
+//     cout << searchnode;
+//     cout << "\n-------------------------------------\n";
+     KeyType key = searchnode.GetPath().back();
+//     cout << "KeyType\n";
+//     cout << key;
+//     cout << "\n-------------------------------------\n";
+     
+     GraphNode<KeyType,T>& graphnode 
+	  = GraphToSearch.FindGraphNode(key);
+//     cout << "GraphNode<KeyType,T>\n";
+//     cout << graphnode;
+//     cout << "\n-------------------------------------\n";
+
+     if(Conditions.IncludeIncompletePaths)
+	  Done.AddObjectIfNotThere(searchnode);
+     
+     DetermineNextNode<KeyType,T> nextnode(searchnode,Conditions,*this);
+     
+     if(graphnode.Sons.size() == 0)
+	  {
+	  Done.AddObjectIfNotThere(searchnode);
+	  }
+     else
+	  {
+	  for_each(graphnode.Sons.begin(),
+		   graphnode.Sons.end(),
+		   nextnode);
+	  }
+     
+     if(Conditions.IncludeParents)
+	  {
+	  if(graphnode.Parents.size() == 0)
+	       Done.AddObjectIfNotThere(searchnode);
+	  else
+	       {
+	       for_each(graphnode.Parents.begin(),
+			graphnode.Parents.end(),
+			nextnode);
+	       }
+	  }
+     NotFinished.pop_front();
+
+//     cout << "\n-------------------------------------\n";
+//     cout << "Done Paths\n";
+//     cout << Done;
+//      cout << "\n-------------------------------------\n";
+//      cout << "NotFinished Paths\n";
+//      cout << NotFinished;
+//      cout << "\n-------------------------------------\n";     
+     } 
+/*F Iterate() . . . . . . . . . . . . . .  perform iterative search for paths
+**
+**  DESCRIPTION
+**    Keep cycling through the non-finished paths until no more left
+**    (or exceeded the maximum cycles)
+**
+**  REMARKS
+**
+*/
+template <class KeyType, class T>
+inline void
+FindPathsInGraph<KeyType,T>::Iterate()
+     {
+     int count = Conditions.MaxNumberOfIterations;
+     while(NotFinished.size() > 0 &&
+	   count != 0)
+	  {
+	  AddNextLevel();
+	  count--;
+	  }
+     }
+

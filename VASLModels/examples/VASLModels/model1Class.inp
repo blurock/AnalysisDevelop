@@ -1,0 +1,16 @@
+ObjectClasses:
+END
+ClassNamePairs:
+InstanceListFromPredicates                   KeyWords
+OriginalPass5MeasuredDiff_Check              PVerifyExpression
+Pass3WidthDiff_Check                         PVerifyExpression
+Pass5MeasuredDiff_Check                      PVerifyExpression
+Check                         PVerifyExpression
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

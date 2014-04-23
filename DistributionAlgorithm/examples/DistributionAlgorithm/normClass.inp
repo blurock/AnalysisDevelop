@@ -1,0 +1,18 @@
+ObjectClasses:
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+NormOpVar1   NormalizeParameters
+NormOpVar3   NormalizeParameters
+VarsAndExps   KeyWords
+InstanceNameList KeyWords
+END
+%% -------------------------------------------------
+ObjectClasses:
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

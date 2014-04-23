@@ -1,0 +1,6 @@
+CriticalPoints.Var1
+CriticalPoints: Var1 [1.0,5.0] [2.0,6.0] [3.0,7.0] END
+CriticalPoints.Var2
+CriticalPoints: Var2 [1.0,5.0] [2.0,6.0] [3.0,7.0] END
+END
+END

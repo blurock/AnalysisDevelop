@@ -1,0 +1,36 @@
+% ----------------------------------------------------------
+%  Parameters for entire set of instances
+% ----------------------------------------------------------
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+%%%%-----------------------------------------------------------------------------
+%%     RuleSystemSearch     AlgorithmSummary
+%%%%-----------------------------------------------------------------------------
+                                    % The name of the Algorithm
+Initial RuleSystem END              % The Algorithm Category
+END                                 % The Algorithm Keywords
+Calculate  END                      % Algorithm Specification
+                                    % Algorithm Input Parameters
+ProductionSystem        NormalProductionSystem
+TrainInstanceNameList      KeyWords
+MaximumNumberOfNodes       Integer
+END
+                                    % Algorithm Output Parameters
+END
+%%%%-----------------------------------------------------------------------------
+%%     RuleSystemSearch     AlgorithmSummary
+%%%%-----------------------------------------------------------------------------
+                                    % The name of the Algorithm
+Initial RuleSystem END              % The Algorithm Category
+END                                 % The Algorithm Keywords
+Action  END                         % Algorithm Specification
+                                    % Algorithm Input Parameters
+Rule                       ExpressionAction
+TrainInstanceNameList      KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%%%%-----------------------------------------------------------------------------
+%  Parameters for each instance
+% ----------------------------------------------------------
+END

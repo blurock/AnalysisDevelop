@@ -1,0 +1,92 @@
+RuleSet  =====================A Set of Action RulesAttributes: ==========================
+Attributes:
+%%% MaximumNumberOfNodes    Integer
+5
+%%% ProductionSystem        NormalProductionSystem
+SetOfRules:
+ClassNamePairs:
+Rule1   PredicateAction
+Rule2   PredicateAction
+END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%% Rule1   ExpressionAction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ActionRule:
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+
+          ActionRuleCondition:
+
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+                Ref     Real
+                END
+                6.0
+                ( LessThanZero ( - Cost Ref ) )
+
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                Cost    NumericExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%%Action1: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        END
+                        ( / ( * Cost X ) Factor )
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%% Rule2   PredicateAction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ActionRule:
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+
+          ActionRuleCondition:
+
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+                Ref     Real
+                END
+                3.0
+                ( LessThanZero ( - Cost Ref ) )
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                Cost    NumericExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%%Cost: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        V1     Real
+                        END
+                        1.0
+                        ( / ( + Cost V1 ) Factor )
+
+%% =================================================
+%%      New Instance Values
+%% =================================================
+Instance: 1 Instance1    The First Instance
+0.0  2.0  1.0
+%% -------------------------------------------------
+Instance: 2 Instance2    The Second Instance
+0.0  2.0  2.0
+%% -------------------------------------------------
+Instance: 3 Instance3    The Third Instance
+0.0  3.0  2.0
+%% -------------------------------------------------
+Instance: 4 Instance4    The Fourth Instance
+0.0  3.0  3.0
+%% -------------------------------------------------
+END

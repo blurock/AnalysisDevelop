@@ -1,0 +1,10 @@
+p1 Fact: Predicate1
+Arg11 Integer
+Arg21 Integer
+Arg31 Integer
+END
+p2 Rule: Predicate1
+Arg12 Integer
+Arg22 Integer
+Arg32 Integer
+END

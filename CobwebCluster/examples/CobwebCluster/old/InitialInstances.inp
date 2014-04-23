@@ -1,0 +1,45 @@
+% **********************************************************
+% The Attributes and Instances to be read in
+% **********************************************************
+%
+The Set Of Read In Instances
+%
+% ----------------------------------------------------------
+%  The set of attributes (as specified by the class)
+% ----------------------------------------------------------
+Attributes:
+                    % RunID
+1000                
+                    % DebugLevel
+0                
+                    % GoalDebug
+5                
+                    % InstanceReadFile
+NoPredInstancesClass.inp NoPredInstances.inp
+END
+                    % Param
+1.0                 
+                    % InstanceNameList
+Instance1 Instance2 Instance3 
+Instance4 Instance5 Instance6 Instance7
+Instance8 Instance9 Instance10 Instance11 Instance12 Instance13 
+END 
+                    % MaxLevel (Tree Depth)
+3
+                    % LogicType
+Continuous END
+                    % GoalDebug
+0
+                    % CobwebMeasure
+Matrix Cobweb END
+% ----------------------------------------------------------
+%  The set of attributes (as specified by the class)
+%  None given
+% ----------------------------------------------------------
+END
+
+
+
+
+
+

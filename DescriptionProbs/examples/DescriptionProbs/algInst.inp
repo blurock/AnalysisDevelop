@@ -1,0 +1,34 @@
+% ----------------------------------------------------------
+%  Parameters for entire set of instances
+% ----------------------------------------------------------
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+                                           % The name of the Algorithm
+       Initial InstanceAlgs DescriptionMat END % The Algorithm Category
+       END                                 % The Algorithm Keywords
+       Matrix END                          % Algorithm Specification
+                                           % Algorithm Input Parameters
+       TotalInstanceNameList KeyWords
+       AttributeNames KeyWords
+       END
+                                           % Algorithm Result Parameters
+       DescriptionMatrix END
+% ----------------------------------------------------------
+                                    % The name of the Algorithm
+Initial InstanceAlgs Cluster END    % The Algorithm Category
+END                                 % The Algorithm Keywords
+Cobweb END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+DescriptionMatrix DescriptionMatrix
+GroupProbs        InstanceMatrix
+SingleDescription InstanceVector
+SingleMembership  Real
+END
+                                % Algorithm Result Parameters
+InGroupMeasure     % DoubleVector
+ExtraGroupMeasure  % Real
+ END
+% ----------------------------------------------------------
+%  Parameters for each instance
+% ----------------------------------------------------------
+END

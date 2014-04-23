@@ -1,0 +1,36 @@
+Expression Test
+Attributes:
+%% -------------------------------------------------
+%%     Log    LogicalTree
+%% -------------------------------------------------
+LocalExpressionKeyWords:
+Y1   Real
+Y2   Real
+Y3   Real
+X1   Real
+X2   Real
+X3   Real
+LDescr1         ContLogicDescription
+LDescr2         ContLogicDescription
+END
+0.0 1.0 1.0  -1.0 3.0 3.0
+LogicDescription:
+L1    Continuous
+L2    Continuous
+L3    Continuous
+END
+0.5 0.5 0.0
+LogicDescription:
+L1    Continuous
+L2    Continuous
+L3    Continuous
+END
+0.5 0.5 0.0
+%% ( Compare LDescr1 LDescr2 )
+%%( PyPred ( Set Y1 Y2 Y3 X1 X2 X3 ) Var3 )
+%%( Pred Var3 )
+%% ( Pred  Var3 Var3 )
+( NOT VarT1 )
+%% =================================================
+END
+

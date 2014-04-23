@@ -1,0 +1,49 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%% ExpressionAction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ActionRule:
+ParameterSet:
+ClassNamePairs:
+T1    TrueFalse
+T2    TrueFalse
+V1    Real
+V2    Real
+END
+True False 3.0 4.0
+Operation:
+
+%% Condition
+ActionRuleCondition:
+ParameterSet:
+ClassNamePairs:
+T1    TrueFalse
+T2    TrueFalse
+END
+True True
+Operation:
+T1     TrueFalse
+T2     TrueFalse
+END
+True True
+( AND  T1 VarT1 )
+%%% Condition Cutoff Level
+CutOff: .75
+%%% Set of Actions
+ActionRuleSetOfActions:
+ClassNamePairs:
+Action1    NumericExpression
+END
+%%% Action1: NumericExpression
+ParameterSet:
+ClassNamePairs:
+V1    Real
+V2    Real
+END
+1.0 2.0
+Operation:
+V1     Real
+V2     Real
+END
+1.0 2.0
+( + ( / Var3 V1 ) ( / Var4 V2 ) )
+

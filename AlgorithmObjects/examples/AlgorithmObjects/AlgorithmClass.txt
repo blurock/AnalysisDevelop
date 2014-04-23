@@ -1,0 +1,8 @@
+ObjectClasses:
+END
+Routines     Initial
+             AlgorithmsTest     Initial#Routines
+                                AlgorithmOperation Initial#Routines#AlgorithmsTest Dummy
+                                AlgorithmTest      Initial#Routines#AlgorithmsTest Test
+Numbers      Initial
+END

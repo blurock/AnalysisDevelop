@@ -1,0 +1,84 @@
+% ----------------------------------------------------------
+%  Parameters for entire set of instances
+% ----------------------------------------------------------
+InstanceSet  ===================== A Set of Optimization Parameters ==========================
+Attributes:
+%% -------------------------------------------------
+%% TrainInstanceNameList KeyWords
+%% -------------------------------------------------
+Instance1 Instance2 Instance3 Instance4 
+Instance5 Instance6 Instance7 Instance8 
+Instance9 Instance10 Instance11 Instance12 
+END
+%% -------------------------------------------------
+% MaximumNumberOfIterations
+500
+%% -------------------------------------------------
+%% OptimizeCost PopulationCostFunction
+CostFunction:
+Genetic:
+%% Genetic Objects in GeneticSet
+GeneticParameters:
+P1  GeneticReal
+P2  GeneticReal
+END
+P1 Distribution_P2
+P2 Distribution_P3
+Population: 30
+ActionRule:
+                ParameterSet:
+                ClassNamePairs:
+                P2   Real
+                Ref     Real
+                END
+                0.0 0.0
+                Operation:
+
+          ActionRuleCondition:
+
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+                Ref   Real
+                END
+                0.0
+                ( LessThanZero ( - Ref Var3 ) )
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                Line    SimpleParameterizedExpression
+                Diff    SimpleParameterizedExpression
+                Cost    SimpleParameterizedExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%%Action1: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        Ref    Real
+                          END
+                        0.0
+        ( + ( *  Var1 P1 ) P2 )
+%%%%%%%%%%%%%%%%%%%%%%%%Action1: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        Ref    Real
+                          END
+                        7.0
+        ( - Line Var3 )
+%%%%%%%%%%%%%%%%%%%%%%%%Action1: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        Zero               Real
+                        END
+                        0.0
+        ( - Zero ( * Diff Diff ) )
+%% =================================================
+%%      No  Instance Data
+%% =================================================
+END

@@ -1,0 +1,167 @@
+@defop {Procedure on} {xxClass_57xx} {DataAlgorithmRunClass} 
+ empty constructor: @code{DataAlgorithmRunClass()}
+
+
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Procedure on} {xxClass_58xx} {DataAlgorithmRunClass} 
+ copy constructor: @code{DataAlgorithmRunClass(@var{data})}
+
+@table @code
+@item @var{data}: xxType_108xx
+ The class to be copied
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Procedure on} {xxClass_59xx} {DataAlgorithmRunClass} 
+ constructor: @code{DataAlgorithmRunClass(@var{id}, @var{name}, @var{descr})}
+
+@table @code
+@item @var{id}: xxType_109xx
+ The ID of the object class
+@item @var{name}: xxType_110xx
+ The name of the object class
+@item @var{descr}: xxType_111xx
+ A text description of the object
+
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_60xx} {print} 
+ DataAlgorithmRunClass: @code{@var{out1} = print(@var{out})}
+
+@table @code
+@item @var{out1}, @var{out}: xxType_113xx
+ The output buffer
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_61xx} {Read} 
+ DataAlgorithmRunClass: @code{@var{in1} = Read(@var{in}, @var{set})}
+
+@table @code
+@item @var{in}, @var{in1}: xxType_115xx
+ The input buffer
+
+@item @var{This}@var{reads}@defop {Procedure on} {xxClass_62xx} {CopyClone} 
+ DataAlgorithmRunClass: @code{CopyClone(@var{objc})}
+
+@table @code
+@item @var{objc}: xxType_114xx
+ The class to be copied
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_63xx} {Clone} 
+ DataAlgorithmRunClass: @code{@var{objc} = Clone()}
+
+@table @code
+@item @var{objc}: xxType_115xx
+ The object class that was created
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_64xx} {EncodeThis} 
+ DataAlgorithmRunClass: @code{@var{ans} = EncodeThis(@var{buffer})}
+
+@table @code
+@item @var{buffer}: xxType_116xx
+ The buffer
+@item @var{ans}: xxType_117xx
+ true if successful
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_65xx} {DecodeThis} 
+ DataAlgorithmRunClass: @code{@var{ans} = DecodeThis(@var{buffer})}
+
+@table @code
+@item @var{buffer}: xxType_118xx
+ The buffer
+@item @var{ans}: xxType_119xx
+ true if successful
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_66xx} {BaseDataObjectExample} 
+ create an object: @code{@var{obj} = BaseDataObjectExample()}
+
+@table @code
+@item @var{obj}: xxType_120xx
+ The created object
+
+@end table
+This function is used to create an empty instance of a object 
+given the class.  This is used so that the virtual functions
+of the object can be used.
+
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_67xx} {TopDecode} 
+ DataAlgorithmRunClass: @code{@var{ans} = TopDecode(@var{buffer}, @var{obj})}
+
+@table @code
+@item @var{buffer}: xxType_121xx
+ The buffer 
+@item @var{obj}: xxType_122xx
+ The object
+@item @var{ans}: xxType_123xx
+ True if successful
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_68xx} {TopDecode} 
+ BaseDataAlgorithmRun: @code{@var{ans} = TopDecode(@var{buffer}, @var{obj})}
+
+@table @code
+@item @var{buffer}: xxType_124xx
+ The buffer 
+@item @var{obj}: xxType_125xx
+ The object
+@item @var{ans}: xxType_126xx
+ True if successful
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+

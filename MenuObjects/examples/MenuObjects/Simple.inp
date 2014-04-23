@@ -1,0 +1,23 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+1000
+Instance: 1 In1    The First Instance
+Green True 1 2 4.1 8.45
+ODReal 0.0 F +Infinity T LinearODReal 0.0 0.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0 -1.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 0.0 -1.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 1.0 0.0 0.0 0.0 0.0
+Instance: 2 In2    The Second Instance
+Red True 10 20 40.1 80.45
+ODReal 0.0 F +Infinity T LinearODReal 0.0 0.0 -1.0 -1.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0 -1.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 0.0 -1.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 1.0 0.0 0.0 0.0 0.0
+Instance: 3 Ins3    The Third Instance
+Blue False 100 200 400.1 800.45
+ODReal 0.0 F +Infinity T LinearODReal 0.0 0.0 -1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0 -1.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 0.0 0.0 -1.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 1.0 0.0 0.0 0.0 0.0
+END
+

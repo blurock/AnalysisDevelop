@@ -1,0 +1,18 @@
+ObjectClasses:
+END
+ClassNamePairs:
+RunID Integer
+CriticalPointsFileName KeyWords
+CriticalPointsRootName KeyWords
+PartitionTypesFromPoints               KeyWords
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+END
+ObjectClasses:
+END
+ClassNamePairs:
+Var1 Real
+Var2 Integer
+Var3 Real
+Var4 Integer
+END
+

@@ -1,0 +1,45 @@
+ObjectClasses:
+DataType: AlgorithmRun  A sample goal run class
+TestAlgorithmRun
+% **********************************************************
+% The Definition of the GoalRunClass
+% **********************************************************
+%
+% ----------------------------------------------------------
+InstanceAlgs Initial
+             Algorithms Initial#InstanceAlgs
+                        InstanceReadASCIIAlg Initial#InstanceAlgs#Algorithms Read
+                        InstanceInstancesAlg Initial#InstanceAlgs#Algorithms Instances
+                        InstanceAttributesAlg Initial#InstanceAlgs#Algorithms Attributes
+                        InstanceMatrixAlg Initial#InstanceAlgs#Algorithms Matrix
+PartitionAlgs Initial
+     PredGen Initial#PartitionAlgs
+         CrPnts Initial#PartitionAlgs#PredGen
+             ReadCriticalPoints           Initial#PartitionAlgs#PredGen#CrPnts Read
+             PartitionsFromCriticalPoints Initial#PartitionAlgs#PredGen#CrPnts Partitions
+ClusterAlgs Initial
+    CobwebTreeAlg Initial#ClusterAlgs
+       A-CowebCreate                  Initial#ClusterAlgs#CobwebTreeAlg
+                        CobwebClusterTreeCreate  Initial#ClusterAlgs#CobwebTreeAlg#A-CowebCreate Create
+                        CobwebClusterTree        Initial#ClusterAlgs#CobwebTreeAlg#A-CowebCreate Test
+       B.DescriptionMat           Initial#ClusterAlgs#CobwebTreeAlg
+                        DescriptionMatrixSetUp   Initial#ClusterAlgs#CobwebTreeAlg#B.DescriptionMat Matrix
+       C.Cluster                  Initial#ClusterAlgs#CobwebTreeAlg
+                        CobwebBestGroup          Initial#ClusterAlgs#CobwebTreeAlg#C.Cluster        Cobweb
+END
+% --------------------------------------------------------------------------------
+END
+ClassNamePairs:
+CriticalPointReadAlg                   AlgorithmSummary
+PartitionsFromCriticalPointsAlg        AlgorithmSummary
+ReadInstancesAlg                       AlgorithmSummary
+InstanceSetUpAlg                       AlgorithmSummary
+AttributeSetUpAlg                      AlgorithmSummary
+MatrixSetUpAlg                         AlgorithmSummary
+CobwebClusterAlg                       AlgorithmSummary
+CobwebClusterTestAlg                   AlgorithmSummary
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END

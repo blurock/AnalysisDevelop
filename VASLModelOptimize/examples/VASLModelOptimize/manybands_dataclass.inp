@@ -1,0 +1,72 @@
+ObjectClasses:
+END
+ClassNamePairs:
+RunIDBase                 Integer
+TotalInstanceNameList     KeyWords
+AttributeNames            KeyWords
+END
+ObjectClasses:
+END
+ClassNamePairs:
+Brammenlaenge_kalt                      Real
+Brammendicke_kalt                       Real
+Brammengewicht                          Real
+Sollbreite_Vorstreifen                  Real
+Fertigbanddicke_Soll_warm               Real
+Ofenbahn_Ist                            Real
+Materialwechselzeit                     Real
+Herdliegezeit_Ofen                      Real
+SMC_Kennung                             Real
+
+Dicke_nach_Stich_warm_0                 Real
+Anstichgeschwindigkeit_0                Real
+Laenge_nach_Stich_warm_0                Real
+Breite_nach_Stich_warm_0                Real
+
+Walzkraft_Horizontalgeruest_1           Real
+Walzkraft_Egalisierungsgeruest_1        Real
+Walzkraft_Stauchgeruest_1               Real
+Dicke_nach_Stich_warm_1                 Real
+Breite_vor_Stich_warm_1                 Real
+Temperatur_1                            Real
+Anstichgeschwindigkeit_1                Real
+Laenge_nach_Stich_warm_1                Real
+Breite_nach_Stich_warm_1                Real
+
+Walzkraft_Horizontalgeruest_2           Real
+Walzkraft_Egalisierungsgeruest_2        Real
+Dicke_nach_Stich_warm_2                 Real
+Breite_vor_Stich_warm_2                 Real
+Temperatur_2                            Real
+Anstichgeschwindigkeit_2                Real
+Laenge_nach_Stich_warm_2                Real
+Breite_nach_Stich_warm_2                Real
+
+Walzkraft_Horizontalgeruest_3           Real
+Walzkraft_Egalisierungsgeruest_3        Real
+Dicke_nach_Stich_warm_3                 Real
+Breite_vor_Stich_warm_3                 Real
+Temperatur_3                            Real
+Anstichgeschwindigkeit_3                Real
+Laenge_nach_Stich_warm_3                Real
+Breite_nach_Stich_warm_3                Real
+
+Walzkraft_Horizontalgeruest_4           Real
+Walzkraft_Egalisierungsgeruest_4        Real
+Dicke_nach_Stich_warm_4                 Real
+Breite_vor_Stich_warm_4                 Real
+Temperatur_4                            Real
+Anstichgeschwindigkeit_4                Real
+Laenge_nach_Stich_warm_4                Real
+Breite_nach_Stich_warm_4                Real
+
+Walzkraft_Horizontalgeruest_5           Real
+Walzkraft_Egalisierungsgeruest_5        Real
+Dicke_nach_Stich_warm_5                 Real
+Breite_vor_Stich_warm_5                 Real
+Temperatur_5                            Real
+Anstichgeschwindigkeit_5                Real
+Laenge_nach_Stich_warm_5                Real
+Breite_nach_Stich_warm_5                Real
+Breite_nach_Stich_gemessen_5            Real
+END

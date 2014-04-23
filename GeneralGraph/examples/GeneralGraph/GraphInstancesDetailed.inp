@@ -1,0 +1,44 @@
+Sample -------------------- Sample Input -------------------
+Attributes:
+Detailed:
+NodeCount: 15
+%%% First Node
+Node1
+ClassNamePairs:
+I       Integer
+J       Integer
+END
+1000 2
+%%% Second Node
+Node2
+ClassNamePairs:
+I       Integer
+J       Integer
+END
+2000 3
+%%% Third Node
+Node3
+ClassNamePairs:
+I       Integer
+J       Integer
+END
+3000 4
+%%% End of Nodes
+END
+EdgeCount: 23
+%%% First Edge
+Edge1   
+ClassNamePairs:
+E       Integer
+END
+4000
+Node1 Node2 
+%%% End of Edges
+END
+Instance: 1 Instance1 The first Instances
+10 10.10
+Instance: 2 Instance2 The second Instances
+20 20.20
+Instance: 3 Instance3 The third Instances
+30 30.30
+END

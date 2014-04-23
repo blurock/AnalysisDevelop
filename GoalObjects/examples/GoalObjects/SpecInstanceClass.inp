@@ -1,0 +1,23 @@
+% ----------------------------------------------------------
+%  The Type Definition of the Attributes
+%  (no new types specified)
+% ----------------------------------------------------------
+ObjectClasses:
+END
+ClassNamePairs:
+ReadInstances                          GoalSpec
+InstanceSetUp                          GoalSpec
+AttributeSetUp                         GoalSpec
+MatrixSetUp                            GoalSpec
+DebugLevel                             Integer
+GoalDebug                              Integer
+InstanceReadFiles                      KeyWords
+InstanceNameList                       KeyWords
+AttributeSpecs                         KeyWords
+TestPercentage                         Real
+END
+% ----------------------------------------------------------
+ObjectClasses:
+END
+ClassNamePairs:
+END

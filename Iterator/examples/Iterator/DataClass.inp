@@ -1,0 +1,26 @@
+ObjectClasses:
+DataType: ObjectIterator Standard Object Iterator
+StandardObjectIterator   
+Keys: ReadAsTriplet END
+DataType: IterationSet   The Run Ignition Iteration Set
+StandardIterationSet Instance
+DataType: SetOfObjects  The set of concentrations
+MoleFractionsSetClass
+ObjectClasses:
+END
+ClassNamePairs:
+o2     Real
+n2     Real
+nc7H16 Real
+END
+END
+ClassNamePairs:
+Number Real
+Iterator StandardObjectIterator
+SetOfConditions StandardIterationSet  
+Final Real
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END

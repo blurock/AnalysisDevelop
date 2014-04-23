@@ -1,0 +1,31 @@
+ObjectClasses:
+DataType: NValued An Assortment of Colors
+Colors Red 0.0 Green 0.5 Blue 1.0 END
+DataType: NValued True-False Logic
+TrueFalse True 1.0 False 0.0 END
+DataType: ConstantODReal A Constant Function
+TestConstant
+DataType: LinearODReal A Linear Function
+TestLinear
+END
+ClassNamePairs:
+Color Colors
+VarT TrueFalse 
+Var1 Integer
+Var2 Integer
+Var3 Real
+Var4 Integer
+VarL TestLinear
+VarC ConstantODReal
+VarG GaussianODReal
+VarR PyramidODReal
+VarS PyramidODReal
+VarP PyramidODReal
+END
+Green True 1 2 4.1 8.45
+ODReal 0.0 F 1.0 T LinearODReal 2.0 3.0 4.0 5.0
+ODReal 0.0 F +Infinity T ConstantODReal 20.0
+ODReal 0.0 F +Infinity T GaussianODReal 100.0 20. 5
+ODReal 5.0 T 6.0 F PyramidODReal 7.0 8.0 9.0 10.0 11.0 11.0
+ODReal 5.0 F 6.0 T PyramidODReal 7.0 8.0 9.0 10.0 10.0 10.0
+ODReal -Infinity T +Infinity T PyramidODReal 7.0 8.0 9.0 10.0 11.0 12.0

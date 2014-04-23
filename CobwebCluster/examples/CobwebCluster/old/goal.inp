@@ -1,0 +1,30 @@
+% **********************************************************
+% The Goal Information
+% **********************************************************
+%
+Goal Goal Information
+%
+% ----------------------------------------------------------
+%  The set of attributes (as specified by the class)
+% ----------------------------------------------------------
+Attributes:
+
+                    % AttributeSetUp
+END
+                    % InstanceSetUp
+END
+                    % ReadInstances
+END
+                    % MatrixSetUp
+END
+                    % PartitionsFromCriticalPoints
+END
+                    % CobwebClusterPredRead
+END
+                    % CobwebClusterPredGen
+END
+% ----------------------------------------------------------
+%  The set of attributes (as specified by the class)
+%  None given
+% ----------------------------------------------------------
+END

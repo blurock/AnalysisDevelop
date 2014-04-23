@@ -1,0 +1,355 @@
+Name: TrainInstanceNameList  (17001)  [Encode: Object.KeyWords]  
+BandNumber425136 BandNumber425138 BandNumber425139 BandNumber425140 BandNumber425141 
+BandNumber425142 BandNumber425143 BandNumber425144 BandNumber425145 BandNumber425146 
+BandNumber425147 BandNumber425148 BandNumber425149 BandNumber425150 BandNumber425151 
+BandNumber425152 BandNumber425153 BandNumber425154 BandNumber425155 BandNumber425156 
+BandNumber425157 BandNumber425158 BandNumber425159 BandNumber425160 BandNumber425161 
+BandNumber425162 BandNumber425163 BandNumber425164 BandNumber425165 BandNumber425166 
+BandNumber425167 BandNumber425168 BandNumber425169 BandNumber425170 BandNumber425171 
+BandNumber425172 BandNumber425173 BandNumber425174 BandNumber425175 BandNumber425176 
+BandNumber425177 BandNumber425178 BandNumber425179 BandNumber425180 BandNumber425181 
+BandNumber425182 BandNumber425183 BandNumber425184 BandNumber425185 BandNumber425186 
+BandNumber425187 BandNumber425188 BandNumber425189 BandNumber425190 BandNumber425191 
+BandNumber425192 BandNumber425193 BandNumber425194 BandNumber425195 BandNumber425196 
+BandNumber425197 BandNumber425198 BandNumber425199 BandNumber425200 BandNumber425201 
+BandNumber425202 BandNumber425203 BandNumber425204 BandNumber425205 BandNumber425206 
+BandNumber425207 BandNumber425208 BandNumber425209 BandNumber425210 BandNumber425211 
+BandNumber425212 BandNumber425213 BandNumber425214 BandNumber428092 BandNumber428093 
+==========================================================================
+Population 50
+==========================================================================
+( - Two 
+  ( Power ( Set Two )
+      ( - ( * Dicke_nach_Stich_warm_0 ( + C1 C2 C3 C4 ) ) Dicke_nach_Stich_warm_1 )
+         )
+  ( Power ( Set Two )
+      ( - ( * Dicke_nach_Stich_warm_0 ( + C1 ( * Two   C2 ) ( * C3 Four ) ( * C4 Eight ) ) ) Dicke_nach_Stich_warm_2  )
+         )
+  ( Power ( Set Two )
+      ( - ( * Dicke_nach_Stich_warm_0 ( + C1 ( * Three C2 ) ( * C3 Nine ) ( * C4 Twentyseven ) ) ) Dicke_nach_Stich_warm_3 ) 
+         )
+  ( Power ( Set Two )
+      ( - ( * Dicke_nach_Stich_warm_0 ( + C1 ( * Four  C2 ) ( * C3 Sixteen ) ( * C4 Sixtyfour ) ) ) Dicke_nach_Stich_warm_4 )
+         )
+  ( Power ( Set Two )
+      ( - ( * Dicke_nach_Stich_warm_0 ( + C1 ( * Five  C2 ) ( * C3 Twentyfive ) ( * C4 HundredTwentyFive ) ) ) Dicke_nach_Stich_warm_5 )
+         )
+)
+IterationCount: 15 out of a maximum of 20
+Current Heuristic Total: -5.27013e+09
+   Min: -2.25842e+08   Max: -1.73038e+06   Diff: 2.24112e+08  Ave: 4.48223e+06
+Begin: -------------- The Best Elements -----------------------
+%% Population Object
+-1.73038e+06  
+Name: ParameterSet  (30301)  [Encode: Object.ParameterSet]  
+Begin: ----------- Set of Parameters ----------------
+Name: C1  (130)  [Encode: Object.Real]  Value: 0.442012
+Name: C2  (130)  [Encode: Object.Real]  Value: -0.105894
+Name: C3  (130)  [Encode: Object.Real]  Value: 0.00126385
+Name: C4  (130)  [Encode: Object.Real]  Value: 0.00351668
+
+End:   ----------- Set of Parameters ----------------
+
+Parameter List -> C1 C2 C3 C4 
+
+
+%% Population Object
+-1.87139e+06  
+Name: ParameterSet  (30301)  [Encode: Object.ParameterSet]  
+Begin: ----------- Set of Parameters ----------------
+Name: C1  (130)  [Encode: Object.Real]  Value: 0.442012
+Name: C2  (130)  [Encode: Object.Real]  Value: -0.105894
+Name: C3  (130)  [Encode: Object.Real]  Value: 0.00659364
+Name: C4  (130)  [Encode: Object.Real]  Value: 0.00353075
+
+End:   ----------- Set of Parameters ----------------
+
+Parameter List -> C1 C2 C3 C4 
+
+
+%% Population Object
+-2.40488e+06  
+Name: ParameterSet  (30301)  [Encode: Object.ParameterSet]  
+Begin: ----------- Set of Parameters ----------------
+Name: C1  (130)  [Encode: Object.Real]  Value: 0.442012
+Name: C2  (130)  [Encode: Object.Real]  Value: -0.105894
+Name: C3  (130)  [Encode: Object.Real]  Value: -0.0138276
+Name: C4  (130)  [Encode: Object.Real]  Value: 0.00351668
+
+End:   ----------- Set of Parameters ----------------
+
+Parameter List -> C1 C2 C3 C4 
+
+
+End: -------------- The Best Elements -----------------------
+==========================================================================
+Population 25
+==========================================================================
+( - Two 
+  ( Power ( Set Two )
+      ( - ( * Dicke_nach_Stich_warm_0 ( + C1 C2 C3 C4 ) ) Dicke_nach_Stich_warm_1 )
+         )
+  ( Power ( Set Two )
+      ( - ( * Dicke_nach_Stich_warm_0 ( + C1 ( * Two   C2 ) ( * C3 Four ) ( * C4 Eight ) ) ) Dicke_nach_Stich_warm_2  )
+         )
+  ( Power ( Set Two )
+      ( - ( * Dicke_nach_Stich_warm_0 ( + C1 ( * Three C2 ) ( * C3 Nine ) ( * C4 Twentyseven ) ) ) Dicke_nach_Stich_warm_3 ) 
+         )
+  ( Power ( Set Two )
+      ( - ( * Dicke_nach_Stich_warm_0 ( + C1 ( * Four  C2 ) ( * C3 Sixteen ) ( * C4 Sixtyfour ) ) ) Dicke_nach_Stich_warm_4 )
+         )
+  ( Power ( Set Two )
+      ( - ( * Dicke_nach_Stich_warm_0 ( + C1 ( * Five  C2 ) ( * C3 Twentyfive ) ( * C4 HundredTwentyFive ) ) ) Dicke_nach_Stich_warm_5 )
+         )
+)
+IterationCount: 51 out of a maximum of 100
+Current Heuristic Total: -2.79114e+08
+   Min: -5.79463e+06   Max: -5.65014e+06   Diff: 144493  Ave: 5779.71
+Begin: -------------- The Best Elements -----------------------
+%% Population Object
+-5.65014e+06  
+Name: ParameterSet  (30301)  [Encode: Object.ParameterSet]  
+Begin: ----------- Set of Parameters ----------------
+Name: C1  (130)  [Encode: Object.Real]  Value: 0.0415777
+Name: C2  (130)  [Encode: Object.Real]  Value: -0.00287148
+Name: C3  (130)  [Encode: Object.Real]  Value: -0.0528573
+Name: C4  (130)  [Encode: Object.Real]  Value: 0.0143584
+
+End:   ----------- Set of Parameters ----------------
+
+Parameter List -> C1 C2 C3 C4 
+
+
+%% Population Object
+-5.66348e+06  
+Name: ParameterSet  (30301)  [Encode: Object.ParameterSet]  
+Begin: ----------- Set of Parameters ----------------
+Name: C1  (130)  [Encode: Object.Real]  Value: 0.0404201
+Name: C2  (130)  [Encode: Object.Real]  Value: -0.00249155
+Name: C3  (130)  [Encode: Object.Real]  Value: -0.0499673
+Name: C4  (130)  [Encode: Object.Real]  Value: 0.0145509
+
+End:   ----------- Set of Parameters ----------------
+
+Parameter List -> C1 C2 C3 C4 
+
+
+%% Population Object
+-5.66667e+06  
+Name: ParameterSet  (30301)  [Encode: Object.ParameterSet]  
+Begin: ----------- Set of Parameters ----------------
+Name: C1  (130)  [Encode: Object.Real]  Value: 0.0415777
+Name: C2  (130)  [Encode: Object.Real]  Value: -0.00287148
+Name: C3  (130)  [Encode: Object.Real]  Value: -0.0528573
+Name: C4  (130)  [Encode: Object.Real]  Value: 0.0145572
+
+End:   ----------- Set of Parameters ----------------
+
+Parameter List -> C1 C2 C3 C4 
+
+
+End: -------------- The Best Elements -----------------------
+==========================================================================
+Population: 50
+==========================================================================
+( - Two 
+  ( Power ( Set Two )
+      ( - ( * Laenge_nach_Stich_warm_0 ( + C1 C2 C3 C4 ) ) Laenge_nach_Stich_warm_1 )
+         )
+  ( Power ( Set Two )
+      ( - ( * Laenge_nach_Stich_warm_0 ( + C1 ( * Two   C2 ) ( * C3 Four ) ( * C4 Eight ) ) ) Laenge_nach_Stich_warm_2  )
+         )
+  ( Power ( Set Two )
+      ( - ( * Laenge_nach_Stich_warm_0 ( + C1 ( * Three C2 ) ( * C3 Nine ) ( * C4 Twentyseven ) ) ) Laenge_nach_Stich_warm_3 ) 
+         )
+  ( Power ( Set Two )
+      ( - ( * Laenge_nach_Stich_warm_0 ( + C1 ( * Four  C2 ) ( * C3 Sixteen ) ( * C4 Sixtyfour ) ) ) Laenge_nach_Stich_warm_4 )
+         )
+  ( Power ( Set Two )
+      ( - ( * Laenge_nach_Stich_warm_0 ( + C1 ( * Five  C2 ) ( * C3 Twentyfive ) ( * C4 HundredTwentyFive ) ) ) Laenge_nach_Stich_warm_5 )
+         )
+)
+IterationCount: 15 out of a maximum of 20
+Current Heuristic Total: -5.27013e+09
+   Min: -2.25842e+08   Max: -1.73038e+06   Diff: 2.24112e+08  Ave: 4.48223e+06
+Begin: -------------- The Best Elements -----------------------
+%% Population Object
+-1.73038e+06  
+Name: ParameterSet  (30301)  [Encode: Object.ParameterSet]  
+Begin: ----------- Set of Parameters ----------------
+Name: C1  (130)  [Encode: Object.Real]  Value: 0.442012
+Name: C2  (130)  [Encode: Object.Real]  Value: -0.105894
+Name: C3  (130)  [Encode: Object.Real]  Value: 0.00126385
+Name: C4  (130)  [Encode: Object.Real]  Value: 0.00351668
+
+End:   ----------- Set of Parameters ----------------
+
+Parameter List -> C1 C2 C3 C4 
+
+
+%% Population Object
+-1.87139e+06  
+Name: ParameterSet  (30301)  [Encode: Object.ParameterSet]  
+Begin: ----------- Set of Parameters ----------------
+Name: C1  (130)  [Encode: Object.Real]  Value: 0.442012
+Name: C2  (130)  [Encode: Object.Real]  Value: -0.105894
+Name: C3  (130)  [Encode: Object.Real]  Value: 0.00659364
+Name: C4  (130)  [Encode: Object.Real]  Value: 0.00353075
+
+End:   ----------- Set of Parameters ----------------
+
+Parameter List -> C1 C2 C3 C4 
+
+
+%% Population Object
+-2.40488e+06  
+Name: ParameterSet  (30301)  [Encode: Object.ParameterSet]  
+Begin: ----------- Set of Parameters ----------------
+Name: C1  (130)  [Encode: Object.Real]  Value: 0.442012
+Name: C2  (130)  [Encode: Object.Real]  Value: -0.105894
+Name: C3  (130)  [Encode: Object.Real]  Value: -0.0138276
+Name: C4  (130)  [Encode: Object.Real]  Value: 0.00351668
+
+End:   ----------- Set of Parameters ----------------
+
+Parameter List -> C1 C2 C3 C4 
+
+
+End: -------------- The Best Elements -----------------------
+==========================================================================
+Population: 50
+==========================================================================
+( - Two 
+  ( Power ( Set Two )
+      ( - ( * Laenge_nach_Stich_warm_0 ( + C1 C2 C3 C4 ) ) Laenge_nach_Stich_warm_1 )
+         )
+  ( Power ( Set Two )
+      ( - ( * Laenge_nach_Stich_warm_0 ( + C1 ( * Two   C2 ) ( * C3 Four ) ( * C4 Eight ) ) ) Laenge_nach_Stich_warm_2  )
+         )
+  ( Power ( Set Two )
+      ( - ( * Laenge_nach_Stich_warm_0 ( + C1 ( * Three C2 ) ( * C3 Nine ) ( * C4 Twentyseven ) ) ) Laenge_nach_Stich_warm_3 ) 
+         )
+  ( Power ( Set Two )
+      ( - ( * Laenge_nach_Stich_warm_0 ( + C1 ( * Four  C2 ) ( * C3 Sixteen ) ( * C4 Sixtyfour ) ) ) Laenge_nach_Stich_warm_4 )
+         )
+  ( Power ( Set Two )
+      ( - ( * Laenge_nach_Stich_warm_0 ( + C1 ( * Five  C2 ) ( * C3 Twentyfive ) ( * C4 HundredTwentyFive ) ) ) Laenge_nach_Stich_warm_5 )
+         )
+)
+IterationCount: 3 out of a maximum of 100
+Current Heuristic Total: -3.48863e+14
+   Min: -6.05969e+12   Max: -2.14748e+09   Diff: 6.05755e+12  Ave: 2.01918e+10
+Begin: -------------- The Best Elements -----------------------
+%% Population Object
+-1.83814e+10  
+Name: ParameterSet  (30301)  [Encode: Object.ParameterSet]  
+Begin: ----------- Set of Parameters ----------------
+Name: C1  (130)  [Encode: Object.Real]  Value: -0.018217
+Name: C2  (130)  [Encode: Object.Real]  Value: 0.76147
+Name: C3  (130)  [Encode: Object.Real]  Value: 0.893055
+Name: C4  (130)  [Encode: Object.Real]  Value: 0.1674
+
+End:   ----------- Set of Parameters ----------------
+
+Parameter List -> C1 C2 C3 C4 
+
+
+%% Population Object
+-1.83814e+10  
+Name: ParameterSet  (30301)  [Encode: Object.ParameterSet]  
+Begin: ----------- Set of Parameters ----------------
+Name: C1  (130)  [Encode: Object.Real]  Value: -0.018217
+Name: C2  (130)  [Encode: Object.Real]  Value: 0.76147
+Name: C3  (130)  [Encode: Object.Real]  Value: 0.893055
+Name: C4  (130)  [Encode: Object.Real]  Value: 0.1674
+
+End:   ----------- Set of Parameters ----------------
+
+Parameter List -> C1 C2 C3 C4 
+
+
+%% Population Object
+-2.03894e+10  
+Name: ParameterSet  (30301)  [Encode: Object.ParameterSet]  
+Begin: ----------- Set of Parameters ----------------
+Name: C1  (130)  [Encode: Object.Real]  Value: -0.018217
+Name: C2  (130)  [Encode: Object.Real]  Value: 0.76147
+Name: C3  (130)  [Encode: Object.Real]  Value: 0.819063
+Name: C4  (130)  [Encode: Object.Real]  Value: 0.19755
+
+End:   ----------- Set of Parameters ----------------
+
+Parameter List -> C1 C2 C3 C4 
+
+
+End: -------------- The Best Elements -----------------------
+==========================================================================
+Population 50
+==========================================================================
+Note that by a mistake Anstichgeschwindigkeit_0 is Laenge_nach_Stich_warm_0
+---------------------------------------------------------------------------
+( - Two 
+  ( Power ( Set Two )
+      ( - ( * Anstichgeschwindigkeit_0 ( + C1 C2 C3 C4 ) ) Laenge_nach_Stich_warm_1 )
+         )
+  ( Power ( Set Two )
+      ( - ( * Anstichgeschwindigkeit_0 ( + C1 ( * Two   C2 ) ( * C3 Four ) ( * C4 Eight ) ) ) Laenge_nach_Stich_warm_2  )
+         )
+  ( Power ( Set Two )
+      ( - ( * Anstichgeschwindigkeit_0 ( + C1 ( * Three C2 ) ( * C3 Nine ) ( * C4 Twentyseven ) ) ) Laenge_nach_Stich_warm_3 ) 
+         )
+  ( Power ( Set Two )
+      ( - ( * Anstichgeschwindigkeit_0 ( + C1 ( * Four  C2 ) ( * C3 Sixteen ) ( * C4 Sixtyfour ) ) ) Laenge_nach_Stich_warm_4 )
+         )
+  ( Power ( Set Two )
+      ( - ( * Anstichgeschwindigkeit_0 ( + C1 ( * Five  C2 ) ( * C3 Twentyfive ) ( * C4 HundredTwentyFive ) ) ) Laenge_nach_Stich_warm_5 )
+         )
+)
+
+IterationCount: 2 out of a maximum of 100
+Current Heuristic Total: -1.84357e+16
+   Min: -2.5334e+14   Max: -2.14748e+09   Diff: 2.53337e+14  Ave: 8.44458e+11
+Begin: -------------- The Best Elements -----------------------
+%% Population Object
+-3.05819e+10  
+Name: ParameterSet  (30301)  [Encode: Object.ParameterSet]  
+Begin: ----------- Set of Parameters ----------------
+Name: C1  (130)  [Encode: Object.Real]  Value: 0.442012
+Name: C2  (130)  [Encode: Object.Real]  Value: 0.0836048
+Name: C3  (130)  [Encode: Object.Real]  Value: 0.415818
+Name: C4  (130)  [Encode: Object.Real]  Value: -0.052212
+
+End:   ----------- Set of Parameters ----------------
+
+Parameter List -> C1 C2 C3 C4 
+
+
+%% Population Object
+-3.53768e+10  
+Name: ParameterSet  (30301)  [Encode: Object.ParameterSet]  
+Begin: ----------- Set of Parameters ----------------
+Name: C1  (130)  [Encode: Object.Real]  Value: 0.442012
+Name: C2  (130)  [Encode: Object.Real]  Value: 0.205285
+Name: C3  (130)  [Encode: Object.Real]  Value: 0.393834
+Name: C4  (130)  [Encode: Object.Real]  Value: -0.052212
+
+End:   ----------- Set of Parameters ----------------
+
+Parameter List -> C1 C2 C3 C4 
+
+
+%% Population Object
+-4.27875e+10  
+Name: ParameterSet  (30301)  [Encode: Object.ParameterSet]  
+Begin: ----------- Set of Parameters ----------------
+Name: C1  (130)  [Encode: Object.Real]  Value: 0.442012
+Name: C2  (130)  [Encode: Object.Real]  Value: 0.237951
+Name: C3  (130)  [Encode: Object.Real]  Value: 0.415818
+Name: C4  (130)  [Encode: Object.Real]  Value: -0.052212
+
+End:   ----------- Set of Parameters ----------------
+
+Parameter List -> C1 C2 C3 C4 
+
+
+End: -------------- The Best Elements -----------------------

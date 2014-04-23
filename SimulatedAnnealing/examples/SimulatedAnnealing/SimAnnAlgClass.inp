@@ -1,0 +1,38 @@
+ObjectClasses:
+
+DataType: FunctionToOptimize The Test Function 
+Function1 
+
+DataType: AlgorithmRun  A sample goal run class
+TestGoalRun
+% **********************************************************
+% The Definition of the GoalRunClass
+% **********************************************************
+%
+% ----------------------------------------------------------
+InstanceAlgs Initial
+             Algorithms Initial#InstanceAlgs
+                        InstanceReadASCIIAlg Initial#InstanceAlgs#Algorithms Read
+                        InstanceInstancesAlg Initial#InstanceAlgs#Algorithms Instances
+                        InstanceAttributesAlg Initial#InstanceAlgs#Algorithms Attributes
+                        InstanceMatrixAlg Initial#InstanceAlgs#Algorithms Matrix
+SAAlgs   Initial
+         Algorithms Initial#SAAlgs
+                    SimulatedAnnealingAlgorithm Initial#SAAlgs#Algorithms SimAnn 
+END 
+END
+ClassNamePairs:
+RunID     Integer
+ReadInstancesAlg                       AlgorithmSummary
+InstanceSetUpAlg                       AlgorithmSummary
+AttributeSetUpAlg                      AlgorithmSummary
+AttributeByTypeAlg                     AlgorithmSummary
+AttributeByNameAlg                     AlgorithmSummary
+MatrixSetUpAlg                         AlgorithmSummary
+SATestAlg                              AlgorithmSummary
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END
+

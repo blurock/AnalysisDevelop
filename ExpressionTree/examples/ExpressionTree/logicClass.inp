@@ -1,0 +1,41 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: LogicDescription  A real function based predicate
+ContLogicDescription Continuous
+%% -------------------------------------------------
+DataType: RealPredicate  A real function based predicate
+ParPredicate  PyramidODReal Continuous 
+%% -------------------------------------------------
+DataType:
+NumericPredicate A sample predicate
+FuzzyPredicate Continuous PyramidODReal
+%% -------------------------------------------------
+DataType:
+Predicate A predicate of a numeric predicate function
+FuzzyParameterPredicate FuzzyPredicate 
+%% -------------------------------------------------
+DataType: ExpressionTree  A Logical Tree
+LogicalTree
+AND   LogicalAND
+OR    LogicalOR
+NOT   LogicalNOT
+Set            ParameterSetOperation
+Pred           FuzzyPredicate
+PyPred         ParPredicate
+Compare        LogicalDescriptionCompare
+END
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  -1.0 3.0 3.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  -1.0 3.0 3.0
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+Log            LogicalTree
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

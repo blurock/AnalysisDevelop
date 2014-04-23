@@ -1,0 +1,14 @@
+ObjectClasses:
+DataType: SelectionTree An Algorithm Selection Tree
+AlgorithmSelectionTree 
+              ObjectClasses:
+              END
+END
+ClassNamePairs:
+SelectionTree      AlgorithmSelectionTree
+AnAlgorithm        AlgorithmRun
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END

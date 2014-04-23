@@ -1,0 +1,18 @@
+ParameterSet:
+ClassNamePairs:
+END
+Operation:
+%% The corresponding expression trees
+P1                 Real
+Factor1            Real
+P2                 Real
+Factor2            Real
+END
+3.0
+1.0
+3.0
+100.0
+ ( + 
+    ( / ( *  ( - P1 Var1 ) ( - P1 Var1 ) ) Factor1 )
+    ( / ( *  ( - P2 Var2 ) ( - P2 Var2 ) ) Factor2 )
+ )

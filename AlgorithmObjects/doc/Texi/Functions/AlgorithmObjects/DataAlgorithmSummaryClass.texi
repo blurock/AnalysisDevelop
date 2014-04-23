@@ -1,0 +1,235 @@
+@defop {Procedure on} {xxClass_20xx} {DataAlgorithmSummaryClass} 
+ empty constructor: @code{DataAlgorithmSummaryClass()}
+
+
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Procedure on} {xxClass_21xx} {DataAlgorithmSummaryClass} 
+ copy constructor: @code{DataAlgorithmSummaryClass(@var{data})}
+
+@table @code
+@item @var{data}: xxType_31xx
+ The class to be copied
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Procedure on} {xxClass_22xx} {DataAlgorithmSummaryClass} 
+ constructor: @code{DataAlgorithmSummaryClass(@var{id}, @var{name}, @var{descr})}
+
+@table @code
+@item @var{id}: xxType_32xx
+ The ID of the object class
+@item @var{name}: xxType_33xx
+ The name of the object class
+@item @var{descr}: xxType_34xx
+ A text description of the object
+
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_23xx} {print} 
+ DataAlgorithmSummaryClass: @code{@var{out1} = print(@var{out})}
+
+@table @code
+@item @var{out1}, @var{out}: xxType_36xx
+ The output buffer
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_24xx} {Read} 
+ DataAlgorithmSummaryClass: @code{@var{in1} = Read(@var{in}, @var{set})}
+
+@table @code
+@item @var{in}, @var{in1}: xxType_38xx
+ The input buffer
+@item @var{set}: xxType_39xx
+ The set of classes
+
+@end table
+This reads in the rest of the information (after the type
+has been determined from the first line.  For the
+base DataAlgorithmSummaryClass, there is no further information.
+
+The objects read in are:
+@itemize @bullet
+@item The set of subalgorithms (as a SelectionTree)
+
+@end itemize
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Procedure on} {xxClass_25xx} {CopyClone} 
+ DataAlgorithmSummaryClass: @code{CopyClone(@var{objc})}
+
+@table @code
+@item @var{objc}: xxType_40xx
+ The class to be copied
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_26xx} {Clone} 
+ DataAlgorithmSummaryClass: @code{@var{objc} = Clone()}
+
+@table @code
+@item @var{objc}: xxType_41xx
+ The object class that was created
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_27xx} {EncodeThis} 
+ DataAlgorithmSummaryClass: @code{@var{ans} = EncodeThis(@var{buffer})}
+
+@table @code
+@item @var{buffer}: xxType_42xx
+ The buffer
+@item @var{ans}: xxType_43xx
+ true if successful
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_28xx} {DecodeThis} 
+ DataAlgorithmSummaryClass: @code{@var{ans} = DecodeThis(@var{buffer})}
+
+@table @code
+@item @var{buffer}: xxType_44xx
+ The buffer
+@item @var{ans}: xxType_45xx
+ true if successful
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_29xx} {BaseDataObjectExample} 
+ create an object: @code{@var{obj} = BaseDataObjectExample()}
+
+@table @code
+@item @var{obj}: xxType_46xx
+ The created object
+
+@end table
+This function is used to create an empty instance of a object 
+given the class.  This is used so that the virtual functions
+of the object can be used.
+
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_30xx} {TopDecode} 
+ DataAlgorithmSummaryClass: @code{@var{ans} = TopDecode(@var{buffer}, @var{obj})}
+
+@table @code
+@item @var{buffer}: xxType_47xx
+ The buffer 
+@item @var{obj}: xxType_48xx
+ The object
+@item @var{ans}: xxType_49xx
+ True if successful
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_31xx} {TopDecode} 
+ BaseDataAlgorithmSummary: @code{@var{ans} = TopDecode(@var{buffer}, @var{obj})}
+
+@table @code
+@item @var{buffer}: xxType_50xx
+ The buffer 
+@item @var{obj}: xxType_51xx
+ The object
+@item @var{ans}: xxType_52xx
+ True if successful
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_32xx} {GetSubAlgorithms} 
+ read in set of subalgorithms: @code{@var{subalgs} = GetSubAlgorithms(@var{in}, @var{category})}
+
+@table @code
+@item @var{in}: xxType_53xx
+ The input stream
+@item @var{algchoices}: xxType_54xx
+ The algorithm choices as keywords
+@item @var{subalgs}: xxType_55xx
+ The chosen algorithms
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_33xx} {PointerToAllowedClasses} 
+ pointer to DataSetOfObjectsClass: @code{@var{pntr} = PointerToAllowedClasses()}
+
+@table @code
+@item @var{pntr}: xxType_56xx
+ Pointer to allowed classes
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_34xx} {SetUpSelectionTree} 
+: @code{@var{ans} = SetUpSelectionTree(@var{treename}, @var{instances}, @var{instsclass})}
+
+@table @code
+@item @var{treename}: xxType_57xx
+ The name of the Selection tree to use (from instances)
+@item @var{instances}: xxType_58xx
+ the set of instances
+@item @var{instsclass}: xxType_59xx
+ The set of instance classes
+@item @var{ans}: xxType_60xx
+ true if successful 
+
+@end table
+This sets up the algorithm selection tree and its corresponding class.
+
+
+@strong{Remarks}@*
+
+@end defop
+

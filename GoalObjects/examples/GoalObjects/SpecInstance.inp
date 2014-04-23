@@ -1,0 +1,24 @@
+% **********************************************************
+% The Definition of the Goal Specification
+%     (The goal to be run)
+%
+% **********************************************************
+title
+Attributes:
+                               % A parameter of the goal ReadInstances
+END
+                               % A parameter of the goal InstanceSetUp
+END
+                               % A parameter of the goal MatrixSetUp
+END
+                               % A parameter of the goal AttributeSetUp
+END
+5                              % The Debug Level
+5                              % The Goal Debug Level
+AInstancesClass.inp AInstances.inp 
+END                            % The input data files (class,data) pairs
+END                            % InstanceNameList
+END                            % Attribute Specifications
+80.0                           % TestPercentage
+%  No Instances
+END

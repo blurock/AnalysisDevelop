@@ -1,0 +1,23 @@
+ObjectClasses:
+END
+ClassNamePairs:
+RunIDBase                 Integer
+RootName                  KeyWords
+TotalInstanceNameList     KeyWords
+AttributeNames            KeyWords
+END
+ObjectClasses:
+END
+ClassNamePairs:
+Dicke_nach_Stich_warm_4                 Real
+
+Walzkraft_Horizontalgeruest_5           Real
+Walzkraft_Egalisierungsgeruest_5        Real
+Dicke_nach_Stich_warm_5                 Real
+Breite_vor_Stich_warm_5                 Real
+Temperatur_5                            Real
+Anstichgeschwindigkeit_5                Real
+Laenge_nach_Stich_warm_5                Real
+Breite_nach_Stich_warm_5                Real
+Breite_nach_Stich_gemessen_5            Real
+END

@@ -1,0 +1,39 @@
+Expression Test
+Attributes:
+%% -------------------------------------------------
+%% InstanceNameList  KeyWords
+%% -------------------------------------------------
+Instance1 END
+%% -------------------------------------------------
+%%% -----------  Read in the Parameter Set (No Keyword version)
+ParameterSet:
+%%%       ClassNamePairs, but no class definitions and then objects
+ClassNamePairs:
+Var2   Real
+Var3   Real
+Var4   Real
+END
+1.0 2.0 3.0
+%%% -------------
+Operation:
+LocalExpressionKeyWords:
+P1    Real
+P2    Real
+P3    Real
+P4    Real
+Var1  Real
+Two   Real
+END
+1.0 0.000010 0.0 2.0 
+7.0
+2.0
+%%% ( Line ( Set P1 P2 P3 P4 ) Var3 )
+%%( Gaussian ( Set P1 P2 P3 ) Var3 )
+( Set Var1 Var2 Var3 Var4 P1 P2 P3 P4 Two )
+%% ( / ( + Var3 Var4 ) Two )
+%% ( LCoerce ( Pred P1 ) )
+%%( Vector Two Var3 Var4 )
+
+%% -------------------------------------------------
+END
+

@@ -1,0 +1,59 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The List of Instances
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Red:   VarT = True, Var1 > 5
+%%  Green: VarT = True, Var1 < 5
+%%  Blue   VarT = False, Var2 ~= 3
+%%  White  VarT = False, Var2 =/= 3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 Instance1    The First Instance
+Red True    10.     3.0 
+Instance: 2 Instance2    The Second Instance
+Red True    8.0     -1.0
+Instance: 3 Instance3    The Third Instance
+Red True    6.0     3.0
+Instance: 4 Instance4    The First Instance
+Green True  4.0     8.0
+Instance: 5 Instance5    The Second Instance
+Green True  5.0     10.0
+Instance: 6 Instance6    The Third Instance
+Green True  6.0     12.0
+Instance: 7 Instance7    The First Instance
+Blue False  10.0    2.9
+Instance: 8 Instance8    The Second Instance
+Blue False  1.0    3.0
+Instance: 9 Instance9    The Third Instance
+Blue False  3.0    3.1
+Instance: 10 Instance10    The First Instance
+White False 13      1.0
+Instance: 11 Instance11    The Second Instance
+White False 14.0    5.0
+Instance: 12 Instance12    The Third Instance
+White False 5.0    10.0
+Instance: 13 Instance13    The First Instance
+Red True    10.     3.0 
+Instance: 14 Instance14    The Second Instance
+Red True    8.0     -1.0
+Instance: 15  Instance15    The Third Instance
+Red True    6.0     3.0
+Instance: 16 Instance16    The First Instance
+Green True  4.0     8.0
+Instance: 17 Instance17   The Second Instance
+Green True  5.0     10.0
+Instance: 18 Instance18   The Third Instance
+Green True  6.0     12.0
+Instance: 19 Instance19   The First Instance
+Blue False  10.0    2.9
+Instance: 20 Instance20   The Second Instance
+Blue False  1.0    3.0
+Instance: 21 Instance21   The Third Instance
+Blue False  3.0    3.1
+Instance: 22 Instance22    The First Instance
+White False 13      1.0
+Instance: 23 Instance23    The Second Instance
+White False 14.0    5.0
+Instance: 24 Instance24    The Third Instance
+White False 5.0    10.0
+END

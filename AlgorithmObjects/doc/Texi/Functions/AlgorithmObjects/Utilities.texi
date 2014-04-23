@@ -1,0 +1,34 @@
+@defop {Function on} {xxClass_1xx} {AlgorithmAndInstanceMultipleAlgorithms} 
+ run: @code{@var{ans} = AlgorithmAndInstanceMultipleAlgorithms(@var{inputs}, @var{standardclasses})}
+
+@table @code
+@item @var{inputs}: xxType_1xx
+ The set of input strings
+@item @var{standardclasses}: xxType_2xx
+ The set of standard classes 
+@item @var{ans}: xxType_3xx
+ 0 if run successful
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+
+@defop {Function on} {xxClass_2xx} {AlgorithmAndInstanceReadIn} 
+ standard algorithm routine: @code{@var{ans} = AlgorithmAndInstanceReadIn(@var{inputs}, @var{standardclasses})}
+
+@table @code
+@item @var{inputs}: xxType_4xx
+ The set of input keywords
+@item @var{standardclasses}: xxType_5xx
+ The set of standard classes
+@item @var{ans}: xxType_6xx
+ 0 if run successful
+
+@end table
+
+@strong{Remarks}@*
+
+@end defop
+

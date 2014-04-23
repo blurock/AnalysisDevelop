@@ -1,0 +1,34 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: GeneticDistribution
+GeneticReal  Real
+%% -------------------------------------------------
+DataType: GeneticSetOfParameters
+ParGeneticSetOfParameters ParameterSet
+%% -------------------------------------------------
+DataType: ParameterizedExpression    A new numeric parameterized function
+VASLParExpression   ParameterSet VASLTree Numeric
+%% -------------------------------------------------
+DataType: Population a real population
+RPopulation
+PopulationObject ParGeneticSetOfParameters
+%% -------------------------------------------------
+DataType: PopulationCost The cost of a sample population
+PopulationCostFunction RPopulation VASLParExpression
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+Distribution_Ref     AttributeDistribution
+MaximumNumberOfIterations    Integer
+TrainInstanceNameList         KeyWords
+OptimizationCost              PopulationCostFunction
+OptimizeObject                PopulationObject
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

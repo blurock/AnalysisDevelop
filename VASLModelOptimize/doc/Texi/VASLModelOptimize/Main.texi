@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  VASLModelOptimize
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for CoreObjects library package "VASLModelOptimize".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) CoreObjects Library
+
+@node     VASLModelOptimize Package
+@section  The "VASLModelOptimize" Package
+@cindex   package, VASLModelOptimize
+@cindex   VASLModelOptimize package
+@cindex   vmd namespace
+@cindex   namespaces, vmd
+
+@table @strong
+@item Package name
+@code{VASLModelOptimize}
+
+@item Namespace name
+@code{vmd}
+
+@item Header files
+@file{VASLModelOptimize.hh}, @file{VASLModelOptimizeType.hh}
+@end table
+
+
+@include VASLModelOptimize/Overview.texi
+
+@include VASLModelOptimize/Classes.texi
