@@ -1,3 +1,5 @@
+MergePackage   = $(ANALYSIS_BINARIES)/MergePackage
+
 BASIS=\
       CommBuffer String Objects ONames BasisSystem MixedClasses\
       Vector MatrixNumeric MatrixUtilities MatrixOut\
@@ -41,7 +43,6 @@ mergeall: mergeBasis mergeCoreObjects
 
 all: mergeall compileBasis compileCoreObjects
 
-
 compileBasis: $(cBASIS)
 
 mergeBasis: $(mBASIS)
@@ -60,7 +61,7 @@ $(cBASIS):
 	popd;
 
 $(mBASIS):
-	MergePackage $(subst $(space)$(mergeprefix),$(empty),$(space)$@) Basis
+	$(MergePackage) $(subst $(space)$(mergeprefix),$(empty),$(space)$@) Basis
 
 $(cCOREOBJECTS):
 	pushd $(subst $(space)$(compileprefix),$(empty),$(space)$@);\
