@@ -73,7 +73,7 @@ $(cCOREOBJECTS):
 	popd;
 
 $(mCOREOBJECTS):
-	MergePackage $(subst $(space)$(mergeprefix),$(empty),$(space)$@) CoreObjects
+	$(MergePackage) $(subst $(space)$(mergeprefix),$(empty),$(space)$@) CoreObjects
 
 .PHONY: $(cBASIS) $(mBASIS) compileBasis mergeBasis
 
