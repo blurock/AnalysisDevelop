@@ -1,3 +1,4 @@
+SHELL         =/bin/bash
 MergePackage   = $(ANALYSIS_BINARIES)/MergePackage
 
 BASIS=\
