@@ -2,7 +2,7 @@ SHELL         =/bin/bash
 MergePackage   = $(ANALYSIS_BINARIES)/MergePackage
 
 BASIS=\
-      CommBuffer String Objects ONames BasisSystem MixedClasses\
+      CommBuffer String Objects ONames BasisSystem MixedClasses System\
       Vector MatrixNumeric MatrixUtilities MatrixOut\
       EigenValues EigenValuesOut BasicLaTeXTable PCAAnalysis PrimitiveStats\
       Pairs Graph StartPairs FindCorrespondences SubGraph\
