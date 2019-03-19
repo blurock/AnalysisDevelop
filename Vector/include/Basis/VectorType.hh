@@ -171,6 +171,11 @@ public:
 }; // class VectorSimple
 
 
+template class vector<int>;
+template class vector<double>;
+template class VectorSimple<int>;
+template class VectorSimple<double>;
+
 /*C VectorNumeric . . . . . . . . . . . . . . . . . . . .  class of VectorNumeric
 **
 **  DESCRIPTION
