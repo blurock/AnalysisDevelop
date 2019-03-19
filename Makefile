@@ -28,6 +28,8 @@ COREOBJECTS=\
             RuleSystem GraphOperations\
             EquivalentClasses VerifyEnvironment FullSystem
 
+
+
 space:=$(empty) $(empty)
 sBASIS:=$(space)$(BASIS)
 sCOREOBJECTS:=$(space)$(COREOBJECTS)
